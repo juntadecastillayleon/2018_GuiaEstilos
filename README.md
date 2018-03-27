@@ -1,2 +1,2 @@
 # 2018_GuiaEstilos
-Guía de estilo web del portal "Junta de Castilla y León" del 2018
+La Guía de estilo web del portal “Junta de Castilla y León” tiene como propósito establecer un marco de intervención controlado en su interfaz. Para ello se han conformado una serie de patrones que faciliten el desarrollo coherente y comprensible de los contenidos, que generen una línea homogénea y representativa del diseño desde el concepto de conjunto, pero definiendo la pluralidad en los contenidos y que consoliden el óptimo mantenimiento del portal. La intención ha sido crear un documento de consulta rápida que permita asistir a los usuarios y preservar la estructura visual del portal.
