@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Incidentes - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Para destacar</a></li>
+					<li><strong>Incidentes</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Incidentes</h1>
+				<div class="destacados incidentes">
+					<h2>Con fecha</h2>
+					<p><a href="">RSS</a></p>
+					<ul>
+						<li class="sin-fecha">
+							<p class="imagen">
+								<span class="dia">22</span>
+								<span class="mes">Feb</span>
+								<span class="anyo">2017</span>
+							</p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Dos personas resultan heridas en un accidente de tráfico en la carretera VA-140</span>
+									<span class="texto">07:23H. Renedo de Esgueva (Valladolid)</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="imagen">
+								<span class="dia">21</span>
+								<span class="mes">Feb</span>
+								<span class="anyo">2017</span>
+							</p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Dos varones heridos al volcar su turismo en la A-62</span>
+									<span class="texto">17:33H. Carpio de Azaba (Salamanca).</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="imagen">
+								<span class="dia">21</span>
+								<span class="mes">Feb</span>
+								<span class="anyo">2017</span>
+							</p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Dos trasladados al hospital por intoxicación en San Andrés de Montejos (León)</span>
+									<span class="texto">15:48H. Ponferrada (León)</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="imagen">
+								<span class="dia">29</span>
+								<span class="mes">Feb</span>
+								<span class="anyo">2017</span>
+							</p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Castilla y León en Fruit Attraction</span>
+									<span class="texto">Variedad y calidad de sus productos hortofrutícolas.</span>
+								</a>
+							</p>
+						</li>
+					</ul>
+					<p class="ver-mas"><a href="">Todas las noticias</a></p>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se coloca en dos columnas al 50% por encima de 980px, por debajo de distribuye en filas de una única columna.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="destacados incidentes"&gt;
+	&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+	&lt;p&gt;&lt;a href="[ENLACE_RSS]"&gt;RSS&lt;/a&gt;&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li class="sin-fecha"&gt;
+			&lt;p class="imagen"&gt;
+				&lt;span class="dia"&gt;[DIA]&lt;/span&gt;
+				&lt;span class="mes"&gt;[MES]&lt;/span&gt;
+				&lt;span class="anyo"&gt;[AÑO]&lt;/span&gt;
+			&lt;/p&gt;
+			&lt;p class="destacado"&gt;
+				&lt;a href="[ENLACE]"&gt;
+					&lt;span class="titulo"&gt;[TÍTULO]&lt;/span&gt;
+					&lt;span class="texto"&gt;[TEXTO]&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/p&gt;
+		&lt;/li&gt;
+		[...]
+	&lt;/ul&gt;
+	&lt;p class="ver-mas"&gt;&lt;a href="[ENLACE_LISTADO]"&gt;Todas las noticias&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+				<div class="destacados incidentes sin-fecha">
+					<h2>Sin fecha</h2>
+					<p><a href="">RSS</a></p>
+					<ul>
+						<li>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Dos personas resultan heridas en un accidente de tráfico en la carretera VA-140</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Dos varones heridos al volcar su turismo en la A-62</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Dos trasladados al hospital por intoxicación en San Andrés de Montejos (León)</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Castilla y León en Fruit Attraction</span>
+								</a>
+							</p>
+						</li>
+					</ul>
+					<p class="ver-mas"><a href="">Todas las noticias</a></p>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se coloca en dos columnas al 50% por encima de 980px, por debajo de distribuye en filas de una única columna.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="destacados incidentes sin-fecha"&gt;
+	&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+	&lt;p&gt;&lt;a href="[ENLACE_RSS]"&gt;RSS&lt;/a&gt;&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li class="sin-fecha"&gt;
+			&lt;p class="imagen"&gt;
+				&lt;span class="dia"&gt;[DIA]&lt;/span&gt;
+				&lt;span class="mes"&gt;[MES]&lt;/span&gt;
+				&lt;span class="anyo"&gt;[AÑO]&lt;/span&gt;
+			&lt;/p&gt;
+			&lt;p class="destacado"&gt;
+				&lt;a href="[ENLACE]"&gt;
+					&lt;span class="titulo"&gt;[TÍTULO]&lt;/span&gt;
+					&lt;span class="texto"&gt;[TEXTO]&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/p&gt;
+		&lt;/li&gt;
+		[...]
+	&lt;/ul&gt;
+	&lt;p class="ver-mas"&gt;&lt;a href="[ENLACE_LISTADO]"&gt;Todas las noticias&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Guía de estilos - Catálogo de componentes - Junta de Castilla y León</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/guia-estilos.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+	<div id="contenedor">
+		<div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+		</div>
+		<div id="main-menu">
+      <!--#include virtual="includes/menu.inc.html" -->
+		</div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Guía de estilos</a></li>
+					<li><strong>Guía de estilos</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<div class="componente-texto">
+					<h1>Guía de estilos</h1>
+					<div class="contenido guia-estilos">
+						<h2>INTRODUCCIÓN</h2>
+						<P>La Guía de estilo web del portal “<strong>Junta de Castilla y León</strong>” tiene como propósito establecer un marco
+							de intervención controlado en su interfaz.
+							Para ello se han conformado una serie de patrones que faciliten el desarrollo coherente y comprensible de los contenidos, que generen una línea homogénea y representativa del diseño desde el concepto de conjunto, pero definiendo la pluralidad en los contenidos y que consoliden el óptimo  mantenimiento del portal. La intención ha sido crear un documento de consulta rápida
+							que permita asistir a los usuarios y preservar la estructura visual del portal.
+						</P>
+
+					</div>
+					<div class="contenido guia-estilos">
+						<h2>EL ESCUDO</h2>
+						<p>El escudo representa el elemento visual más importante y emblemático del portal, por este motivo es fundamental respetar una serie de <strong>normas</strong> en cuanto a su <strong>utilización</strong> y al<strong>espacio</strong> en el que se ubica.</p>
+						<img class="emblema" src="img/jcyl.jpg">
+						<ul>
+							<li><strong>El escudo no puede ser modificado</strong>. No se deben alterar propiedades como el cromatismo, brillo, contraste, opacidad, nitidez cualquier otro aspecto que comprometa su imagen. Es decir, debe permanecer en su formato original, tal como se muestra en la cabecera.</li>
+							<li>El escudo no puede ser objeto de recursos decorativos. Su presencia se ciñe a una cuestión indentificativa de carácter intistucional no a un complemento estético.</li>
+							<li> El escudo tiene un área de seguridad que no puede ser invadido. Si bien no hay una distancia mínima precisa, debe poseer el suficiente "aire" o margen como para que no establezca contacto con otro elemento. Es necesario que se presente íntegro, no puede ser recortado.</li>
+						</ul>
+						<h3>ESCUDO Y MARCA TERRITORIO</h3>
+						<P>Como norma especial cabe destacar que la <strong>marca Territorio</strong> jamás podrá exceder el<strong> 70%</strong> de la altura del escudo en el caso de que ambos se encuentren en la misma página</P>
+						<img class="comparativa" src="img/comparativa.jpg">
+					</div>
+					<div class="contenido guia-estilos">
+						<h2>COLOR</h2>						
+						<p>El conjunto de la web destaca por el empleo de un color predominante, el cual responde a un sentido claramente institucional e identificativo seleccionado a partir del escudo de la Junta. Un rojo de gama media, respaldado por diferentes tonalidades de sutiles muestras neutras, grises y un verde de presencia ocasional. En la <em>Prehome</em> se da una mayor variedad cromática, la diferencia respecto a los portales queda patente, se pretende facilitar la navegación con accesos de tonos pastel a contenidos claramente diferenciados y reforzar el significado de una web plural.</p>						
+						<h3>PORTALES</h3>
+						<ul class="guia items-3columnas">
+							<li class="caja color1"><strong>PRINCIPAL<br>#ba283b<br>rgb(186, 40, 59)</strong></li>
+							<li class="caja color2"><strong>#f6f6f6<br>rgb(246, 246, 246)</strong></li>
+							<li class="caja color3"><strong>#333333 <br>rgb(51, 51, 51)</strong></li>
+							<li class="caja color4"><strong>#666666<br>rgb(102, 102, 102)</strong></li>
+							<li class="caja color5"><strong>#cccccc<br>rgb(204, 204, 204)</strong></li>
+							<li class="caja color6"><strong>#e3eeee<br>rgb(227, 238, 238)</strong></li>			
+						</ul>
+						<h3>PREHOME</h3>
+						<ul class="guia items-3columnas">
+							<li class="caja color7"><strong>#ECF0F4<br>(236,240,244)</strong></li>
+							<li class="caja color8"><strong>#EBECF5<br>(235,236,245)</strong></li>
+							<li class="caja color9"><strong>#EBF4F5<br>(235,244,245)</strong></li>
+							<li class="caja color10"><strong>#F8F1F7<br>(248,241,247)</strong></li>
+							<li class="caja color11"><strong>#F2F4EC<br>(242,244,236)</strong></li>
+							<li class="caja color12"><strong>#FAF2EB(250,242,235)</strong></li>		
+						</ul>
+					</div>
+					<div class="contenido guia-estilos">
+
+						<h2>TIPOGRAFÍA</h2>
+						<p>Se han seleccionado dos familias tipográficas para jcyl.es:</p>
+						<p><strong><a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a></strong> y<strong><a href="https://fonts.google.com/specimen/Lora" target="_blank"> Lora</a></strong>. Extraídas de Google fonts, <strong>Lora</strong> es un serif contemporánea bien equilibrada con raíces en la caligrafía. Es un tipo de letra de texto con contraste moderado muy adecuado para el cuerpo del texto.<strong> Lato</strong> es un tipo de letra de la família san serif, los detalles semi-redondeados de las cartas dan Lato una sensación de calor, mientras que la estructura fuerte proporciona estabilidad y seriedad. Se ha empleado en títulos y componentes de navegación de la web. Ambas confieren al conjunto equilibrío, sobriedad y legibilidad, pero también elegancia, cercanía y modernidad.</p>
+						<ul class="tipografias">
+							<li><h1>H1- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend leo ut ullamcorper faucibus.</h1>
+								<ul class="datos">
+									<li>Lato</li>
+									<li>30px</li>
+									<li>Negrita</li>
+									<li>Alineado a la izquierda</li>
+								</ul></li>
+								<li><h2>H2- Lacinia magna vulputate sed felis elementum nec</h2>
+									<ul class="datos">
+										<li>Lato</li>
+										<li>25px</li>
+										<li>Negrita</li>
+										<li>Alineado a la izquierda</li>
+									</ul>
+								</li>
+								<li><h2 class="versionB">H2- Lacinia magna vulputate sed felis elementum nec</h2><em>En la prehome y portales</em>
+									<ul class="centro datos">
+										<li>Lato</li>
+										<li>25px</li>
+										<li>Negrita</li>
+										<li>Alineado al centro</li>
+									</ul>												
+								</li>
+								<li><h3>H3- Aliquam porttitor lacinia magna, vulputate varius justo vulputate sed</h3>
+									<ul class="datos">
+										<li>Lora</li>
+										<li>20px</li>
+										<li>Negrita</li>
+										<li>Alineado a la izquierda</li>
+										<li>Cursiva</li>
+									</ul>
+								</li>
+								<li><h4>H4- Mauris dignissim tortor ut semper tristique</h4>
+									<ul class="datos">
+										<li>Lora</li>
+										<li>18px</li>
+										<li>Regular</li>
+										<li>Alineado a la izquierda</li>
+									</ul>
+								</li>
+								<li><p><strong>PÁRRAFO</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sit dolorum repellat laborum, illum nesciunt eius accusantium aliquam iste, ipsum labore excepturi numquam obcaecati iure tempora, dolore vero perspiciatis eligendi!</p>
+									<ul class="datos">
+										<li>Lora</li>
+										<li>16px</li>
+										<li>Regular</li>
+										<li>Alineado a la izquierda</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="listado">
+										<li><strong>LISTADO</strong></li>
+										<li>Illum nesciunt eius</li>
+										<li>Lorem ipsum dolor sit amet</li>
+										<li>dolore vero perspiciatis eligendi!</li>
+										<li>Aliquam porttitor lacinia magna, vulputate varius justo vulputate sed</li>
+									</ul>
+									<ul class="datos">
+										<li>Lora</li>
+										<li>16px</li>
+										<li>Regular o Negrita</li>
+										<li>Alineado a la izquierda</li>
+										<li>Cursiva</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="contenido guia-estilos">
+							<h2>BOTONES Y ELEMENTOS DE NAVEGACIÓN</h2>
+							<p>Existe una gama extensa de botones, enlaces y otros elementos de navegación distribuidos a lo largo de toda la web y cuyas características están ajustadas a los contenidos que los albergan como se puede comprobar en el catálogo de componentes. Como ejemplos de los modelos más recurridos y significativos cabría destacar los siguientes:</p>
+							<h3>BOTONES</h3>						
+							<ul class="botones">
+								<li><a href="#" class="blanco">Lorem ipsum sit dolor amet</a></li>
+								<li><a class="anexos" href="#" class="blanco">Acceder a los anexos</a></li>
+							</ul>
+
+
+							<ul class="botones gris">
+								<li><a href="#"><span class="enlace descarga"><span>Descargar</span></span></a></li>
+								<li><a href="#"><span class="enlace acceder"><span>Acceder</span></span></a></li>
+								<li><a class="ver-noticias" href="">Todas las noticias</a></li>							
+							</ul>							
+							<ul class="botones">
+								<li><a class="buscador-uno" href="">Buscar</a></li>
+								<li><a href=""></a></li>
+								<li><a class="buscador-dos" href="">Buscar</a></li>
+								<li><a href=""></a></li>
+							</ul>
+							<ul class="botones formatos-descarga">
+								<li><a href=""><img alt="CSV" src="img/iconos/csv.png"> Descargar <span class="elemento-invisible">Listado de residencias, albergues y campamentos juveniles de Castilla y León</span></a></li>
+								<li><a href=""><img alt="JSON" src="img/iconos/json.png"> Descargar <span class="elemento-invisible">Listado de residencias, albergues y campamentos juveniles de Castilla y León</span></a></li>
+								<li><a href=""><img alt="XML" src="img/iconos/xml.png"> Descargar <span class="elemento-invisible">Listado de residencias, albergues y campamentos juveniles de Castilla y León</span></a></li>
+							</ul>
+							<h3>PAGINACIÓN</h3>
+							<div class="paginacion simple-pagination izq" aria-hidden="true"><ul><li class="disabled"><span class="current prev">&lt;</span></li><li class="active"><span class="current">1</span></li><li><a href="#page-2" class="page-link">2</a></li><li><a href="#page-2" class="page-link next">&gt;</a></li></ul></div>
+							<div class="paginacion-letras">
+
+								<ul>
+									<li class="act"><a href="">A</a></li>
+									<li><a href="">B</a></li>
+									<li><a href="">C</a></li>
+									<li><a href="">D</a></li>
+									<li><a href="">E</a></li>
+									<li><a href="">F</a></li>
+									<li><a href="">G</a></li>
+									<li><a href="">H</a></li>
+									<li><a href="">I</a></li>
+									<li><a href="">J</a></li>
+									<li><a href="">K</a></li>
+									<li><a href="">L</a></li>
+									<li><a href="">M</a></li>
+									<li><a href="">N</a></li>
+									<li><a href="">Ñ</a></li>
+									<li><a href="">O</a></li>
+									<li><a href="">P</a></li>
+									<li><a href="">Q</a></li>
+									<li><a href="">R</a></li>
+									<li><a href="">S</a></li>
+									<li><a href="">T</a></li>
+									<li><a href="">U</a></li>
+									<li><a href="">V</a></li>
+									<li><a href="">W</a></li>
+									<li><a href="">X</a></li>
+									<li><a href="">Y</a></li>
+									<li><a href="">Z</a></li>
+								</ul>
+								<p><span class="elemento-invisible">Letra seleccionada:</span><span class="letra">A</span></p>
+							</div>
+						</div>
+						
+				</div>
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+	</div>
+								
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+</body>
+</html>

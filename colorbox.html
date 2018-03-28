@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Colorbox - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/colorbox-galeria.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Para destacar</a></li>
+					<li><strong>Colorbox</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Colorbox</h1>
+				<div class="componente-texto">
+					<div class="contenido">
+						<p><a href="ajax-tab-content.html" class="cboxElementIframe">Enlace para abrir una página html en colorbox.</a></p>
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>Para abrir una ventana modal con un HTML solo hace falta añadir la clase <em>cboxElementIframe</em> al enlace. Abrirá la página indicada en el <em>href</em> en una ventana modal.</p>
+					<p>Es necesario añadir tanto los estilos como la librería JS de Colorbox.</p>
+					<p>Las ventanas emergentes de colorbox se adaptan al tamaño de la ventana en que se abren.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;link href="css/colorbox-galeria.css" rel="stylesheet"&gt;
+&lt;script src="js/jquery.colorbox-min.js"&gt;&lt;/script&gt;
+&lt;a href="[ENLACE]" class="cboxElementIframe"&gt;[TEXTO_ENLACE]&lt;/a&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

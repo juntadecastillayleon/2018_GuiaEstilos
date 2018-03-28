@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Solo imagen - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Enlaces</a></li>
+					<li><strong>Solo imagen</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Solo imagen</h1>
+				<div class="enlace-solo-imagen">
+					<p><a href=""><img src="img/local/enlace-solo-imagen.jpg" alt=""></a></p>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>La imagen se expandirá o contraerá, conservando sus proporciones, ocupando el 100% del espacio disponible.</p>
+					<p>Tamaño de la imagen: 1170 X 285px.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="enlace-solo-imagen"&gt;
+	&lt;p&gt;&lt;a href=""&gt;&lt;img src="[IMG]" alt=""&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

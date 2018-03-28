@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body class="home">
+    <div id="contenedor">
+        <div class="contenedor">
+            <h1><a href="index.html"><img src="img/jcyl.jpg" alt="Junta de Castilla y León"/></a></h1>
+        </div>
+        <div id="main-menu">
+			<script>
+				$('#main-menu').load('includes/menu-prehome.inc.html');
+			</script>
+        </div>
+		<div id="buscador">
+			<form action="" method="post">
+				<label for="q" class="elemento-invisible">Texto a buscar</label>
+				<input type="text" name="q" id="q" value="" placeholder="Buscar..." />
+				<input type="image" src="img/buscar.png" alt="Buscar" />
+			</form>
+		</div>
+		<div id="carrusel">
+			<!--
+				Ocultamos el carrusel a lectores de pantalla.
+				Todos los enlaces enlazan al mismo portal. Turismo Castilla y León.
+				De no ser así, se buscaría otra solución.
+			-->
+			<ul class="owl-carousel" aria-hidden="true">
+				<li>
+					<span>
+						<img src="img/carrusel.jpg" alt=""/>
+						<a href="">
+							<span>
+								<strong>Frías</strong>
+								<em>Burgos</em>
+							</span>
+						</a>
+					</span>
+				</li>
+				<li>
+					<span>
+						<img src="img/carrusel.jpg" alt=""/>
+						<a href="">
+							<span>
+								<strong>Frías</strong>
+								<em>Burgos</em>
+							</span>
+						</a>
+					</span>
+				</li>
+				<li>
+					<span>
+						<img src="img/carrusel.jpg" alt=""/>
+						<a href="">
+							<span>
+								<strong>Frías</strong>
+								<em>Burgos</em>
+							</span>
+						</a>
+					</span>
+				</li>
+			</ul>
+			<!--
+				En su lugar mostranmos un enlace, oculto visualmente, que lleve al portal.
+			-->
+			<p class="elemento-invisible"><a href="">Portal de Turismo de Castilla y León</a></p>
+		</div>
+		<div id="enlaces-destacados">
+			<div class="contenedor">
+				<h2 class="elemento-invisible">Enlaces destacados</h2>
+				<ul>
+					<li class="item-1">
+						<a href="">
+							<span class="icono"><img src="img/enlaces-destacados/boe.png" alt=""/></span>
+							<span class="texto">Boletín oficial</span>
+						</a>
+					</li>
+					<li class="item-2">
+						<a href="">
+							<span class="icono"><img src="img/enlaces-destacados/sede-electronica.png" alt=""/></span>
+							<span class="texto">Sede electrónica</span>
+						</a>
+					</li>
+					<li class="item-3">
+						<a href="">
+							<span class="icono"><img src="img/enlaces-destacados/transparencia.png" alt=""/></span>
+							<span class="texto">Transparencia y participación</span>
+						</a>
+					</li>
+					<li class="item-4">
+						<a href="">
+							<span class="icono"><img src="img/enlaces-destacados/atencion.png" alt=""/></span>
+							<span class="texto">Atención al ciudadano</span>
+						</a>
+					</li>
+					<li class="item-5">
+						<a href="">
+							<span class="icono"><img src="img/enlaces-destacados/emergencias.png" alt=""/></span>
+							<span class="texto">Emergencias al 112</span>
+						</a>
+					</li>
+					<li class="item-6">
+						<a href="">
+							<span class="icono"><img src="img/enlaces-destacados/meteorologia.png" alt=""/></span>
+							<span class="texto">Meteorología</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="noticias">
+			<div class="contenedor">
+				<h2>Destacados</h2>
+				<ul>
+					<li>
+						<img src="img/destacados-home/img-1.jpg" alt=""/>
+						<span class="triangulo-izquierda"></span>
+						<p>
+							<a href="">
+								<span class="titulo">Nuevos acuerdos del Diálogo Social</span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<img src="img/destacados-home/img-2.jpg" alt=""/>
+						<span class="triangulo-izquierda"></span>
+						<p>
+							<a href="">
+								<span class="titulo">Herrera plantea reforzar los ejes estratégicos comunes y la implicación de la sociedad civil...</span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<img src="img/destacados-home/img-3.jpg" alt=""/>
+						<span class="triangulo-izquierda"></span>
+						<p>
+							<a href="">
+								<span class="titulo">Mejora el índice de satisfacción en Castilla y León con 6,91 puntos en el Barómetro Sanitario</span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="">
+								<span class="titulo">Viajes del Club de los 60, Primavera y Otoño 2017</span>
+							</a>
+						</p>
+						<img src="img/destacados-home/img-5.jpg" alt=""/>
+						<span class="triangulo-derecha"></span>
+					</li>
+					<li>
+						<p>
+							<a href="">
+								<span class="titulo">Guía informativa sobre EBAU CyL 2016-17</span>
+							</a>
+						</p>
+						<img src="img/destacados-home/img-5.jpg" alt=""/>
+						<span class="triangulo-derecha"></span>
+					</li>
+					<li>
+						<p>
+							<a href="">
+								<span class="titulo">II Agenda de Acción Exterior de Castilla y León 2017 - 2020</span>
+							</a>
+						</p>
+						<img src="img/destacados-home/img-6.jpg" alt=""/>
+						<span class="triangulo-derecha"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div id="destacados">
+            <div class="contenedor">
+                <h2>Noticias</h2>
+                <ul class="items-3">
+                    <li>
+						<a href="">
+							<span class="destacado">17 de octubre. Día Internacional para la erradicación de la pobreza</span>
+							<span class="seccion"><span>Administración pública</span></span>
+						</a>
+                    </li>
+                    <li>
+						<a href="">
+							<span class="destacado">Programa "Conciliamos" en Navidad 2016</span>
+							<span class="seccion"><span>Familia</span></span>
+						</a>
+                    </li>
+                    <li>
+						<a href="">
+							<span class="destacado">Resolución de la convocatoria de subvenciones rehabilitación edificatoria 2016</span>
+							<span class="seccion"><span>Oficina vivienda</span></span>
+						</a>
+                    </li>
+					<!--
+                    <li>
+						<a href="">
+							<span class="destacado">Resolución de la convocatoria de subvenciones a la implantación del IEE 2016</span>
+							<span class="seccion"><span>Oficina vivienda</span></span>
+						</a>
+                    </li>
+					-->
+                </ul>
+				<p class="ver"><a href="">Portal de comunicación</a></p>
+            </div>
+        </div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web-prehome.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

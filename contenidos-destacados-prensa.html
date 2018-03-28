@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Contenidos destacados prensa - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Para destacar</a></li>
+					<li><strong>Contenidos destacados prensa</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Contenidos destacados prensa</h1>
+				<div class="destacados-home">
+					<ul class="items-3">
+						<li>
+							<a href="">
+								<span class="destacado">17 de octubre. Día Internacional para la erradicación de la pobreza</span>
+								<span class="seccion"><span>Administración pública</span></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="destacado">Programa "Conciliamos" en Navidad 2016</span>
+								<span class="seccion"><span>Familia</span></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="destacado">Resolución de la convocatoria de subvenciones rehabilitación edificatoria 2016</span>
+								<span class="seccion"><span>Oficina vivienda</span></span>
+							</a>
+						</li>
+					</ul>
+					<p class="ver"><a href="">Portal de comunicación</a></p>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se distribuye en una fila de tres columnas por encima de 830px. Por debajo de 830px se distribuye en tres filas de una columna.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="destacados-home"&gt;
+	&lt;ul class="items-3"&gt;
+		&lt;li&gt;
+			&lt;a href="[ENLACE]"&gt;
+				&lt;span class="destacado"&gt;[TÍTULO]&lt;/span&gt;
+				&lt;span class="seccion"&gt;&lt;span&gt;[SECCIÓN]&lt;/span&gt;&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		[X3]
+	&lt;/ul&gt;
+	&lt;p class="ver"&gt;&lt;a href="[ENLACE]"&gt;Portal de comunicación&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Enlaces desde gobierno - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Enlaces</a></li>
+					<li><strong>Enlaces desde gobierno</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Enlaces desde gobierno</h1>
+				<div class="texto borde gobierno">
+					<h2>Temas de interés</h2>
+					<ul>
+						<li>
+							<a href="">La agricultura y la ganadería de Castilla y León en cifras</a>
+						</li>
+						<li>
+							<a href="">Código de buenas prácticas agrarias de Castilla y León</a>
+						</li>
+						<li>
+							<a href="">Cámaras Agrarias y Juntas Agropecuarias Locales</a>
+						</li>
+						<li>
+							<a href="">Veterinarios interinos</a>
+						</li>
+						<li>
+							<a href="">Ayudas a las organizaciones profesionales agrarias</a>
+						</li>
+						<li>
+							<a href="">Directrices para la promoción de la mujer en el sector agrario</a>
+						</li>
+						<li class="ver-mas">
+							<a href="">Todos los consejos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>Se adapta al anacho disponible ocupando el 100%.</p>
+					<p>En resoluciones menores de 360px la imagen del bullet desaparece y un cuadro rojo, más pequeño,  aparece en su lugar.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="texto borde gobierno"&gt;
+	&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href="[ENLACE]"&gt;[TITULO]&lt;/a&gt;
+		&lt;/li&gt;
+		[...]
+		&lt;li class="ver-mas"&gt;
+			&lt;a href=""&gt;[ENLACE]&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+				<!--2-->
+				<div class="fila col-2">
+					<div class="texto borde gobierno">
+						<h2>Qué hacer ante</h2>
+						<ul>
+							<li>
+								<a href="">Consejos y recomendaciones ante temperaturas elevadas</a>
+							</li>
+							<li>
+								<a href="">Consejos y recomendaciones para actividades de montaña</a>
+							</li>
+							<li>
+								<a href="">Consejos y recomendaciones ante lluvias fuertes</a>
+							</li>
+							<li class="ver-mas">
+								<a href="">Todos los consejos</a>
+							</li>
+						</ul>
+					</div>
+					<div class="texto borde gobierno">
+						<h2>El 112 aconseja</h2>
+						<ul>
+							<li>
+								<a href="">Actuación ante accidentes con líquidos inflamables</a>
+							</li>
+							<li>
+								<a href="">Actuación ante accidentes con gases inflamables</a>
+							</li>
+							<li>
+								<a href="">Actuación ante accidentes con materias tóxicas e infecciosas</a>
+							</li>
+							<li class="ver-mas">
+								<a href="">Todas las fichas</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se coloca en una fila de dos columnas a partir de 600px, por debajo de 600px se coloca en dos filas de una columna.</p>
+					<p>En resoluciones menores de 360px la imagen del bullet desaparece y un cuadro rojo, más pequeño,  aparece en su lugar.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="fila col-2"&gt;
+	&lt;div class="texto borde gobierno"&gt;
+		&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;
+			&lt;/li&gt;
+			[...]
+			&lt;li class="ver-mas"&gt;
+				&lt;a href=""&gt;[ENLACE]&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class="texto borde gobierno"&gt;
+		&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;
+			&lt;/li&gt;
+			[...]
+			&lt;li class="ver-mas"&gt;
+				&lt;a href=""&gt;[ENLACE]&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+				
+				<!--3-->
+				<div class="fila col-3">
+					<div class="texto borde gobierno">
+						<h2>De 1984 a 1994</h2>
+						<ul>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li class="ver-mas">
+								<a href="">Todos los consejos</a>
+							</li>
+						</ul>
+					</div>
+					<div class="texto borde gobierno">
+						<h2>De 1995 a 2005</h2>
+						<ul>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li class="ver-mas">
+								<a href="">Todos los consejos</a>
+							</li>
+						</ul>
+					</div>
+					<div class="texto borde gobierno">
+						<h2>De 2006 A 2015</h2>
+						<ul>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li>
+								<a href="">Premio Castilla y León 1984</a>
+							</li>
+							<li class="ver-mas">
+								<a href="">Todos los consejos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se coloca en una fila de tres columnas a partir de 768px, por debajo de 768px se coloca en tres filas de una columna.</p>
+					<p>En resoluciones menores de 360px la imagen del bullet desaparece y un cuadro rojo, más pequeño,  aparece en su lugar.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="fila col-3"&gt;
+	&lt;div class="texto borde gobierno"&gt;
+		&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;
+			&lt;/li&gt;
+			[...]
+			&lt;li class="ver-mas"&gt;
+				&lt;a href=""&gt;[ENLACE]&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class="texto borde gobierno"&gt;
+		&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;
+			&lt;/li&gt;
+			[...]
+			&lt;li class="ver-mas"&gt;
+				&lt;a href=""&gt;[ENLACE]&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class="texto borde gobierno"&gt;
+		&lt;h2&gt;[ENCABEZADO]&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;
+			&lt;/li&gt;
+			[...]
+			&lt;li class="ver-mas"&gt;
+				&lt;a href=""&gt;[ENLACE]&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

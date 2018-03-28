@@ -1,0 +1,67 @@
+[
+  {
+    "fechaini": "2017-08-29 00:00:00.0",
+    "fechafin": "2017-09-03 00:00:00.0",
+    "texto": "XVIII FERIA DE ARTESANÍA DE PALENCIA. PALENCIA",
+    "dia": [
+      1,
+      2,
+      3
+    ],
+    "href": "http://gestorcontenidos.jcyl.es/web/jcyl/Artesania/es/Plantilla100Detalle/1284167506804/_/1284697784684/Comunicacion"
+  },
+  {
+    "fechaini": "2017-09-01 00:00:00.0",
+    "fechafin": "2017-09-01 00:00:00.0",
+    "texto": "XXXIX FERIA DE CERÁMICA Y ALFARERÍA DE VALLADOLID. VALLADOLID",
+    "dia": [
+      1
+    ],
+    "href": "http://gestorcontenidos.jcyl.es/web/jcyl/Artesania/es/Plantilla100Detalle/1284167506804/_/1284697797093/Comunicacion"
+  },
+	{
+		"fechaini": "2017-09-10 00:00:00.0",
+    "fechafin": "2017-09-10 00:00:00.0",
+		"texto": "Acto de presentación.",
+    "dia": [
+      10
+    ],
+		"href": ""
+	},
+	{
+		"fechaini": "2017-09-20 00:00:00.0",
+    "fechafin": "2017-09-20 00:00:00.0",
+		"texto": "Acto de presentación.",
+    "dia": [
+      20
+    ],
+		"href": ""
+	},
+	{
+		"fechaini": "2017-09-25 00:00:00.0",
+    "fechafin": "2017-09-25 00:00:00.0",
+		"texto": "Acto de presentación.",
+    "dia": [
+      25
+    ],
+		"href": ""
+	},
+	{
+		"fechaini": "2017-09-26 00:00:00.0",
+    "fechafin": "2017-09-26 00:00:00.0",
+		"texto": "Acto de presentación.",
+    "dia": [
+      26
+    ],
+		"href": ""
+	},
+	{
+		"fechaini": "2017-09-29 00:00:00.0",
+    "fechafin": "2017-09-29 00:00:00.0",
+		"texto": "Acto de presentación.",
+    "dia": [
+      29
+    ],
+		"href": ""
+	}
+]

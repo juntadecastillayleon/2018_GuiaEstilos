@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Galería de imágenes con texto - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/colorbox-galeria.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		var GLOBAL_N_ITEMS = 8;
+	</script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Imágenes</a></li>
+					<li><strong>Galería de imágenes con texto</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Galería de imágenes con texto</h1>
+				<h2>Sin paginación</h2>
+				<div class="galeria-multimedia">
+					<ul>
+						<li>
+							<a href="http://cmcmedia.jcyl.es/media/audio/20150709_Declaraciones_antes_de_entrega_Cecales_de_Oro_Rosa_Valdeon.mp3" title="Descarga del documento tipo MP3. Audio vicepresidenta de la Junta de Castilla y León, Rosa Valdeón. Abre una nueva ventana" rel="galeria-1">
+								<span class="imagen">
+									<img src="img/local/galeria-audio.jpg" alt="Descarga del documento tipo MP3. Abre una nueva ventana">
+								</span>
+								<span class="texto">Audio vicepresidenta de la Junta de Castilla y León, Rosa Valdeón</span>
+							</a>
+						</li>
+						<li>
+							<a href="portales.html" title="Duis metus turpis, viverra et risus vitae" class="cboxElementIframe" rel="galeria-1">
+								<span class="imagen">
+									<img src="img/local/galeria-2-2.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" class="cboxElement" rel="galeria-1">
+								<span class="imagen">
+									<img src="img/local/galeria-3-3.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Intervención de Herrera en el XXXIV Aniversario del Estatuto de autonomía" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-audio.jpg" alt="">
+								</span>
+								<span class="texto">Intervención de Herrera en el XXXIV Aniversario del Estatuto de autonomía</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-1-1.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-4.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-5.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-1-1.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="paginacion" aria-hidden="true">
+				</div>
+				<h2>Con paginación</h2>
+				<div class="galeria-multimedia">
+					<ul>
+						<li>
+							<a href="http://cmcmedia.jcyl.es/media/audio/20150709_Declaraciones_antes_de_entrega_Cecales_de_Oro_Rosa_Valdeon.mp3" title="Descarga del documento tipo MP3. Audio vicepresidenta de la Junta de Castilla y León, Rosa Valdeón. Abre una nueva ventana" rel="galeria-1">
+								<span class="imagen">
+									<img src="img/local/galeria-audio.jpg" alt="Descarga del documento tipo MP3. Abre una nueva ventana">
+								</span>
+								<span class="texto">Audio vicepresidenta de la Junta de Castilla y León, Rosa Valdeón</span>
+							</a>
+						</li>
+						<li>
+							<a href="portales.html" title="Duis metus turpis, viverra et risus vitae" class="cboxElementIframe" rel="galeria-1">
+								<span class="imagen">
+									<img src="img/local/galeria-2-2.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" class="cboxElement" rel="galeria-1">
+								<span class="imagen">
+									<img src="img/local/galeria-3-3.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Intervención de Herrera en el XXXIV Aniversario del Estatuto de autonomía" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-audio.jpg" alt="">
+								</span>
+								<span class="texto">Intervención de Herrera en el XXXIV Aniversario del Estatuto de autonomía</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-1-1.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-4.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-5.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-1-1.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-6.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Intervención de Herrera en el XXXIV Aniversario del Estatuto de autonomía" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-audio.jpg" alt="">
+								</span>
+								<span class="texto">Intervención de Herrera en el XXXIV Aniversario del Estatuto de autonomía</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Atención a medios de Herrera en el XXXIV Aniversario del Estatuto de Autonomí" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-audio.jpg" alt="">
+								</span>
+								<span class="texto">Atención a medios de Herrera en el XXXIV Aniversario del Estatuto de Autonomí</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-2-2.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-3-3.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-4.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-5.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="Duis metus turpis, viverra et risus vitae" class="cboxElement">
+								<span class="imagen">
+									<img src="img/local/galeria-6.jpg" alt="">
+								</span>
+								<span class="texto">Duis metus turpis, viverra et risus vitae</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="paginacion" aria-hidden="true">
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se dispondrá en filas de cuatro columnas por encima de 980px. Por debajo de 980px y por encima de 768px se dispondrá en filas de tres columnas. por debajo de 768px y por encima de 530px se dispondrá en filas de dos columnas. Por debajo de 530px se dispondrá en filas de una sola columna.</p>
+					<p>La paginación (Javascript) se inicializará sola si el número de elementos del listado es mayor que el indicado en la variable <em>GLOBAL_N_ITEMS</em>.</p>
+					<p>El tamaño de las imágenes puede ser variable, siendo el tamaño ideal de 270 X 200px.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;script&gt;
+	var GLOBAL_N_ITEMS = 8;
+&lt;/script&gt;
+
+&lt;div class="galeria-multimedia"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href="[IMG_GRANDE]" title="[TÍTULO]" class="cboxElement"&gt;
+				&lt;span class="imagen"&gt;
+					&lt;img src="[IMG]" alt=""&gt;
+				&lt;/span&gt;
+				&lt;span class="texto"&gt;[TEXTO]&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		[...]
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paginacion" aria-hidden="true"&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.simplePagination.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

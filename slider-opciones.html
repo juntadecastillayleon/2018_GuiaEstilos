@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Slider opciones - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Enlaces</a></li>
+					<li><strong>Slider opciones</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Slider opciones</h1>
+				<div class="carrusel-enlaces">
+					<ul>
+						<li>
+							<a href="">
+								<span class="titulo">Jornada sobre riego solar fotovoltaico</span>
+								<img src="img/carrusel/img-1.jpg" alt=""/>
+								<span class="texto">Retrasmisión en diferido de la jornada sobre el bombeo solar fotovoltaico</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="titulo">Investigación e innovación</span>
+								<img src="img/carrusel/img-2.jpg" alt=""/>
+								<span class="texto">Nuevo modelo de investigación agraria y Agroalimentaria</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="titulo">Plataforma del ovino y caprino</span>
+								<img src="img/carrusel/img-3.jpg" alt=""/>
+								<span class="texto">Plataforma de competitividad productiva del sector de ovino y caprino</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="titulo">Comite de seguimiento del PDR del 21 de Junio</span>
+								<img src="img/carrusel/img-4.jpg" alt=""/>
+								<span class="texto">El PDR 2007-2013 de Castilla León cierra con 1.828 millones de euros públicos ejecutados y 67.500 beneficiarios</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="responsive">
+					<p>El componente se distribuye en dos columnas de dos elementos mientras tenga espacio, por encima de 600px. Por debajo de este tamaño se colocan en una sola columna.</p>
+					<p>Además tanto el título como el texto se colocan de forma diferente según el tamaño, así por encima de 1024 el título y el texto superponen la imagen mientras que por debajo de esta resolución el texto se coloca bajo la imagen y el título sobre ella, además cuando están a una columna el texto vuelve a superponerse a la imagen.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="carrusel-enlaces"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=""&gt;
+				&lt;span class="titulo"&gt;[TITULO]&lt;/span&gt;
+				&lt;img src="[IMG]" alt=""/&gt;
+				&lt;span class="texto"&gt;[DESCRIPCIÓN]&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Destacados prehome - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Para destacar</a></li>
+					<li><strong>Destacados prehome</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Destacados prehome</h1>
+				<div class="noticias-home">
+					<div class="contenedor">
+						<h2>Destacados</h2>
+						<ul>
+							<li>
+								<img src="img/destacados-home/img-1.jpg" alt=""/>
+								<span class="triangulo-izquierda"></span>
+								<p>
+									<a href="">
+										<span class="titulo">Nuevos acuerdos del Diálogo Social</span>
+									</a>
+								</p>
+							</li>
+							<li>
+								<img src="img/destacados-home/img-2.jpg" alt=""/>
+								<span class="triangulo-izquierda"></span>
+								<p>
+									<a href="">
+										<span class="titulo">Herrera plantea reforzar los ejes estratégicos comunes y la implicación de la sociedad civil...</span>
+									</a>
+								</p>
+							</li>
+							<li>
+								<img src="img/destacados-home/img-3.jpg" alt=""/>
+								<span class="triangulo-izquierda"></span>
+								<p>
+									<a href="">
+										<span class="titulo">Mejora el índice de satisfacción en Castilla y León con 6,91 puntos en el Barómetro Sanitario</span>
+									</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="">
+										<span class="titulo">Viajes del Club de los 60, Primavera y Otoño 2017</span>
+									</a>
+								</p>
+								<img src="img/destacados-home/img-5.jpg" alt=""/>
+								<span class="triangulo-derecha"></span>
+							</li>
+							<li>
+								<p>
+									<a href="">
+										<span class="titulo">Guía informativa sobre EBAU CyL 2016-17</span>
+									</a>
+								</p>
+								<img src="img/destacados-home/img-5.jpg" alt=""/>
+								<span class="triangulo-derecha"></span>
+							</li>
+							<li>
+								<p>
+									<a href="">
+										<span class="titulo">II Agenda de Acción Exterior de Castilla y León 2017 - 2020</span>
+									</a>
+								</p>
+								<img src="img/destacados-home/img-6.jpg" alt=""/>
+								<span class="triangulo-derecha"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se distribuirá en dos filas de 3 columnas, imagen a la izquierda y texto a la derecha, por encima de los 1280px.</p>
+					<p>Por debajo de 1280px y por encima de 900px se distribuirá en tres filas de dos columnas.</p>
+					<p>Por debajo de 900px se colocará en seis filas de una columna. Por debajo de 400px la imagen desaparecerá quedando solo el texto.</p>
+					<p>El tamaño de las imágenes es de 195 X 180px.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="noticias-home"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;h2&gt;Destacados&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;img src="[IMG]" alt=""/&gt;
+				&lt;span class="triangulo-izquierda"&gt;&lt;/span&gt;
+				&lt;p&gt;
+					&lt;a href="[ENLACE]"&gt;
+						&lt;span class="titulo"&gt;[TÍTULO]&lt;/span&gt;
+					&lt;/a&gt;
+				&lt;/p&gt;
+			&lt;/li&gt;
+			[X3]
+			&lt;li&gt;
+				&lt;p&gt;
+					&lt;a href="[ENLACE]"&gt;
+						&lt;span class="titulo"&gt;[TÍTULO]&lt;/span&gt;
+					&lt;/a&gt;
+				&lt;/p&gt;
+				&lt;img src="[IMG]" alt=""/&gt;
+				&lt;span class="triangulo-derecha"&gt;&lt;/span&gt;
+			&lt;/li&gt;
+			[X3]
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>
