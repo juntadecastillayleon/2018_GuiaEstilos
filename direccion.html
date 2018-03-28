@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Dirección - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Generales</a></li>
+					<li><strong>Dirección</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Dirección</h1>
+				<h2>Menos datos</h2>
+				<div class="direccion">
+					<div class="vcard">
+						<div class="datos">
+							<p class="fn n"><strong class="given-name">Ente Público Regional de la Energía de Castilla y León (EREN)</strong></p>
+							<span class="org elemento-invisible"><span class="organization-name">Junta de Castilla y León</span></span>
+							<p class="adr">
+								<span class="type elemento-invisible">work</span>
+								<span class="street-address">Avda. Reyes Leoneses, 11 (Edificio EREN) - C.P.: 24008 - León (León)</span>
+								<span class="region elemento-invisible">Castilla y León</span>
+								<span class="country-name elemento-invisible">España</span>
+							</p>
+							<p class="tel"><span class="type elemento-invisible">work </span>987 849 393</p>
+							<p class="tel fax"><span class="type elemento-invisible">work </span><span class="type elemento-invisible">fax </span>987 849 390</p>
+							<p class="url"><a href="" title="">http://www.energia.jcyl.eshttp://www.energia.jcyl.eshttp://www.energia.jcyl.eshttp://www.energia.jcyl.es</a></p>
+							<span class="geo elemento-invisible">
+								<span class="latitude">42.61386</span>
+								<span class="longitude">-5.5892663</span>
+							</span>
+							<p class="directorio"><a href="">Directorio completo</a></p>
+						</div>
+						<div class="mapa" aria-hidden="true">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.6160844242336!2d-5.5855768842909!3d42.60588832753348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af35650fc1f%3A0x1bc3bf21aace39fe!2sEdificio+Eren!5e0!3m2!1ses!2ses!4v1488218027106" width="540" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El mapa y la información se colocarán en dos columnas por encima de 800px. Por debajo de 800px se colocarán en dos filas, el texto encima y el mapa debajo.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="direccion"&gt;
+	&lt;div class="vcard"&gt;
+		&lt;div class="datos"&gt;
+			&lt;p class="fn n"&gt;&lt;strong class="given-name"&gt;[Nombre, título]&lt;/strong&gt;&lt;/p&gt;
+			&lt;span class="org elemento-invisible"&gt;&lt;span class="organization-name"&gt;[Organización]&lt;/span&gt;&lt;/span&gt;
+			&lt;p class="adr"&gt;
+				&lt;span class="type elemento-invisible"&gt;work&lt;/span&gt;
+				&lt;span class="street-address"&gt;[Dirección]&lt;/span&gt;
+				&lt;span class="region elemento-invisible"&gt;[Provincia]&lt;/span&gt;
+				&lt;span class="country-name elemento-invisible"&gt;[País]&lt;/span&gt;
+			&lt;/p&gt;
+			&lt;p class="tel"&gt;&lt;span class="type elemento-invisible"&gt;work &lt;/span&gt;[Teléfono]&lt;/p&gt;
+			&lt;p class="tel fax"&gt;&lt;span class="type elemento-invisible"&gt;work &lt;/span&gt;&lt;span class="type elemento-invisible"&gt;fax &lt;/span&gt;[Fax]&lt;/p&gt;
+			&lt;p class="url"&gt;&lt;a href="" title=""&gt;[Url]&lt;/a&gt;&lt;/p&gt;
+			&lt;span class="geo elemento-invisible"&gt;
+				&lt;span class="latitude"&gt;[Latitud]&lt;/span&gt;
+				&lt;span class="longitude"&gt;[Longitud]&lt;/span&gt;
+			&lt;/span&gt;
+			&lt;p class="directorio"&gt;&lt;a href=""&gt;Directorio completo&lt;/a&gt;&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="mapa" aria-hidden="true"&gt;
+			&lt;iframe src="[Url mapa]" width="540" height="300" frameborder="0" style="border:0" allowfullscreen&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+				<h2>Más datos</h2>
+				<div class="direccion">
+					<div class="vcard">
+						<div class="datos">
+							<div class="izda"><img src="img/local/centro-crefes.jpg" alt=""></div>
+							<p class="fn n"><strong class="given-name">Ente Público Regional de la Energía de Castilla y León (EREN)</strong></p>
+							<span class="org elemento-invisible"><span class="organization-name">Junta de Castilla y León</span></span>
+							<p class="fn n given-name nombre">Nombre y apellidos del cargo principal: <span class="org organization-name">Junta de Castilla y León</span></p>
+							<p class="adr">
+								<span class="type elemento-invisible">work</span>
+								<span class="street-address">Avda. Reyes Leoneses, 11 (Edificio EREN) - C.P.: 24008 - León (León)</span>
+								<span class="region elemento-invisible">Castilla y León</span>
+								<span class="country-name elemento-invisible">España</span>
+							</p>
+							<p class="tel"><span class="type elemento-invisible">work</span>987 849 393</p>
+							<p class="tel"><span class="type elemento-invisible">fax</span>987 849 390</p>
+							<p class="email">correoelectronico@jcyl.es</span></p>
+							<p class="url"><a href="" title="">http://ifvsiau1.jcyl.es/web/jcyl?c=Page&cid=1284562219713&pagename=JCYL_Cursos%2FPage%2FPlantilla50y50#anexos</a></p>
+							<span class="geo elemento-invisible">
+								<span class="latitude">42.61386</span>
+								<span class="longitude">-5.5892663</span>
+							</span>
+							<p class="directorio"><a href="">Directorio completo</a></p>
+							<ul class="mas-info">
+								<li><a href="/web/jcyl/binarios" target="_blank" title="xxx">documento1<img src="pdf.gif" alt="xxx" class="iconodescarga"></a></li>
+								<li><a href="/web/jcyl/binarios" target="_blank" title="xxx">documento1<img src="pdf.gif" alt="xxx" class="iconodescarga"></a></li>
+							</ul>
+						</div>
+						<div class="mapa" aria-hidden="true">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.6160844242336!2d-5.5855768842909!3d42.60588832753348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af35650fc1f%3A0x1bc3bf21aace39fe!2sEdificio+Eren!5e0!3m2!1ses!2ses!4v1488218027106" width="540" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="mas-datos">
+							<h2>Mas información</h2>
+							<p>información adicional en parrafo</p>
+							<ul>
+								<li>Horario de apertura al público, los días laborables de lunes a viernes de 8,30 a 14,30 h y de lunes a jueves de 16,30 a 18,30 h. Los sábados laborables de 9 a 14 horas.</li>
+								<li>Los días 24 y 31 de diciembre no festivos horario de apertura al público 9 a 14 horas.</li>
+								<li>Los meses de julio y agosto, estas oficinas permanecerán abiertas los días laborables, de lunes a viernes, de 8,30 a 14,30 h.</li>
+							</ul>
+							<div class="centrar">
+								<table summary="Localidades que pertenecen a la Oficina de Empleo de Medina de Rioseco">
+									<caption>Localidades a las que da servicio</caption>
+									<tr>
+										<th scope="col">Localidades</th>
+										<th scope="col">Código postal</th>
+									</tr>
+									<tr>
+										<td>AGUILAR DE CAMPOS</td>
+										<td>47814</td>
+									</tr>
+								</table>
+								<p class="descarga"><a href="" title=""><img src="excel.gif" alt="">Descarga la tabla en formato Excel</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>Mismo comportamiento que con menos datos.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="direccion"&gt;
+	&lt;div class="vcard"&gt;
+		&lt;div class="datos"&gt;
+			&lt;p class="fn n"&gt;&lt;strong class="given-name"&gt;[Nombre, título]&lt;/strong&gt;&lt;/p&gt;
+			&lt;span class="org elemento-invisible"&gt;&lt;span class="organization-name"&gt;[Organización]&lt;/span&gt;&lt;/span&gt;
+			&lt;p class="adr"&gt;
+				&lt;span class="type elemento-invisible"&gt;work&lt;/span&gt;
+				&lt;span class="street-address"&gt;[Dirección]&lt;/span&gt;
+				&lt;span class="region elemento-invisible"&gt;[Provincia]&lt;/span&gt;
+				&lt;span class="country-name elemento-invisible"&gt;[País]&lt;/span&gt;
+			&lt;/p&gt;
+			&lt;p class="tel"&gt;&lt;span class="type elemento-invisible"&gt;work &lt;/span&gt;[Teléfono]&lt;/p&gt;
+			&lt;p class="tel fax"&gt;&lt;span class="type elemento-invisible"&gt;work &lt;/span&gt;&lt;span class="type elemento-invisible"&gt;fax &lt;/span&gt;[Fax]&lt;/p&gt;
+			&lt;p class="url"&gt;&lt;a href="" title=""&gt;[Url]&lt;/a&gt;&lt;/p&gt;
+			&lt;span class="geo elemento-invisible"&gt;
+				&lt;span class="latitude"&gt;[Latitud]&lt;/span&gt;
+				&lt;span class="longitude"&gt;[Longitud]&lt;/span&gt;
+			&lt;/span&gt;
+			&lt;p class="directorio"&gt;&lt;a href=""&gt;Directorio completo&lt;/a&gt;&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="mapa" aria-hidden="true"&gt;
+			&lt;iframe src="[Url mapa]" width="540" height="300" frameborder="0" style="border:0" allowfullscreen&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
+		&lt;div class="mas-datos"&gt;
+			[Contenido HTML]
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

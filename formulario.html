@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Formulario - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+          <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Buscadores y formularios</a></li>
+					<li><strong>Formulario</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Formulario</h1>
+				<p class="info-form">Los campos marcados con <span>*</span> son obligatorios</p>
+				<div class="buscador-especifico fondo">
+					<form name="formulario" method="get" action="">
+						<fieldset class="fieldset">
+							<legend><span></span> Datos sobre la actividad formativa</legend>
+							<div>
+								<label for="titulo">Titulo de la actividad formativa <span aria-label="campo obligatorio">*</span></label>
+								<input id="titulo" name="titulo" type="text" aria-required="true">
+							</div>
+							<div>
+								<label for="provincia">Seleccione provincia</label>
+								<select id="provincia">
+									<option>Todas</option>
+								</select>
+							</div>
+							<div>
+								<label for="lugar">Lugar de impartición</label>
+								<input id="lugar" name="lugar" type="text">
+							</div>
+							<div>
+								<label for="fechas">Fechas</label>
+								<input id="fechas" name="fechas" type="text">
+							</div>
+							<div>
+								<label for="fechas">Unidad de Seguridad y Salud de</label>
+								<input id="fechas" name="fechas" type="text">
+							</div>
+							<fieldset class="columnas">
+								<legend>¿Cómo conoció esta actividad?</legend>
+								<div>
+									<input type="checkbox" value="" id="check-1">
+									<label for="check-1">Web</label>
+								</div>
+								<div>
+									<input type="checkbox" value="" id="check-2">
+									<label for="check-2">Colegio profesional</label>
+								</div>
+								<div>
+									<input type="checkbox" value="" id="check-3">
+									<label for="check-3">Catálogo manual</label>
+								</div>
+								<div>
+									<input type="checkbox" value="" id="check-4">
+									<label for="check-4">Medio de comunicación</label>
+								</div>
+								<div>
+									<input type="checkbox" value="" id="check-5">
+									<label for="check-5">Visita o llamada personal</label>
+								</div>
+								<div>
+									<input type="checkbox" value="" id="check-6">
+									<label for="check-6">Otros</label>
+								</div>
+								<div>
+									<input type="checkbox" value="" id="check-7">
+									<label for="check-7">Sidicato</label>
+								</div>
+							</fieldset>
+							<div>
+								<label for="interes">¿Por qué le interesa esta actividad?</label>
+								<textarea id="interes" name="interes"></textarea>
+							</div>
+						</fieldset>
+						<fieldset class="fieldset">
+							<legend><span></span> Datos sobre el alumno</legend>
+							<div>
+								<label for="nombre">Apellidos y nombre</label>
+								<input id="nombre" name="nombre" type="text">
+							</div>
+							<div class="fechas">
+								<div>
+									<label for="desde">Fecha de nacimiento</label>
+									<input id="desde" name="desde" type="text" placeholder="dd/mm/aaaa">
+								</div>
+							</div>
+							<div>
+								<label for="dni">DNI</label>
+								<input id="dni" name="dni" type="text">
+							</div>
+							<div>
+								<label for="direccion">Direccion</label>
+								<input id="direccion" name="direccion" type="text">
+							</div>
+							<div>
+								<label for="fechas">Unidad de Seguridad y Salud de</label>
+								<input id="fechas" name="fechas" type="text">
+							</div>
+							<fieldset class="en-linea">
+								<legend>¿Ha realizado algún curso de seguridad e higiene?</legend>
+								<div>
+									<input type="radio" value="" id="radio-1">
+									<label for="radio-1">Sí</label>
+								</div>
+								<div>
+									<input type="radio" value="" id="radio-2">
+									<label for="radio-2">No</label>
+								</div>
+							</fieldset>
+							<fieldset class="en-linea">
+								<legend>¿Conocimientos sobre el tema?</legend>
+								<div>
+									<input type="radio" value="" id="radio-1">
+									<label for="radio-1">Ninguno</label>
+								</div>
+								<div>
+									<input type="radio" value="" id="radio-2">
+									<label for="radio-2">Básico</label>
+								</div>
+								<div>
+									<input type="radio" value="" id="radio-3">
+									<label for="radio-3">Medio</label>
+								</div>
+								<div>
+									<input type="radio" value="" id="radio-4">
+									<label for="radio-4">Elevados</label>
+								</div>
+							</fieldset>
+						</fieldset>
+						<input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+					</form>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>Los formularios fluyen adaptándose al ancho disponible en cada momento.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;p class="info-form"&gt;Los campos marcados con &lt;span&gt;*&lt;/span&gt; son obligatorios&lt;/p&gt;
+&lt;div class="buscador-especifico fondo"&gt;
+	&lt;form name="formulario" method="get" action=""&gt;
+		&lt;fieldset class="fieldset"&gt;
+			&lt;legend&gt;&lt;span&gt;&lt;/span&gt; [TÍTULO]&lt;/legend&gt;
+			&lt;div&gt;
+				&lt;label for="[ID]"&gt;[ETIQUETA] &lt;span aria-label="campo obligatorio"&gt;*&lt;/span&gt;&lt;/label&gt;
+				&lt;input id="[ID]" name="[ID]" type="text" aria-required="true"&gt;
+			&lt;/div&gt;
+			&lt;div&gt;
+				&lt;label for="[ID]"&gt;[ETIQUETA]&lt;/label&gt;
+				&lt;select id="[ID]"&gt;
+					&lt;option&gt;Todas&lt;/option&gt;
+					[...]
+				&lt;/select&gt;
+			&lt;/div&gt;
+			&lt;fieldset class="columnas"&gt;
+				&lt;legend&gt;[TÍTULO]&lt;/legend&gt;
+				&lt;div&gt;
+					&lt;input type="checkbox" value="" id="[ID]"&gt;
+					&lt;label for="[ID]"&gt;[ETIQUETA]&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/fieldset&gt;
+			&lt;fieldset class="en-linea"&gt;
+				&lt;legend&gt;[TÍTULO]&lt;/legend&gt;
+				&lt;div&gt;
+					&lt;input type="radio" value="" id="[ID]"&gt;
+					&lt;label for="[ID]"&gt;[ETIQUETA]&lt;/label&gt;
+				&lt;/div&gt;
+				[...]
+			&lt;/fieldset&gt;
+			&lt;div class="fechas"&gt;
+				&lt;div&gt;
+					&lt;label for="[ID]"&gt;[ETIQUETA]&lt;/label&gt;
+					&lt;input id="[ID]" name="[ID]" type="text" placeholder="dd/mm/aaaa"&gt;
+					&lt;img src="img/calendario-popup.png" alt=""&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			[...]
+		&lt;/fieldset&gt;
+		[..]
+		&lt;input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton"&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-es.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/jquery.sidr.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/portal.js"></script>
+    <script src="js/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Rejilla - Guía de estilos - Catálogo de componentes - Junta de Castilla y León</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/guia-estilos.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+	<div id="contenedor">
+		<div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+		</div>
+		<div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+		</div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Guía de estilos</a></li>
+					<li><strong>Rejilla</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<div class="componente-texto">
+					<h1>Guía de estilos</h1>
+
+						<div class="contenido guia-estilos">
+							<h2>ESPACIO Y ESPACIADO</h2>
+							<P>El portal está elaborado bajo la premisa de un diseño sencillo, legible, plano identificativo y responsive, tiene como objetivo que el usuario goce de una óptima percepción en la información transmitida, se trata de un formato adaptable a todas las resoluciones de pantalla, desde móvil hasta escritorio, para ello se ha configurado una estructura de  sistema de rejillas o Grid  que permite una mayor flexibilidad a la hora de adaptar los diferentes tipos de contenidos. Los componentes están distribuidos dentro de una única región que ocupa el 100% de la pantalla hasta un máximo de 1170 píxeles y puede contener de uno a cinco columnas donde se asienten los contenidos, dependiendo del formato y el espacio que requieran.</P>
+							<p>No hay un espaciado común debido a la amplia variedad de recursos instaurados en los contenidos, pero sería conveniente  respetar el espacio mínimo entre ellos, su uso incorrecto puede influir negativamente en la relación e interacción de los usuarios con la web. <strong>La distancia mínima entre columnas debe ser de 36.4 píxeles</strong>. La distancia específica tanto horizontal como vertical entre contenidos y componentes está registrada en el catálogo de componentes</p>
+							<h3>Sistema de rejillas de jcyl.es</h3>
+							<span class="grid"><img src="img/grid.jpg" alt="sistema de rejillas o grid"></span>
+							<h3>REGIONES</h3>
+							<p>Cabecera, miga de pan y pie de página o footer son regiones cuyas propiedades tanto comunes como particulares están presentes en casi todas las páginas. No son regiones susceptibles de cambios, excepto la imagen de cabecera e items de navegacíón en el menú y en el pie de página que variaran en función del portal.</p>
+							<h4>CABECERA</h4>
+							<div class="listado18">
+								<ul>
+									<li>Contiene el escudo, menú superior el cual puede constar de buscador, acceso a cuenta de usuario, contacto, selector de idioma, redes sociales y navegación entre portales. También contiene el menú principal, imagen de cabecera y título principal</li>
+									<li>Cabecera, contenidos y pie de página están enmarcadas en un contendor cuyo ancho máximo es de 1170 píxeles, a excepción de la imagen de cabecera que ocupa mínimo 1500 píxelesd e ancho y algunos fondos de color que ocupan el 100%.
+										<li>El número de items del menú principal de la cebecera puede variar dependiendo del portal. Para poder adoptar un único criterio de adaptación a distintos tamaños de pantalla sin tener que personalizar el menú principal en cada portal e implicando una optimización de recursos,
+											se ha configurado una relación de dependencia entre el número de items que contiene el menú y el ancho de pantalla que se esté visualizando:
+											<span class="enfasis"> Cuantos más items tenga el menú, antes aparecerá la hamburguesa a medida que reduzcamos el ancho de pantalla</span>
+											<strong>MENÚ VS QUERIES</strong>
+											<ul>
+												<li>Si el menú contiene <span class="cifra">9</span> items la hamburguesa<span class="hamburguer"> ≡ </span>se visualizará hasta los <span class="cifra"> 1100 </span>píxeles de ancho</li>
+												<li>Si el menú contiene <span class="cifra">8</span> items la hamburguesa<span class="hamburguer"> ≡ </span> se visualizará hasta los <span class="cifra"> 990 </span>píxeles de ancho</li>
+												<li>Si el menú contiene <span class="cifra">7</span> items la hamburguesa<span class="hamburguer"> ≡ </span> se visualizará hasta los <span class="cifra"> 800 </span>píxeles de ancho</li>
+												<li>Si el menú contiene <span class="cifra">6</span> items la hamburguesa<span class="hamburguer"> ≡ </span> se visualizará hasta los <span class="cifra"> 720 </span>píxeles de ancho</li>
+												<li>Si el menú contiene <span class="cifra">5</span> items la hamburguesa<span class="hamburguer"> ≡ </span> se visualizará hasta los <span class="cifra"> 600 </span>píxeles de ancho</li>
+												<li>Si el menú contiene <span class="cifra">4</span> items la hamburguesa<span class="hamburguer"> ≡ </span> se visualizará hasta los <span class="cifra"> 550 </span>píxeles de ancho</li>
+												<li>Si el menú contiene <span class="cifra">3</span> items la hamburguesa<span class="hamburguer"> ≡ </span> se visualizará hasta los <span class="cifra"> 425 </span>píxeles de ancho</li>
+												<li>Si el menú contiene <span class="cifra">2</span> items la hamburguesa<span class="hamburguer"> ≡ </span> se visualizará hasta los <span class="cifra"> 360</span> píxeles de ancho</li></ul></li></ul>
+
+												<img src="img/cabecera-prehome.png" alt="cabecera de Prehome"><em><strong>Cabecera de Prehome.</strong> Contiene Escudo y menú principal</em>
+												<div class="codigo">
+													<h3>Código</h3>
+													<pre class="language-markup">
+														<code>
+&lt;body class="home"&gt;
+	&lt;div id="contenedor"&gt;
+		&lt;div class="contenedor"&gt;
+			&lt;h1&gt;&lt;a href="index.html"&gt;&lt;img src="img/jcyl.jpg" alt="Junta de Castilla y León"/&gt;&lt;/a&gt;&lt;/h1&gt;
+		&lt;/div&gt;
+		&lt;div id="main-menu"&gt;
+			&lt;div class="contenedor"&gt;
+				&lt;h2 class="elemento-invisible"&gt;Menú principal&lt;/h2&gt;
+				&lt;button class="hamburger hamburger--spin" type="button" ara-label="Menú" aria-controls="menu" aria-haspopup="true" aria-expanded="false"&gt;
+					&lt;span class="hamburger-box"&gt;
+						&lt;span class="hamburger-inner"&gt;&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span class="hamburger-text"&gt;Menú&lt;/span&gt;
+				&lt;/button&gt;
+				&lt;div id="sidr"&gt;
+					&lt;ul id="menu"&gt;
+						&lt;li&gt;
+							&lt;a href=""&gt;[ITEM]&lt;/a&gt;
+							&lt;a href="" class="menu-focus"&gt;&lt;img src="img/sidr-mernu-cerrado.png" alt=""/&gt;&lt;/a&gt;
+							&lt;div class="submenu"&gt;
+								&lt;div class="columna"&gt;
+									&lt;ul&gt;
+										&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+										[...]
+									&lt;/ul&gt;
+								&lt;/div&gt;
+								&lt;div class="columna"&gt;
+									&lt;ul&gt;
+										&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+										[...]
+									&lt;/ul&gt;
+								&lt;/div&gt;
+								&lt;div class="columna"&gt;
+									&lt;ul&gt;
+										&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+										[...]
+									&lt;/ul&gt;
+								&lt;/div&gt;
+								&lt;div class="pie"&gt;
+									&lt;ul&gt;
+										&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+										[...]
+									&lt;/ul&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						[...]
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		[...]
+	&lt;/div&gt;
+&lt;/div&gt;
+														</code>
+													</pre>
+												</div>
+												
+												<img src="img/cabecera-portal.png"  alt="cabecera de portal"><em><strong>Cabecera de portal.</strong> Contiene Escudo menú superior, menú principal, imagen de cabecera y título principal</em>
+												<div class="codigo">
+													<h3>Código</h3>
+													<pre class="language-markup">
+														<code>
+&lt;body&gt;
+    &lt;div id="contenedor"&gt;
+        &lt;div class="contenedor"&gt;
+			&lt;div class="escudo"&gt;
+				&lt;p&gt;&lt;a href="index.html"&gt;&lt;img src="img/jcyl.jpg" alt="Junta de Castilla y León"/&gt;&lt;/a&gt;&lt;/p&gt;
+				&lt;h1 class="elemento-invisible"&gt;Catálogo de componentes - Junta de Castilla y León&lt;/h1&gt;
+			&lt;/div&gt;
+			&lt;div class="cabecera"&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/zona-privada-r.png" alt="Zona privada"/&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/contacto-r.png" alt="Contacto"/&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;div class="selector-idiomas"&gt;
+					&lt;h2 class="elemento-invisible"&gt;Idiomas&lt;/h2&gt;
+					&lt;button class="idioma-actual" aria-haspopup="true" aria-expanded="false"&gt;Castellano&lt;/button&gt;
+					&lt;ul class="idiomas"&gt;
+						&lt;li&gt;&lt;a lang="en" hreflang="en" href="" &gt;English&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a lang="fr" hreflang="fr" href="" &gt;Français&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a lang="pt" hreflang="pt" href="" &gt;Português&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;h2 class="elemento-invisible"&gt;Redes sociales&lt;/h2&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/enc-facebook-r.png" alt="Facebook"&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/enc-twitter-r.png" alt="Twitter"&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/enc-youtube-r.png" alt="Youtube"&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;h2 class="elemento-invisible"&gt;Menu jcyl.es&lt;/h2&gt;
+				&lt;p id="menu-jcyl"&gt;&lt;a href="" aria-haspopup="true" aria-expanded="false"&gt;&lt;img src="img/enc-portales-r.png" alt="Abrir menú jcyl.es"&gt;&lt;/a&gt;&lt;/p&gt;
+				&lt;h2 class="elemento-invisible"&gt;Mi cuenta&lt;/h2&gt;
+				&lt;div id="mi-cuenta"&gt;
+					&lt;a href="#mi-cuenta-detalle" aria-haspopup="true" aria-expanded="false"&gt;&lt;img src="img/mi-cuenta.png" alt="Mi cuenta"&gt;&lt;/a&gt;
+					&lt;div id="mi-cuenta-detalle"&gt;
+						&lt;p class="usuario"&gt;[USUARIO]&lt;/p&gt;
+						&lt;p&gt;[MAIL]&lt;/p&gt;
+						&lt;p class="boton"&gt;&lt;a href=""&gt;Mi cuenta&lt;/a&gt;&lt;/p&gt;
+						&lt;p class="cerrar"&gt;&lt;a href=""&gt;Cerrar sesión&lt;/a&gt;&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="main-menu"&gt;
+			&lt;div class="contenedor"&gt;
+				&lt;h2 class="elemento-invisible"&gt;Menú principal&lt;/h2&gt;
+				&lt;button class="hamburger hamburger--spin" type="button" ara-label="Menú" aria-controls="menu" aria-haspopup="true" aria-expanded="false"&gt;
+					&lt;span class="hamburger-box"&gt;
+						&lt;span class="hamburger-inner"&gt;&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span class="hamburger-text"&gt;Menú&lt;/span&gt;
+				&lt;/button&gt;
+				&lt;p class="buscar"&gt;
+					&lt;a href="" aria-haspopup="true" aria-expanded="false"&gt;
+						&lt;img src="img/buscar-menu.png" alt="Buscador"&gt;
+					&lt;/a&gt;
+				&lt;/p&gt;
+				&lt;div id="sidr"&gt;
+					&lt;ul id="menu"&gt;
+						&lt;li&gt;
+							&lt;a href=""&gt;[ITEM]&lt;/a&gt;
+							&lt;a href="" class="menu-focus"&gt;&lt;img src="img/sidr-mernu-cerrado.png" alt=""/&gt;&lt;/a&gt;
+							&lt;div class="submenu"&gt;
+								&lt;ul&gt;
+									&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+									[...]
+								&lt;/ul&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						[..]
+						&lt;li class="buscar-menu"&gt;&lt;a href="" aria-haspopup="true" aria-expanded="false"&gt;&lt;img src="img/buscar-menu.png" alt="Buscador"&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+        &lt;/div&gt;
+		&lt;div id="encabezado"&gt;
+			&lt;picture&gt;
+				&lt;source media="(min-width:61.25em)" srcset="[IMG]"&gt;
+				&lt;source media="(min-width:22.5em)" srcset="[IMG_PEQ]"&gt;
+				&lt;img src="[IMG]" alt=""/&gt;
+			&lt;/picture&gt;
+			&lt;div class="contenedor"&gt;
+				&lt;p&gt;[PORTAL]&lt;span&gt;de Castilla y León&lt;/span&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		[...]
+	&lt;/div&gt;
+&lt;/body&gt;
+														</code>
+													</pre>
+												</div>
+
+											</div>
+											<h4>MIGA DE PAN</h4>
+											<div class="listado18">
+												<p>La intención ha sido resaltar la presencia de la miga de pan comno recurso importante de navegación, no solo en vista de escritorio, también en tamaños de pantalla correspondientes a dispositivos móviles y tablets</p>
+												<div class="m-column">
+													<img src="img/miga-movil.png" alt=""><em><strong>Miga de pan móviles.</strong> Diseño de la miga en pantallas a partir de móviles pequeños</em>
+												</div>
+												<div class="m-column">
+													<img src="img/miga-escritorio.png" alt=""><em><strong>Miga de pan escritorio.</strong>Diseño de la miga en pantallas a partir de tablet</em>
+												</div>
+												<span class="enfasis">A pesar de la importancia que desempeña sus funciones, la miga de pan mantiene un aspecto discreto para no interceder en la relevancia del contenido.
+													No sería adecuado modificar sus propiedades, ni suprimir su presencia en las páginas que la contenga</span>
+												</div>
+												<div class="codigo">
+													<h3>Código</h3>
+													<pre class="language-markup">
+														<code>
+&lt;div id="rastro-migas"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="[INDEX]"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+			[...]
+			&lt;li&gt;&lt;strong&gt;[PAGINA]&lt;/strong&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+														</code>
+													</pre>
+												</div>
+												
+												<h4>PIE DE PÁGINA O FOOTER</h4>
+												<div class="listado18">
+													<ul>
+														<li>El Footer de la Prehome contiene un sitemap o mapa del sitio y accesos a jcyl TV, directorio y la Guía de navegación. La marca Territorio ocupa el centro y finalmente se ubica un banner de acceso a las Redes Sociales</li>
+														<li>El Footer de los portales presenta los enlaces de navegación relativos al portal</li>
+														<li>En Prehome y portales, el footer también alberga los enlaces a contenidos legales, accesibilidad, contacto, así como el acceso al servicio de validación W3C y otros de ámbito europeo.</li>
+														<li>Al igual que las regiones anteriores, el footer esta sujeto al estilo establecido, no debe ser alterado.</li>
+													</ul>
+													<img src="img/footer-prehome.png" alt="Footer de Prehome"><em><strong>Footer de Prehome</strong> Mapa del sitio, enlaces tagenciales y de caracter institucional, legislativos, accesibles y medidas estándar de cumplimiento web</em>
+													<div class="codigo">
+														<h3>Código</h3>
+														<pre class="language-markup">
+															<code>
+&lt;div id="mapa-web"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;div class="fila"&gt;
+			&lt;h2 class="elemento-invisible"&gt;Mapa web&lt;/h2&gt;
+			&lt;div class="columna-s"&gt;
+				&lt;div class="columna"&gt;
+					&lt;h3&gt;&lt;a href=""&gt;Gobierno y administración&lt;/a&gt;&lt;/h3&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href=""&gt;Organización&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Gobierno abierto&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Hacienda y finanzas públicas&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Acción exterior y Europa&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Empleados públicos&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Estadística&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Comunicación&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class="columna"&gt;
+					&lt;h3&gt;Ciudadanos&lt;/h3&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href=""&gt;Medio ambiente&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Vivienda y urbanismo&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Educación&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Salud&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Carreteras y transportes&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Servicios sociales&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Juventud&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Familia y mujer&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Inmigracion&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class="columna"&gt;
+					&lt;h3&gt;Empleo y empresa&lt;/h3&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href=""&gt;Conoce Castilla y León&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Patrimonio cultural&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Cultura&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Deporte&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Turismo&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="columna-s"&gt;
+				&lt;div class="columna"&gt;
+					&lt;h3&gt;Turismo y cultura&lt;/h3&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href=""&gt;Conoce Castilla y León&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Patrimonio cultural&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Cultura&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Deporte&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Turismo&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class="columna"&gt;
+					&lt;h3&gt;Trámites electrónicos&lt;/h3&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href=""&gt;Sede electrónica&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Contratación administrativa&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Boletín oficial&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Tu Jcyl.es&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Atención al ciudadano&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Tributos&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="columna-redes-sociales"&gt;
+				&lt;h3 class="elemento-invisible"&gt;Redes sociales&lt;/h3&gt;
+				&lt;ul class="retransmison-contactos"&gt;
+					&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/tv.png" alt=""/&gt; Televisión&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/tfno.png" alt=""/&gt; Direcciones y telefonos&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;p&gt;&lt;a href=""&gt;&lt;img src="img/banner-redes-sociales.png" alt="Redes sociales de la Junta de Castilla y León" /&gt;&lt;/a&gt;&lt;/p&gt;
+				&lt;p class="castilla-y-leon"&gt;&lt;img src="img/castilla-y-leon.png" alt="Castilla y León"&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="menu-pie"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;h2 class="elemento-invisible"&gt;Menú secundario&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=""&gt;Atención al ciudadano&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Aviso legal&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Privacidad&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Accesibilidad&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="logos"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/css.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/xhtml.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/ilunion.jpg" alt="Ilunion WCAG 2.0 WAI - AA"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/europa.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/union-europea.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/mobile-ok.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+															</code>
+														</pre>
+													</div>
+													
+													<img src="img/footer-portal.png" alt="Footer de portal"><em><strong>Footer de portal</strong> Mapa de enlaces del portal y el resto igual que en la Prehome excepto por los enlaces tagenciales.</em>
+													<div class="codigo">
+														<h3>Código</h3>
+														<pre class="language-markup">
+															<code>
+&lt;div id="mapa-web"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;div class="fila"&gt;
+			&lt;h2 class="elemento-invisible"&gt;Mapa web&lt;/h2&gt;
+			&lt;div class="columna"&gt;
+				&lt;h3&gt;&lt;a href=""&gt;[ENCABEZADO]&lt;/a&gt;&lt;/h3&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+					[...]
+				&lt;/ul&gt;
+				[...]
+			&lt;/div&gt;
+			&lt;div class="columna"&gt;
+				&lt;h3&gt;&lt;a href=""&gt;[ENCABEZADO]&lt;/a&gt;&lt;/h3&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+					[...]
+				&lt;/ul&gt;
+				[...]
+			&lt;/div&gt;
+			&lt;div class="columna"&gt;
+				&lt;h3&gt;&lt;a href=""&gt;[ENCABEZADO]&lt;/a&gt;&lt;/h3&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+					[...]
+				&lt;/ul&gt;
+				[...]
+			&lt;/div&gt;
+			&lt;div class="columna"&gt;
+				&lt;h3&gt;&lt;a href=""&gt;[ENCABEZADO]&lt;/a&gt;&lt;/h3&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="[ENLACE]"&gt;[ITEM]&lt;/a&gt;&lt;/li&gt;
+					[...]
+				&lt;/ul&gt;
+				[...]
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="menu-pie"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;h2 class="elemento-invisible"&gt;Menú secundario&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=""&gt;Atención al ciudadano&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Aviso legal&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Privacidad&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Accesibilidad&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="logos"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/css.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/xhtml.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/ilunion.jpg" alt="Ilunion WCAG 2.0 WAI - AA"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/europa.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/union-europea.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/logos/mobile-ok.jpg" alt=""/&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+															</code>
+														</pre>
+													</div>
+													
+												</div>
+											</div>
+												
+				</div>
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+	</div>
+								
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+</body>
+</html>

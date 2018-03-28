@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buscador trámites - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/filtros-busqueda.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+	
+    <script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Buscadores y formularios</a></li>
+					<li><strong>Buscador trámites</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Buscador trámites</h1>
+				<div class="buscador-especifico filtro">
+					<ul class="menu-opciones-buscador">
+						<li class="ico-ayuda">
+							<a href="" target="_blank" title="Nueva ventana: Ayuda del buscador específico">Ayuda</a>
+						</li>
+						<li class="ico-calendario">
+							<a href="">Calendario</a>
+						</li>
+					</ul>
+					<form name="formulario" method="get" action="">
+						<div>
+							<label for="q">Texto</label>
+							<input id="q" name="q" type="text" placeholder="Texto a buscar...">
+						</div>
+						<div>
+							<label for="provincia">Provincia</label>
+							<select id="provincia">
+								<option>Todas</option>
+							</select>
+						</div>
+						<div>
+							<label for="fuente">Fuente</label>
+							<select id="fuente">
+								<option>Todas</option>
+							</select>
+						</div>
+						<div class="fechas">
+							<div>
+								<label for="desde">Desde</label>
+								<input id="desde" name="desde" type="text" placeholder="dd/mm/aaaa">
+								<img src="img/calendario-popup.png" alt="">
+							</div>
+							<div>
+								<label for="hasta">Hasta</label>
+								<input id="hasta" name="hasta" type="text" placeholder="dd/mm/aaaa">
+								<img src="img/calendario-popup.png" alt="">
+							</div>
+						</div>
+						<div>
+							<input id="en-plazo" name="en-plazo" type="checkbox">
+							<label for="en-plazo">En plazo</label>
+						</div>
+						<input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+					</form>
+				</div>
+
+				<div class="resultados-busqueda">
+					<h2>Resultados de la búsqueda</h2>
+					<p class="resultados">Resultados 1 - 10 de 2110 para <strong>calendario</strong>.</p>
+					<p class="imprimir"><a href="">Imprimir resultados</a></p>
+					<!-- Filtros -->
+					<div id="dyn_nav">
+					  <div id="dyn_nav_col" style="height: 100%">
+						<ul id="tipoInformacion" class="dn-attr dn-attr-more">
+						  <li class="dn-attr-hdr">
+							<div class="dn-zippy-hdr goog-zippy-collapsed" tabindex="0">
+							  <div class="dn-zippy-hdr-img"></div>
+							  <span class="dn-attr-hdr-txt" title="Tipo de Trámite">Tipo de Trámite</span></div>
+							<div style="overflow: hidden; display: none;">
+							  <div>
+								<input class="dn-zippy-input label-input-label" aria-haspopup="true" value="search...">
+							  </div>
+							</div>
+						  </li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:tipoInformacion%3DTr%C3%A1mite&amp;dnavs=inmeta:tipoInformacion%3DTr%C3%A1mite" title="Trámite">Trámite<span class="dn-attr-c"> (730)</span></a></li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:tipoInformacion%3DAyuda%252C%2520Beca%252C%2520Subvenci%C3%B3n&amp;dnavs=inmeta:tipoInformacion%3DAyuda%252C%2520Beca%252C%2520Subvenci%C3%B3n" title="Ayuda, Beca, Subvención">Ayuda, Beca, Subvención<span class="dn-attr-c"> (310)</span></a></li>
+						  <li class="tipoInformacion_dn">
+							<ul class="dn-attr-hidden">
+							  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/_?client=metadatos&amp;output=xml_no_dtd&amp;p1=&amp;proxystylesheet=metadatos&amp;sort=date:D:L:d1&amp;oe=UTF-8&amp;ie=UTF-8&amp;site=Portal_AdministracionElectronica&amp;filter=0&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;requiredfields=tipoContenido:Ayuda012%7CtipoContenido:Tramite%7CtipoContenido:Premio&amp;ud=1&amp;tituloc=no&amp;p0=true&amp;q=+inmeta:tipoInformacion%3DServicio&amp;dnavs=inmeta:tipoInformacion%3DServicio" title="Servicio">Servicio<span class="dn-attr-c"> (80)</span></a></li>
+							  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/_?client=metadatos&amp;output=xml_no_dtd&amp;p1=&amp;proxystylesheet=metadatos&amp;sort=date:D:L:d1&amp;oe=UTF-8&amp;ie=UTF-8&amp;site=Portal_AdministracionElectronica&amp;filter=0&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;requiredfields=tipoContenido:Ayuda012%7CtipoContenido:Tramite%7CtipoContenido:Premio&amp;ud=1&amp;tituloc=no&amp;p0=true&amp;q=+inmeta:tipoInformacion%3DPremio&amp;dnavs=inmeta:tipoInformacion%3DPremio" title="Premio">Premio<span class="dn-attr-c"> (28)</span></a></li>
+							</ul>
+						  </li>
+						  <li id="tipoInformacion_more_less"><a id="more_tipoInformacion" class="dn-hidden" style="margin-right: 10px; outline-style: none;" onclick="dynNavMgr.displayMore('tipoInformacion', true); return false;" href="javascript:;"><span class="dn-more-img dn-mimg"></span><span id="disp_tipoInformacion">0</span><span> Más</span></a><a id="less_tipoInformacion" class="dn-inline-block" style="outline-style: none;" onclick="dynNavMgr.displayMore('tipoInformacion', false, 2); return false;" href="javascript:;"><span class="dn-more-img dn-limg"></span><span>Menos</span></a></li>
+						  <label class="dn-hidden dn-name">tipoInformacion</label>
+						  <label id="tipoInformacion_total" class="dn-hidden">4</label>
+						  <label id="tipoInformacion_total_left" class="dn-hidden">2</label>
+						</ul>
+						<ul id="keywords" class="dn-attr dn-attr-more">
+						  <li class="dn-attr-hdr">
+							<div class="dn-zippy-hdr goog-zippy-collapsed" tabindex="0">
+							  <div class="dn-zippy-hdr-img"></div>
+							  <span class="dn-attr-hdr-txt" title="Materia">Materia</span></div>
+							<div style="overflow: hidden; display: none;">
+							  <div>
+								<input class="dn-zippy-input label-input-label" aria-haspopup="true" value="search...">
+							  </div>
+							</div>
+						  </li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:keywords%3Djuego&amp;dnavs=inmeta:keywords%3Djuego" title="juego">juego<span class="dn-attr-c"> (47)</span></a></li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:keywords%3Dsanidad&amp;dnavs=inmeta:keywords%3Dsanidad" title="sanidad">sanidad<span class="dn-attr-c"> (40)</span></a></li>
+						  <li id="keywords_more_less"><a id="more_keywords" class="dn-link" style="margin-right: 10px; outline-style: none;" onclick="dynNavMgr.displayMore('keywords', true); return false;" href="javascript:;"><span class="dn-more-img dn-mimg"></span><span id="disp_keywords">240</span><span> Más</span></a><a id="less_keywords" class="dn-link dn-hidden" style="outline-style: none;" onclick="dynNavMgr.displayMore('keywords', false, 240); return false;" href="javascript:;"><span class="dn-more-img dn-limg"></span><span>Menos</span></a></li>
+						  <label class="dn-hidden dn-name">keywords</label>
+						  <label id="keywords_total" class="dn-hidden">242</label>
+						  <label id="keywords_total_left" class="dn-hidden">240</label>
+						</ul>
+						<ul id="infoAdicional" class="dn-attr dn-attr-more">
+						  <li class="dn-attr-hdr">
+							<div class="dn-zippy-hdr goog-zippy-collapsed" tabindex="0">
+							  <div class="dn-zippy-hdr-img"></div>
+							  <span class="dn-attr-hdr-txt" title="Estado">Estado</span></div>
+							<div style="overflow: hidden; display: none;">
+							  <div>
+								<input class="dn-zippy-input label-input-label" aria-haspopup="true" value="search...">
+							  </div>
+							</div>
+						  </li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:infoAdicional%3Dcerrado&amp;dnavs=inmeta:infoAdicional%3Dcerrado" title="cerrado">cerrado<span class="dn-attr-c"> (343)</span></a></li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:infoAdicional%3Dabierto%2520de%2520forma%2520permanente%252E&amp;dnavs=inmeta:infoAdicional%3Dabierto%2520de%2520forma%2520permanente%252E" title="abierto de forma permanente.">abierto de forma permanente.<span class="dn-attr-c"> (231)</span></a></li>
+						  <li id="infoAdicional_more_less"><a id="more_infoAdicional" class="dn-link" style="margin-right: 10px; outline-style: none;" onclick="dynNavMgr.displayMore('infoAdicional', true); return false;" href="javascript:;"><span class="dn-more-img dn-mimg"></span><span id="disp_infoAdicional">64</span><span> Más</span></a><a id="less_infoAdicional" class="dn-link dn-hidden" style="outline-style: none;" onclick="dynNavMgr.displayMore('infoAdicional', false, 64); return false;" href="javascript:;"><span class="dn-more-img dn-limg"></span><span>Menos</span></a></li>
+						  <label class="dn-hidden dn-name">infoAdicional</label>
+						  <label id="infoAdicional_total" class="dn-hidden">66</label>
+						  <label id="infoAdicional_total_left" class="dn-hidden">64</label>
+						</ul>
+						<ul id="nombreOrganismo" class="dn-attr dn-attr-more">
+						  <li class="dn-attr-hdr">
+							<div class="dn-zippy-hdr goog-zippy-collapsed" tabindex="0">
+							  <div class="dn-zippy-hdr-img"></div>
+							  <span class="dn-attr-hdr-txt" title="Organismo Responsable">Organismo Responsable</span></div>
+							<div style="overflow: hidden; display: none;">
+							  <div>
+								<input class="dn-zippy-input label-input-label" aria-haspopup="true" value="search...">
+							  </div>
+							</div>
+						  </li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:nombreOrganismo%3Dconsejer%C3%ADa%2520de%2520la%2520presidencia%252C%2520secretar%C3%ADa%2520general%2520de%2520la%2520presidencia&amp;dnavs=inmeta:nombreOrganismo%3Dconsejer%C3%ADa%2520de%2520la%2520presidencia%252C%2520secretar%C3%ADa%2520general%2520de%2520la%2520presidencia" title="consejería de la presidencia, secretaría general de la presidencia">consejería de la presidencia, secretaría general de la presidencia<span class="dn-attr-c"> (62)</span></a></li>
+						  <li><a class="dn-attr-v" href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/PlantillaBuscadorContenidos/1251181050732/Tramite/1251181362322/Estructura?tituloc=no&amp;p0=true&amp;p1=&amp;p2=10&amp;p3=&amp;partialfields=%28tipoContenido:Tramite%7CtipoContenido:Servicio%7CtipoContenido:Premio%7CtipoContenido:Ayuda012%29&amp;num=10&amp;filter=0&amp;getfields=*&amp;client=buscadorEspTramites12&amp;site=portal_AdministracionElectronica&amp;hl=es&amp;output=xml_no_dtd&amp;proxystylesheet=buscadorEspTramites12&amp;sort=date:D:S:d1&amp;ie=UTF-8&amp;ulang=es&amp;ip=217.71.21.34&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ud=1&amp;q=Tramite+inmeta:nombreOrganismo%3Dconsejer%C3%ADa%2520de%2520econom%C3%ADa%2520y%2520hacienda%252C%2520direcci%C3%B3n%2520general%2520de%2520energ%C3%ADa%2520y%2520minas&amp;dnavs=inmeta:nombreOrganismo%3Dconsejer%C3%ADa%2520de%2520econom%C3%ADa%2520y%2520hacienda%252C%2520direcci%C3%B3n%2520general%2520de%2520energ%C3%ADa%2520y%2520minas" title="consejería de economía y hacienda, dirección general de energía y minas">consejería de economía y hacienda, dirección general de energía y minas<span class="dn-attr-c"> (46)</span></a></li>
+						  <li id="nombreOrganismo_more_less"><a id="more_nombreOrganismo" class="dn-link" style="margin-right: 10px; outline-style: none;" onclick="dynNavMgr.displayMore('nombreOrganismo', true); return false;" href="javascript:;"><span class="dn-more-img dn-mimg"></span><span id="disp_nombreOrganismo">40</span><span> Más</span></a><a id="less_nombreOrganismo" class="dn-link dn-hidden" style="outline-style: none;" onclick="dynNavMgr.displayMore('nombreOrganismo', false, 40); return false;" href="javascript:;"><span class="dn-more-img dn-limg"></span><span>Menos</span></a></li>
+						  <label class="dn-hidden dn-name">nombreOrganismo</label>
+						  <label id="nombreOrganismo_total" class="dn-hidden">42</label>
+						  <label id="nombreOrganismo_total_left" class="dn-hidden">40</label>
+						</ul>
+					  </div>
+					</div>
+					<!-- /Filtros -->
+					<dl>
+					  <dt> <a href="http://www.trabajoyprevencion.jcyl.es/web/jcyl/TrabajoYPrevencion/es/Plantilla66y33/1284377304431/_/_/_">Calendario Laboral de Castilla y León | Trabajo y Prevención ...</a> </dt>
+					  <dd>... <strong>Calendario</strong> Laboral de Castilla y León. <strong>Calendario</strong> Laboral 2016. Decreto 58/2015, <strong>Calendario</strong> de fiestas laborales 2016 (601 kbytes) Descarga del<br>
+						documento tipoPDF. Abre una nueva ventana. ... <strong>Calendario</strong> Laboral 2017. ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.trabajoyprevencion.jcyl.es/web/jcyl/TrabajoYPrevencion/es/Plantilla66y33/1253860466245/_/_/_">Trabajo y Prevención</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284168955783/_/_/_">Calendario de ferias | Artesanía de Castilla y León | Junta de ...</a> </dt>
+					  <dd>... Inicio; <strong>Calendario</strong> de ferias. <strong>Calendario</strong> de ferias. La importancia económica de las ferias comerciales en nuestra Comunidad está<br>
+						asentada tanto en su número, su impacto territorial y su ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284167506804/_/_/_">Artesanía de Castilla y León</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284178703128/_/_/_">Calendario de cursos | Artesanía de Castilla y León | Junta de ...</a> </dt>
+					  <dd>... Inicio; <strong>Calendario</strong> de cursos. <strong>Calendario</strong> de cursos. CEARCAL pone en marcha los Monográficos 2014-2015, cuyo objetivo es crear una programación<br>
+						estable de cursos de iniciación y perfeccionamiento ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284167506804/_/_/_">Artesanía de Castilla y León</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100/1251181279788/_/_/_">Calendario de días inhábiles | Sede Electrónica | Junta de ...</a> </dt>
+					  <dd>... <strong>Calendario</strong> de días inhábiles. ... Anualmente se publica en la Comunidad el <strong>Calendario</strong> de días inhábiles a efectos del cómputo de plazos<br>
+						administrativos. <strong>Calendario</strong> de días inhábiles 2017. ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla66y33/1251181050732/_/_/_">Sede Electrónica</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100DetalleFeed/1251181050732/Tramite/1279887289163/Tramite">Aprobación de los calendarios de conservación del ...</a> </dt>
+					  <dd>... Aprobación de los <strong>calendarios</strong> de conservación del patrimonio documental. ...
+						<ul>
+						  <li class="ayuda"> Trámite</li>
+						  <li class="portal"> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla66y33/1251181050732/_/_/_">Sede Electrónica</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.estadistica.jcyl.es/web/jcyl/Estadistica/es/Plantilla100/1284220677039/_/_/_">Calendario Estadístico 2017 | Estadística | Junta de Castilla y ...</a> </dt>
+					  <dd>... Inicio; Estadísticas por temas; Otras estadísticas; <strong>Calendario</strong> Estadístico 2017. <strong>Calendario</strong> Estadístico 2017. ... Está disponible en varios formatos: <strong>Calendario</strong><br>
+						Estadístico 2017 (Planning) (172 kbytes) Descarga del documento tipoPDF. ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.estadistica.jcyl.es/web/jcyl/Estadistica/es/Plantilla66y33_100/1246989275272/_/_/_">Estadística</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.economia.jcyl.es/web/jcyl/Economia/es/Plantilla66y33/1142233348812/_/_/_">Ferias Comerciales | Economía</a> </dt>
+					  <dd>... Inicio; Comercio y artesanía; Ferias Comerciales. Ferias Comerciales. <strong>Calendario</strong> Ferial. La importancia económica ... documento tipoPDF. Abre una<br>
+						nueva ventana. <strong>Calendario</strong> de Ferias. L, M, X, J, V, S, D. hay ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.economia.jcyl.es/web/jcyl/Economia/es/Plantilla66y33/1284250105595/_/_/_">Economía</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla100DetalleFeed/1284152328311/Licitacion/1284676810322/Propuesta">Expediente B2016/010186 SUMINISTRO DE 200 ...</a> </dt>
+					  <dd>... Expediente B2016/010186 SUMINISTRO DE 200 EJEMPLARES DE <strong>CALENDARIO</strong> DEPORTIVO. ... Descripción: Adquisición de<br>
+						200 ejemplares de <strong>calendario</strong> para 2017 con motivos deportivos.<br>
+						Código de expediente: B2016/010186. ...
+						<ul>
+						  <li class="licitacion"> Licitación</li>
+						  <li class="portal"> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla66y33/1284152328311/_/_/_">Portal Contratación Administrativa</a> </li>
+						  <li class="plazo-abierto">Abierto</li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla100DetalleFeed/1284152328311/Licitacion/1284663222657/Propuesta">Expediente B2016/009530 CALENDARIOS ACTIVIDADES ...</a> </dt>
+					  <dd>... Expediente B2016/009530 <strong>CALENDARIOS</strong> ACTIVIDADES AR&amp;PA 2016. ... Consejería de Cultura y Turismo. Descripción:<br>
+						REALIZACIÓN DE <strong>CALENDARIOS</strong> ACTIVIDADES AR&amp;PA<br>
+						2016. Código de expediente: B2016/009530. ...
+						<ul>
+						  <li class="licitacion"> Licitación</li>
+						  <li class="portal"> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla66y33/1284152328311/_/_/_">Portal Contratación Administrativa</a> </li>
+						  <li class="plazo-abierto">Abierto</li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla100DetalleFeed/1284152328311/Licitacion/1284630241195/Propuesta">DERIVADO AM VACUNAS CALENDARIO Y OTRAS. LOTE 2 ...</a> </dt>
+					  <dd>... DERIVADO AM VACUNAS <strong>CALENDARIO</strong> Y OTRAS. LOTE 2 (168/2016). ...
+						<ul>
+						  <li class="licitacion"> Licitación</li>
+						  <li class="portal"> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla66y33/1284152328311/_/_/_">Portal Contratación Administrativa</a> </li>
+						  <li class="plazo-abierto">Abierto</li>
+						</ul>
+					  </dd>
+					</dl>
+				</div>
+				<div class="paginacion">
+					<p>Página 1 de 3</p>
+					<ul>
+						<li class="primera"><span><span class="elemento-invisible">Primera página</span>&lt;&lt;</span></li>
+						<li class="anterior"><span><span class="elemento-invisible">Página anterior</span>&lt;</span></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>1</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>2</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>3</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>...</a></li>
+						<li class="siguiente"><a href=""><span class="elemento-invisible">Página siguiente</span>&gt;</a></li>
+						<li class="ultima"><a href=""><span class="elemento-invisible">Última página</span>&gt;&gt;</a></li>
+					</ul>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>Este componente se comporta igual que el <a href="buscador.html">buscador</a>. De hecho es un buscador con una columna de filtros.</p>
+					<p>Los filtros se colocarán a la izquierda de los resultados de búsqueda ocupando el 20% del anchio disponible a partir de de 980px. Por debajo de 980px se dispondrán los filtros encima y los resultados debajo.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="buscador-especifico filtro"&gt;
+	&lt;ul class="menu-opciones-buscador"&gt;
+		&lt;li class="ico-ayuda"&gt;
+			&lt;a href="" target="_blank" title="Nueva ventana: Ayuda del buscador específico"&gt;Ayuda&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="ico-calendario"&gt;
+			&lt;a href=""&gt;Calendario&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;form name="formulario" method="get" action=""&gt;
+		&lt;div&gt;
+			&lt;label for="q"&gt;Texto&lt;/label&gt;
+			&lt;input id="q" name="q" type="text" placeholder="Texto a buscar..."&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="provincia"&gt;Provincia&lt;/label&gt;
+			&lt;select id="provincia"&gt;
+				&lt;option&gt;Todas&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="fuente"&gt;Fuente&lt;/label&gt;
+			&lt;select id="fuente"&gt;
+				&lt;option&gt;Todas&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;div class="fechas"&gt;
+			&lt;div&gt;
+				&lt;label for="desde"&gt;Desde&lt;/label&gt;
+				&lt;input id="desde" name="desde" type="text" placeholder="dd/mm/aaaa"&gt;
+				&lt;img src="img/calendario-popup.png" alt=""&gt;
+			&lt;/div&gt;
+			&lt;div&gt;
+				&lt;label for="hasta"&gt;Hasta&lt;/label&gt;
+				&lt;input id="hasta" name="hasta" type="text" placeholder="dd/mm/aaaa"&gt;
+				&lt;img src="img/calendario-popup.png" alt=""&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;input id="en-plazo" name="en-plazo" type="checkbox"&gt;
+			&lt;label for="en-plazo"&gt;En plazo&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton"&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+&lt;div class="resultados-busqueda"&gt;
+	&lt;h2&gt;Resultados de la búsqueda&lt;/h2&gt;
+	&lt;p class="resultados"&gt;Resultados 1 - 10 de [N] para &lt;strong&gt;[X]&lt;/strong&gt;.&lt;/p&gt;
+	&lt;p class="imprimir"&gt;&lt;a href=""&gt;Imprimir resultados&lt;/a&gt;&lt;/p&gt;
+	&lt;!-- Filtros --&gt;
+	&lt;div id="dyn_nav"&gt;
+	&lt;/div&gt;
+	&lt;!-- /Filtros --&gt;
+	&lt;dl&gt;
+	  &lt;dt&gt;&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;&lt;/dt&gt;
+	  &lt;dd&gt;
+		[TEXTO]
+		&lt;ul&gt;
+		  &lt;li class="texto"&gt; Texto&lt;/li&gt;
+		  &lt;li class="portal"&gt; &lt;a href="[ENLACE]"&gt;[PORTAL]&lt;/a&gt; &lt;/li&gt;
+		&lt;/ul&gt;
+	  &lt;/dd&gt;
+	  [...]
+	&lt;/dl&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+	<script src="js/dyn_nav_compiled.js"></script>
+	<script>
+		var dynNavMgr = new gsa.search.DynNavManager(
+			"",
+			"",
+			"",
+			"client=metadatos&output=xml_no_dtd&p1=&proxystylesheet=metadatos&sort=date:D:L:d1&oe=UTF-8&ie=UTF-8&site=Portal_AdministracionElectronica&filter=0&access=p&entqr=3&entqrm=0&requiredfields=tipoContenido:Ayuda012%7CtipoContenido:Tramite%7CtipoContenido:Premio&ud=1",
+			0
+		);
+	</script>
+	<script type="text/javascript">
+		dynNavMgr.addAttrValues("tipoInformacion", 
+		[
+		["Servicio", 80],
+		["Premio", 28]]
+		);
+		dynNavMgr.addAttrValues("keywords", 
+		[
+		["cultura", 38],
+		["minería", 35],
+		["personal docente", 32],
+		["producción agraria", 31],
+		["industria", 30],
+		["fundaciones", 25],
+		["medio ambiente", 23],
+		["prevención de riesgos laborales", 23],
+		["empresa, sectores empresariales, desarrollo económico", 22],
+		["gestión de residuos peligrosos", 22],
+		["educación", 21],
+		["empleado público", 21],
+		["transportes", 21],
+		["entidades locales", 20],
+		["asociaciones", 19],
+		["juventud", 18],
+		["empleo", 17],
+		["colegios profesionales", 16],
+		["turismo", 16],
+		["actividades agrarias, producción agraria", 15],
+		["vivienda", 14],
+		["industria agroalimentaria", 13],
+		["empresa", 12],
+		["deporte", 11],
+		["política agraria", 11],
+		["espectáculos públicos", 10],
+		["producción agraria, producción animal", 10],
+		["familia", 9],
+		["medio ambiente, flora", 9],
+		["telecomunicaciones", 9],
+		["entidades locales, administración territorial", 8],
+		["ordenación industrial, sectores económicos", 8],
+		["tributos", 8],
+		["admisión, enseñanza régimen especial", 7],
+		["ahorro y eficiencia energética", 7],
+		["enseñanza régimen general", 7],
+		["organización educativa", 7],
+		["promoción cultural", 7],
+		["actividades agrarias", 6],
+		["administración educativa", 6],
+		["educación, innovación educativa", 6],
+		["empresa, competencia empresarial, financiación", 6],
+		["empresa, innovación tecnológica", 6],
+		["espacios naturales, incendios", 6],
+		["formación para el empleo", 6],
+		["juventud, cultura", 6],
+		["caza", 5],
+		["competencia empresarial, sectores empresariales", 5],
+		["formación profesional específica, admisión", 5],
+		["industria agroalimentaria, explotación agraria", 5],
+		["procedimientos administrativos", 5],
+		["producción animal", 5],
+		["producción vegetal", 5],
+		["relaciones laborales", 5],
+		["servicios sociales, personas mayores", 5],
+		["transformación de productos animales, produccion cárnica", 5],
+		["agencias de viajes", 4],
+		["bosques", 4],
+		["cooperación al desarrollo", 4],
+		["educación, admisión", 4],
+		["innovación educativa", 4],
+		["personas con discapacidad", 4],
+		["servicios sociales", 4],
+		["trabajadores desempleados, convocatorias de subvenciones para la formación ocupacional", 4],
+		["universidad, educación", 4],
+		["acción exterior", 3],
+		["actividades agrarias, explotación agraria", 3],
+		["artesanía, industria agroalimentaria", 3],
+		["asociaciones, inmigración", 3],
+		["comunicación", 3],
+		["drogodependencias", 3],
+		["economía, comercio", 3],
+		["educación, primaria, administración educativa", 3],
+		["empleo, formación continua, orientación y programas integrados", 3],
+		["empresa, economía", 3],
+		["formación profesional específica", 3],
+		["función pública", 3],
+		["innovación educativa, enseñanza régimen especial", 3],
+		["medio ambiente, calidad ambiental, residuos", 3],
+		["mujer", 3],
+		["mujer, servicios sociales", 3],
+		["ordenación de explotaciones", 3],
+		["pesca", 3],
+		["primaria, secundaria, administración educativa", 3],
+		["producción agraria, actividades agrarias", 3],
+		["producción agraria, viticultura", 3],
+		["promoción del empleo e inserción laboral, intermediación y orientación laboral", 3],
+		["protección civil", 3],
+		["puntos de encuentro", 3],
+		["sanidad animal, cría de ganado", 3],
+		["servicios sociales, infancia", 3],
+		["trabajadores con discapacidad, trabajadores, empleo", 3],
+		["actividades juveniles", 2],
+		["bienes inmuebles de interés cultural, patrimonio cultural, cultura", 2],
+		["catálogos de las bibliotecas de castilla y león, cultura", 2],
+		["centros de trabajo, condiciones de trabajo, relaciones laborales, empleo", 2],
+		["comercio", 2],
+		["convocatorias de subvenciones para la formación continua, trabajadores", 2],
+		["declaración tributaria, tributos", 2],
+		["defensa de la competencia", 2],
+		["educación, formación profesional específica, admisión", 2],
+		["educación, investigación educativa", 2],
+		["educación, organización educativa, administración educativa, abandono escolar", 2],
+		["educación, personal docente", 2],
+		["empleo, formación para el empleo, fomento del empleo por cuenta ajena", 2],
+		["energía, innovación tecnológica, economía", 2],
+		["especies de fauna protegidas, actividades agrarias", 2],
+		["familia, educación", 2],
+		["fomento del autoempleo", 2],
+		["formación profesional específica, innovación educativa, admisión", 2],
+		["industria agroalimentaria, actividades agrarias", 2],
+		["industria agroalimentaria, explotación agraria, actividades agrarias", 2],
+		["industria, energía, minería", 2],
+		["industria, seguridad industrial", 2],
+		["información administrativa y atención al ciudadano", 2],
+		["medio ambiente, actividades agrarias", 2],
+		["medio ambiente, espacios naturales, flora", 2],
+		["migración", 2],
+		["mujer, servicios sociales, personas mayores", 2],
+		["organización educativa, admisión", 2],
+		["organización educativa, innovación educativa", 2],
+		["organización educativa, innovación educativa, admisión", 2],
+		["personas mayores, servicios sociales", 2],
+		["pesca, caza", 2],
+		["política agrícola común de mercados", 2],
+		["prestaciones sociales", 2],
+		["sitcyl. sistema de información territorial", 2],
+		["trabajadores, condiciones de trabajo, expedientes de regulación de empleo", 2],
+		["transporte de mercancías", 2],
+		["transportes, infraestructuras de transportes", 2],
+		["universidad, investigación educativa", 2],
+		["vinificación, industria agroalimentaria, comercialización agraria", 2],
+		["acceso a la información ambiental", 1],
+		["administración autonómica, información administrativa y atención al ciudadano", 1],
+		["administración educativa, educación", 1],
+		["administración local", 1],
+		["administración pública", 1],
+		["administración pública, información administrativa y atención al ciudadano", 1],
+		["admisión, educación", 1],
+		["admisión, secundaria", 1],
+		["ahorro y eficiencia energética, energía", 1],
+		["alojamiento", 1],
+		["apoyo escolar, acceso a la educación", 1],
+		["arbitraje de consumo", 1],
+		["artes escénicas", 1],
+		["artesanía, comercio", 1],
+		["atención a la dependencia", 1],
+		["bibliotecas, cultura", 1],
+		["campamentos, campings", 1],
+		["comedor escolar", 1],
+		["comunicación, relaciones institucionales", 1],
+		["condiciones de trabajo", 1],
+		["consumo", 1],
+		["convenios colectivos", 1],
+		["cooperativas laborales, sociedades laborales", 1],
+		["cría de ganado, producción animal", 1],
+		["cría de ganado, sanidad animal, regulación de la producción agraria", 1],
+		["cultura, turismo, patrimonio cultural", 1],
+		["deporte, actividades deportivas", 1],
+		["desarrollo económico, empresa", 1],
+		["economía, prevención de riesgos laborales", 1],
+		["economía, prevención de riesgos laborales, educación", 1],
+		["educación, empleo", 1],
+		["educación, enseñanza general, rendimiento escolar", 1],
+		["educación, enseñanza régimen especial, admisión", 1],
+		["educación, organización educativa", 1],
+		["educación, organización educativa, administración educativa", 1],
+		["educación, primaria, secundaria, organización educativa, admisión", 1],
+		["educación, secundaria, admisión", 1],
+		["empleo, formación continua, trabajadores", 1],
+		["empleo, trabajadores", 1],
+		["empleo, trabajadores, empresa", 1],
+		["empresa, economía, centros de trabajo, relaciones laborales", 1],
+		["empresa, formación para el empleo, universidad", 1],
+		["energía, industria", 1],
+		["energía, innovación tecnológica", 1],
+		["energía, minería", 1],
+		["enseñanza general, organización educativa, educación", 1],
+		["enseñanza régimen especial", 1],
+		["enseñanza régimen especial, innovación educativa", 1],
+		["enseñanza régimen especial, orientación escolar, personas con discapacidad", 1],
+		["entidades locales, administración local, administración territorial", 1],
+		["entidades locales, administración territorial, ayuntamiento, diputación provincial", 1],
+		["entidades locales, formación profesional específica, educación", 1],
+		["escuela de administración pública", 1],
+		["espacios naturales, medio ambiente", 1],
+		["familia, admisión", 1],
+		["familia, familias numerosas", 1],
+		["familia, infancia, servicios sociales", 1],
+		["fauna, medio ambiente", 1],
+		["fiesta", 1],
+		["formación agraria y agroalimentaria", 1],
+		["formación continua, orientación y programas integrados", 1],
+		["gestión de residuos peligrosos, medio ambiente", 1],
+		["hacienda", 1],
+		["hacienda, tributos", 1],
+		["industria, minería", 1],
+		["infancia, familia", 1],
+		["información estadística, servidores estadísticos, sistema de información estadística", 1],
+		["infraestructuras de carreteras", 1],
+		["innovación tecnológica, industria", 1],
+		["instalaciones juveniles", 1],
+		["instituciones culturales", 1],
+		["juego de las chapas", 1],
+		["juventud, actividades juveniles de tiempo libre", 1],
+		["juventud, empleo", 1],
+		["juventud, información juvenil", 1],
+		["medio ambiente, espacios naturales", 1],
+		["medio ambiente, medidas agroambientales", 1],
+		["mujer, violencia de género", 1],
+		["ordenación industrial, sectores económicos, calidad ambiental", 1],
+		["organización educativa, primaria", 1],
+		["personal docente, educación", 1],
+		["personas con discapacidad, personas mayores", 1],
+		["política agraria, producción agraria", 1],
+		["política de desarrollo rural", 1],
+		["producción agraria, comercialización agraria", 1],
+		["producción animal, cría de ganado, sanidad animal", 1],
+		["promoción del empleo e inserción laboral, juventud", 1],
+		["puntos de encuentro, servicios sociales", 1],
+		["relaciones institucionales, convenio", 1],
+		["sanidad animal", 1],
+		["sanidad, empleado público", 1],
+		["sector de la automoción, transportes", 1],
+		["sector químico", 1],
+		["secundaria", 1],
+		["semillas y viveros", 1],
+		["servicios de la administración, formación", 1],
+		["servicios sociales, personas con discapacidad", 1],
+		["situación de la agricultura, investigación agraria", 1],
+		["trabajadores autónomos", 1],
+		["trabajadores autónomos, minería", 1],
+		["trabajadores, condiciones de trabajo", 1],
+		["trabajadores, trabajadores con discapacidad, empleo", 1],
+		["valoración de vehículos, tributos", 1],
+		["valoración rústica, tributos", 1],
+		["valoración urbana, tributos", 1],
+		["viticultura", 1],
+		["vivienda, tributos", 1],
+		["voluntariado, servicios sociales", 1]]
+		);
+		dynNavMgr.addAttrValues("infoAdicional", 
+		[
+		["abierto", 104],
+		["abierto y permanente.", 76],
+		["abierto de forma permanente", 25],
+		["abierto y permanente", 9],
+		["el plazo para presentar la comunicación está abierto de forma permanente.", 4],
+		["abierto de forma permanente. antes de su puesta en servicio", 3],
+		["con carácter previo al inicio de las operaciones de tratamiento de residuos.", 3],
+		["abierto de forma permanente para la autorización.", 2],
+		["abierto de forma permanente. ", 2],
+		["abierto y permanente. ", 2],
+		["del 1 de agosto a 15 de enero de cada campaña vitícola.", 2],
+		["dos años, desde la entrada en vigor de la ley.", 2],
+		["dos meses desde que se produce la aceptación.", 2],
+		["el plazo que indique la resolución de autorización administrativa previa.", 2],
+		["el plazo viene determinado en cada convocatoria. ver empleo público.", 2],
+		["1 mes desde la adquisición.", 1],
+		["1 mes desde la aprobación por el patronato.", 1],
+		["1ª convocatoria: del 18 de enero al 13 de febrero de 2017.", 1],
+		["2 meses desde la fecha del acuerdo.", 1],
+		["2 meses desde la formalización en escritura pública.", 1],
+		["6 meses desde el otorgamiento de la escritura de constitución.", 1],
+		["15 días, a partir de la aprobación del texto.", 1],
+		["15 días, a partir de la toma de posesión.", 1],
+		["abierta y permanente.", 1],
+		["abierto ", 1],
+		["abierto de forma permanente. ", 1],
+		["abierto de forma permanente. antes de comenzar a manipular gases fluorados.", 1],
+		["abierto de forma permanente. antes de la primera utilización de la grúa.", 1],
+		["abierto de forma permanente. antes de su puesta en servicio.", 1],
+		["abierto de forma permanente. antes de su puesta en servicio. ", 1],
+		["abierto permanentemente", 1],
+		["abierto permanentemente.", 1],
+		["abierto permanentemente. antes de su puesta en servicio", 1],
+		["abierto y permamente.", 1],
+		["abierto y permanente.<br/><br/> ", 1],
+		["abierto y permantente.", 1],
+		["antes de finalizar el ejercicio anterior al que se refiera.", 1],
+		["antes de que expire la vigencia de la autorización que se pretende modificar.", 1],
+		["antes del 30 de noviembre del año anterior a su celebración.", 1],
+		["antes del comienzo de la competición.", 1],
+		["con anterioridad al 30 de junio del curso anterior al inicio del programa.", 1],
+		["con carácter previo a la puesta a en funcionamiento de la instalación.", 1],
+		["del 1 al 15 de abril de cada año.", 1],
+		["del 1 de septiembre al 31 de octubre del curso académico correspondiente.", 1],
+		["durante los 30 días anteriores al mes de su vencimiento. ", 1],
+		["el plazo para presentar la comunicación está abierto de forma permanente. ", 1],
+		["el plazo para presentar las solicitudes estará abierto permanentemente.", 1],
+		["en cada caso el que fije la norma", 1],
+		["en cualquier momento, transcurridos 6 meses desde la inscripción.", 1],
+		["entre el 1 de agosto y el 15 de diciembre de cada campaña.", 1],
+		["entre el 1 de febrero y 15 de marzo de cada año, ambos inclusive", 1],
+		["ha de comunicarse inmediatamente (artículo 27º ley 13/2002).", 1],
+		["las solicitudes deberán presentarse en el primer semestre del año.", 1],
+		["no hay plazo establecido para solicitar la autorización. ", 1],
+		["plazo abierto permanentemente, antes del inicio de la obra.", 1],
+		["plazo de presentación abierto y permanente.", 1],
+		["previamente a la actuación de la entidad como servicio de prevención ajeno.", 1],
+		["previamente a la realización de la actividad objeto de autorización.", 1],
+		["previo al inicio de la actividad.", 1],
+		["previo al inicio de la actividad. ", 1],
+		["solicitarlo con 3 meses de antelación al vencimiento de la inscripción.", 1],
+		["solicitarlo con 3 meses de antelación al vencimiento del permiso.", 1],
+		["un mes desde el certificado de finalización de las obras.", 1],
+		["un mes desde que se produce el acto que se comunica.", 1]]
+		);
+		dynNavMgr.addAttrValues("nombreOrganismo", 
+		[
+		["consejería de fomento y medio ambiente, dirección general del medio natural", 42],
+		["consejería de educación, dirección general de innovación y equidad educativa", 36],
+		["agencia de innovación, financiación e internacionalización empresarial (ade)", 35],
+		["consejería de educación, dirección general de recursos humanos", 29],
+		["consejería de educación, dirección general de política educativa escolar", 27],
+		["servicio público de empleo de castilla y león (ecyl)", 26],
+		["consejería de sanidad, dirección general de salud pública ", 25],
+		["consejería de cultura y turismo, dirección general de políticas culturales", 23],
+
+		["consejería de fomento y medio ambiente, dirección general de transportes", 23],
+		["consejería de cultura y turismo, dirección general de turismo", 22],
+		["consejería de educación, dirección general de universidades e investigación", 19],
+		["consejería de la presidencia, dirección general de la función pública", 19],
+		["consejería de economía y hacienda, secretaría general de economía y hacienda", 17],
+		["consejería de empleo, dirección general de economía social y autónomos", 16],
+		["consejería de cultura y turismo, dirección general de deportes", 13],
+		["consejería de fomento y medio ambiente, agencia de protección civil ", 13],
+		["consejería de sanidad, gerencia regional de salud (sacyl)", 13],
+		["consejería de la presidencia", 12],
+		["consejería de cultura y turismo, dirección general de patrimonio cultural", 11],
+		["consejería de fomento y medio ambiente, dirección general de telecomunicaciones", 11],
+		["consejería de agricultura y ganadería, instituto tecnológico agrario (ita)", 10],
+		["consejería de agricultura y ganadería", 9],
+		["consejería de economía y hacienda, dirección general de comercio y consumo", 9],
+		["consejería de cultura y turismo, secretaría general de cultura y turismo", 6],
+		["consejería de cultura y turismo", 5],
+		["consejería de empleo", 4],
+		["consejería de educación, viceconsejería de función pública y gobierno abierto", 2],
+		["consejería de familia e igualdad de oportunidades", 2],
+		["consejería de la presidencia, dirección general de análisis y planificación", 2],
+		["consejería de sanidad, secretaría general de sanidad", 2],
+		["instituto de la juventud de castilla y león", 2],
+		["z_consejería de fomento y medio ambiente, dirección general del medio natural", 2],
+		["consejería de educación, consejería de empleo", 1],
+		["consejería de la presidencia, delegaciones territoriales", 1],
+		["consejería de la presidencia, dirección de comunicación", 1],
+		["delegaciones territoriales", 1],
+		["dirección general de turismo, consejería de cultura y turismo", 1],
+		["gerencia de servicios sociales", 1],
+		["gerencia de servicios sociales, gerencia regional de salud (sacyl)", 1],
+		["viceconsejería de función pública y gobierno abierto, consejería de educación", 1]]
+		);
+	</script>
+	<script type="text/javascript">
+		dynNavMgr.init();
+	</script>
+  </body>
+</html>

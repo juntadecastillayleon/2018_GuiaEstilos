@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body class="home">
+    <div id="contenedor">
+        <div class="contenedor">
+            <h1><a href="index.html"><img src="img/jcyl.jpg" alt="Junta de Castilla y León"/></a></h1>
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu-prehome.inc.html" -->
+        </div>
+		<div id="buscador">
+			<form action="" method="post">
+				<label for="q" class="elemento-invisible">Texto a buscar</label>
+				<input type="text" name="q" id="q" value="" placeholder="Buscar..." />
+				<input type="image" src="img/buscar.png" alt="Buscar" />
+			</form>
+		</div>
+		<div id="carrusel">
+			<!--
+				Ocultamos el carrusel a lectores de pantalla.
+				Todos los enlaces enlazan al mismo portal. Turismo Castilla y León.
+				De no ser así, se buscaría otra solución.
+			-->
+			<ul class="owl-carousel" aria-hidden="true">
+				<li>
+					<span>
+						<img src="img/carrusel.jpg" alt=""/>
+						<a href="">
+							<span>
+								<strong>Frías</strong>
+								<em>Burgos</em>
+							</span>
+						</a>
+					</span>
+				</li>
+				<li>
+					<span>
+						<img src="img/carrusel.jpg" alt=""/>
+						<a href="">
+							<span>
+								<strong>Frías</strong>
+								<em>Burgos</em>
+							</span>
+						</a>
+					</span>
+				</li>
+				<li>
+					<span>
+						<img src="img/carrusel.jpg" alt=""/>
+						<a href="">
+							<span>
+								<strong>Frías</strong>
+								<em>Burgos</em>
+							</span>
+						</a>
+					</span>
+				</li>
+			</ul>
+			<!--
+				En su lugar mostranmos un enlace, oculto visualmente, que lleve al portal.
+			-->
+			<p class="elemento-invisible"><a href="">Portal de Turismo de Castilla y León</a></p>
+		</div>
+		
+		<div id="presentacion">
+			 <div class="contenedor">
+				<p>La Web es la puerta de entrada a la Junta de Castilla y León desde Internet y está destinada a ser la <strong>principal vía de comunicación con los ciudadanos, por su agilidad, sencillez e inmediatez</strong>.</p>
+				<p>La Dirección General de Análisis y Planificación ha renovado el portal web JCYL.es con un <strong>diseño creativo moderno, accesible, usable y  adaptado para su visualización en todos los dispositivos</strong>.</p>
+				<p>Este diseño lo utilizan los <strong>más de 50 portales alojados en la plataforma web corporativa</strong> entre los que se encuentran los de Empleo, Sede Electrónica, Medio Ambiente, Empresas, Tributos,&nbsp; Empleo Público, 112, Juventud, Vivienda, Bibliotecas, Contratación…</p>
+				<p>El <strong>objetivo</strong> de la presente Guía es el de <strong>normalizar la estructura y diseño de los portales web JCYL.es adoptando un diseño más moderno y claro</strong>. Para ello se han establecido pautas para el desarrollo coherente y comprensible, basándose en tres principios básicos: <strong>accesibilidad, usabilidad y diseño adaptado a cada dispositivo (responsive)</strong>.</p>
+				<p>La guía se ha publicado en un <strong>formato de consulta rápida</strong> que permita identificar y reutilizar fácilmente cualquier elemento del portal, apoyándose en ejemplos prácticos de uso, y en una lista de componentes que cubre la mayoría de las necesidades web. De la misma manera, dentro de ella se  pueden descargar todos los recursos necesarios para poder ser reutilizados en cualquier proyecto.</p>
+				<p>Además con dicha reutilización asegura la consecución de un trabajo con <strong>una imagen corporativa homogénea, atractiva y fácilmente identificable</strong>, a la vez que optimiza la eficacia de sus comunicaciones.</p>
+				<p>Sin embargo, la mayoría de pautas aquí reflejadas son fácilmente reutilizables para la generación de cualquier proyecto web. Por  ello, dentro del objetivo de tener un <strong>Gobierno Abierto</strong>, la información de esta guía se publica bajo una &quot;<a href="http://creativecommons.org/licenses/by/3.0/es">licencia de <span lang="en">Creative Commons</span> Reconocimiento 3.0</a>&quot; por lo  que <strong>cualquier administración, ciudadano o empresa puede usar su contenido  para generar su propia guía de estilo</strong>.</p>
+			 </div>
+		</div>
+
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web-prehome.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

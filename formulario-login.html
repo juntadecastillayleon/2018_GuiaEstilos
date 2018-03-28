@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Formulario login - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Buscadores y formularios</a></li>
+					<li><strong>Formulario login</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Formulario login</h1>
+				<p class="info-form">Para poder autenticarse debe estar registrado en el Portal Personalizado de la Junta de Castilla y León.</p>
+				<div class="buscador-especifico login">
+					<div class="mensaje error">
+						<p><strong>Atención</strong></p>
+						<p>La contraseña no es correcta</p>
+					</div>
+					<ul class="menu-opciones-buscador">
+						<li class="ico-ayuda">
+							<a href="">Ayuda</a>
+						</li>
+					</ul>
+					<form name="formulario" method="get" action="">
+						<div>
+							<label for="usuario">Usuario</label>
+							<input id="usuario" name="usuario" type="text" class="user">
+						</div>
+						<div>
+							<label for="pass">Contraseña</label>
+							<input id="pass" name="pass" type="text" class="pass">
+						</div>
+						<input id="aceptar" name="aceptar" value="Aceptar" type="submit" class="boton">
+					</form>
+					<div class="info-login">
+						<p>Si usted no es usuario del Portal Personalizado de la Junta puede registrarse en el siguiente enlace: <a href="">Registrarse</a>.</p>
+						<p>Si se olvidó de su contraseña, pulse en el siguiente enlace: <a href="">Recordar contraseña</a>.</p>
+						<p>Si tiene algún problema con su nombre de usuario y contraseña póngase en contacto con el <a href="">webmaster</a>.</p>
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>EL componente se dispondrá en una caja de dos columnas al 50%, formulario a la izquierda y texto a la derecha, por encima de 600px. Por debajo de 600px si dispondrá en dos filas al 100% con el formulario arriba y el texto debajo.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;p class="info-form"&gt;[TEXTO]&lt;/p&gt;
+&lt;div class="buscador-especifico login"&gt;
+	&lt;div class="mensaje error"&gt;
+		&lt;p&gt;&lt;strong&gt;Atención&lt;/strong&gt;&lt;/p&gt;
+		&lt;p&gt;[MENSAJE]&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;ul class="menu-opciones-buscador"&gt;
+		&lt;li class="ico-ayuda"&gt;
+			&lt;a href=""&gt;Ayuda&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;form name="formulario" method="get" action=""&gt;
+		&lt;div&gt;
+			&lt;label for="usuario"&gt;Usuario&lt;/label&gt;
+			&lt;input id="usuario" name="usuario" type="text" class="user"&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="pass"&gt;Contraseña&lt;/label&gt;
+			&lt;input id="pass" name="pass" type="text" class="pass"&gt;
+		&lt;/div&gt;
+		&lt;input id="aceptar" name="aceptar" value="Aceptar" type="submit" class="boton"&gt;
+	&lt;/form&gt;
+	&lt;div class="info-login"&gt;
+		&lt;p&gt;Si usted no es usuario del Portal Personalizado de la Junta puede registrarse en el siguiente enlace: &lt;a href=""&gt;Registrarse&lt;/a&gt;.&lt;/p&gt;
+		&lt;p&gt;Si se olvidó de su contraseña, pulse en el siguiente enlace: &lt;a href=""&gt;Recordar contraseña&lt;/a&gt;.&lt;/p&gt;
+		&lt;p&gt;Si tiene algún problema con su nombre de usuario y contraseña póngase en contacto con el &lt;a href=""&gt;webmaster&lt;/a&gt;.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

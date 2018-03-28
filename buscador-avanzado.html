@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buscador - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Buscadores y formularios</a></li>
+					<li><strong>Buscador</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Buscador</h1>
+				<div class="buscador-especifico filtro">
+					<ul class="menu-opciones-buscador">
+						<li class="ico-ayuda">
+							<a href="" target="_blank" title="Nueva ventana: Ayuda del buscador específico">Ayuda</a>
+						</li>
+						<li class="ico-calendario">
+							<a href="">Calendario</a>
+						</li>
+					</ul>
+					<form name="formulario" method="get" action="">
+						<div>
+							<label for="q">Texto</label>
+							<input id="q" name="q" type="text" placeholder="Texto a buscar...">
+						</div>
+						<div>
+							<label for="provincia">Provincia</label>
+							<select id="provincia">
+								<option>Todas</option>
+							</select>
+						</div>
+						<div>
+							<label for="fuente">Fuente</label>
+							<select id="fuente">
+								<option>Todas</option>
+							</select>
+						</div>
+						<div class="fechas">
+							<div>
+								<label for="desde">Desde</label>
+								<input id="desde" name="desde" type="text" placeholder="dd/mm/aaaa">
+								<img src="img/calendario-popup.png" alt="">
+							</div>
+							<div>
+								<label for="hasta">Hasta</label>
+								<input id="hasta" name="hasta" type="text" placeholder="dd/mm/aaaa">
+								<img src="img/calendario-popup.png" alt="">
+							</div>
+						</div>
+						<div>
+							<input id="en-plazo" name="en-plazo" type="checkbox">
+							<label for="en-plazo">En plazo</label>
+						</div>
+						<input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+					</form>
+				</div>
+				<div class="resultados-busqueda">
+					<h2>Resultados de la búsqueda</h2>
+					<p class="resultados">Resultados 1 - 10 de 2110 para <strong>calendario</strong>.</p>
+					<p class="imprimir"><a href="">Imprimir resultados</a></p>
+					<dl>
+					  <dt> <a href="http://www.trabajoyprevencion.jcyl.es/web/jcyl/TrabajoYPrevencion/es/Plantilla66y33/1284377304431/_/_/_">Calendario Laboral de Castilla y León | Trabajo y Prevención ...</a> </dt>
+					  <dd>... <strong>Calendario</strong> Laboral de Castilla y León. <strong>Calendario</strong> Laboral 2016. Decreto 58/2015, <strong>Calendario</strong> de fiestas laborales 2016 (601 kbytes) Descarga del<br>
+						documento tipoPDF. Abre una nueva ventana. ... <strong>Calendario</strong> Laboral 2017. ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.trabajoyprevencion.jcyl.es/web/jcyl/TrabajoYPrevencion/es/Plantilla66y33/1253860466245/_/_/_">Trabajo y Prevención</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284168955783/_/_/_">Calendario de ferias | Artesanía de Castilla y León | Junta de ...</a> </dt>
+					  <dd>... Inicio; <strong>Calendario</strong> de ferias. <strong>Calendario</strong> de ferias. La importancia económica de las ferias comerciales en nuestra Comunidad está<br>
+						asentada tanto en su número, su impacto territorial y su ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284167506804/_/_/_">Artesanía de Castilla y León</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284178703128/_/_/_">Calendario de cursos | Artesanía de Castilla y León | Junta de ...</a> </dt>
+					  <dd>... Inicio; <strong>Calendario</strong> de cursos. <strong>Calendario</strong> de cursos. CEARCAL pone en marcha los Monográficos 2014-2015, cuyo objetivo es crear una programación<br>
+						estable de cursos de iniciación y perfeccionamiento ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.artesania.jcyl.es/web/jcyl/Artesania/es/Plantilla66y33/1284167506804/_/_/_">Artesanía de Castilla y León</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100/1251181279788/_/_/_">Calendario de días inhábiles | Sede Electrónica | Junta de ...</a> </dt>
+					  <dd>... <strong>Calendario</strong> de días inhábiles. ... Anualmente se publica en la Comunidad el <strong>Calendario</strong> de días inhábiles a efectos del cómputo de plazos<br>
+						administrativos. <strong>Calendario</strong> de días inhábiles 2017. ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla66y33/1251181050732/_/_/_">Sede Electrónica</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100DetalleFeed/1251181050732/Tramite/1279887289163/Tramite">Aprobación de los calendarios de conservación del ...</a> </dt>
+					  <dd>... Aprobación de los <strong>calendarios</strong> de conservación del patrimonio documental. ...
+						<ul>
+						  <li class="ayuda"> Trámite</li>
+						  <li class="portal"> <a href="https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla66y33/1251181050732/_/_/_">Sede Electrónica</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.estadistica.jcyl.es/web/jcyl/Estadistica/es/Plantilla100/1284220677039/_/_/_">Calendario Estadístico 2017 | Estadística | Junta de Castilla y ...</a> </dt>
+					  <dd>... Inicio; Estadísticas por temas; Otras estadísticas; <strong>Calendario</strong> Estadístico 2017. <strong>Calendario</strong> Estadístico 2017. ... Está disponible en varios formatos: <strong>Calendario</strong><br>
+						Estadístico 2017 (Planning) (172 kbytes) Descarga del documento tipoPDF. ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.estadistica.jcyl.es/web/jcyl/Estadistica/es/Plantilla66y33_100/1246989275272/_/_/_">Estadística</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.economia.jcyl.es/web/jcyl/Economia/es/Plantilla66y33/1142233348812/_/_/_">Ferias Comerciales | Economía</a> </dt>
+					  <dd>... Inicio; Comercio y artesanía; Ferias Comerciales. Ferias Comerciales. <strong>Calendario</strong> Ferial. La importancia económica ... documento tipoPDF. Abre una<br>
+						nueva ventana. <strong>Calendario</strong> de Ferias. L, M, X, J, V, S, D. hay ...
+						<ul>
+						  <li class="texto"> Texto</li>
+						  <li class="portal"> <a href="http://www.economia.jcyl.es/web/jcyl/Economia/es/Plantilla66y33/1284250105595/_/_/_">Economía</a> </li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla100DetalleFeed/1284152328311/Licitacion/1284676810322/Propuesta">Expediente B2016/010186 SUMINISTRO DE 200 ...</a> </dt>
+					  <dd>... Expediente B2016/010186 SUMINISTRO DE 200 EJEMPLARES DE <strong>CALENDARIO</strong> DEPORTIVO. ... Descripción: Adquisición de<br>
+						200 ejemplares de <strong>calendario</strong> para 2017 con motivos deportivos.<br>
+						Código de expediente: B2016/010186. ...
+						<ul>
+						  <li class="licitacion"> Licitación</li>
+						  <li class="portal"> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla66y33/1284152328311/_/_/_">Portal Contratación Administrativa</a> </li>
+						  <li class="plazo-abierto">Abierto</li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla100DetalleFeed/1284152328311/Licitacion/1284663222657/Propuesta">Expediente B2016/009530 CALENDARIOS ACTIVIDADES ...</a> </dt>
+					  <dd>... Expediente B2016/009530 <strong>CALENDARIOS</strong> ACTIVIDADES AR&amp;PA 2016. ... Consejería de Cultura y Turismo. Descripción:<br>
+						REALIZACIÓN DE <strong>CALENDARIOS</strong> ACTIVIDADES AR&amp;PA<br>
+						2016. Código de expediente: B2016/009530. ...
+						<ul>
+						  <li class="licitacion"> Licitación</li>
+						  <li class="portal"> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla66y33/1284152328311/_/_/_">Portal Contratación Administrativa</a> </li>
+						  <li class="plazo-abierto">Abierto</li>
+						</ul>
+					  </dd>
+					  <dt> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla100DetalleFeed/1284152328311/Licitacion/1284630241195/Propuesta">DERIVADO AM VACUNAS CALENDARIO Y OTRAS. LOTE 2 ...</a> </dt>
+					  <dd>... DERIVADO AM VACUNAS <strong>CALENDARIO</strong> Y OTRAS. LOTE 2 (168/2016). ...
+						<ul>
+						  <li class="licitacion"> Licitación</li>
+						  <li class="portal"> <a href="http://www.contratacion.jcyl.es/web/jcyl/ContratacionAdministrativa/es/Plantilla66y33/1284152328311/_/_/_">Portal Contratación Administrativa</a> </li>
+						  <li class="plazo-abierto">Abierto</li>
+						</ul>
+					  </dd>
+					</dl>
+				</div>
+				<div class="paginacion">
+					<p>Página 1 de 3</p>
+					<ul>
+						<li class="primera"><span><span class="elemento-invisible">Primera página</span>&lt;&lt;</span></li>
+						<li class="anterior"><span><span class="elemento-invisible">Página anterior</span>&lt;</span></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>1</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>2</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>3</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>...</a></li>
+						<li class="siguiente"><a href=""><span class="elemento-invisible">Página siguiente</span>&gt;</a></li>
+						<li class="ultima"><a href=""><span class="elemento-invisible">Última página</span>&gt;&gt;</a></li>
+					</ul>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente, tanto buscador como resultados, fluyen adaptándose al ancho disponible en cada momento.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="buscador-especifico filtro"&gt;
+	&lt;ul class="menu-opciones-buscador"&gt;
+		&lt;li class="ico-ayuda"&gt;
+			&lt;a href="" target="_blank" title="Nueva ventana: Ayuda del buscador específico"&gt;Ayuda&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="ico-calendario"&gt;
+			&lt;a href=""&gt;Calendario&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;form name="formulario" method="get" action=""&gt;
+		&lt;div&gt;
+			&lt;label for="q"&gt;Texto&lt;/label&gt;
+			&lt;input id="q" name="q" type="text" placeholder="Texto a buscar..."&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="provincia"&gt;Provincia&lt;/label&gt;
+			&lt;select id="provincia"&gt;
+				&lt;option&gt;Todas&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="fuente"&gt;Fuente&lt;/label&gt;
+			&lt;select id="fuente"&gt;
+				&lt;option&gt;Todas&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;div class="fechas"&gt;
+			&lt;div&gt;
+				&lt;label for="desde"&gt;Desde&lt;/label&gt;
+				&lt;input id="desde" name="desde" type="text" placeholder="dd/mm/aaaa"&gt;
+				&lt;img src="img/calendario-popup.png" alt=""&gt;
+			&lt;/div&gt;
+			&lt;div&gt;
+				&lt;label for="hasta"&gt;Hasta&lt;/label&gt;
+				&lt;input id="hasta" name="hasta" type="text" placeholder="dd/mm/aaaa"&gt;
+				&lt;img src="img/calendario-popup.png" alt=""&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;input id="en-plazo" name="en-plazo" type="checkbox"&gt;
+			&lt;label for="en-plazo"&gt;En plazo&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton"&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+&lt;div class="resultados-busqueda"&gt;
+	&lt;h2&gt;Resultados de la búsqueda&lt;/h2&gt;
+	&lt;p class="resultados"&gt;Resultados 1 - 10 de [N] para &lt;strong&gt;[X]&lt;/strong&gt;.&lt;/p&gt;
+	&lt;p class="imprimir"&gt;&lt;a href=""&gt;Imprimir resultados&lt;/a&gt;&lt;/p&gt;
+	&lt;dl&gt;
+	  &lt;dt&gt;&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;&lt;/dt&gt;
+	  &lt;dd&gt;
+		[TEXTO]
+		&lt;ul&gt;
+		  &lt;li class="texto"&gt; Texto&lt;/li&gt;
+		  &lt;li class="portal"&gt; &lt;a href="[ENLACE]"&gt;[PORTAL]&lt;/a&gt; &lt;/li&gt;
+		&lt;/ul&gt;
+	  &lt;/dd&gt;
+	  [...]
+	&lt;/dl&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

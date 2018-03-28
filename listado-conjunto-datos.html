@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Conjunto de datos - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Listados</a></li>
+					<li><strong>Conjunto de datos</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Conjunto de datos</h1>
+				<div class="conjunto-datos">
+					<ul>
+					  <li>
+						<a href="">Ofertas de Empleo</a>
+						<ul>
+						  <li><a href="" aria-label="Descargar ofertas de Empleo en formato CSV"><img alt="CSV" src="img/iconos/csv.png"></a></li>
+						  <li><a href="" aria-label="Descargar ofertas de Empleo en formato JSON"><img alt="JSON" src="img/iconos/json.png"></a></li>
+						  <li><a href="" aria-label="Descargar ofertas de Empleo en formato XML"><img alt="XML" src="img/iconos/xml.png"></a></li>
+						</ul>
+					  </li>
+					  <li>
+						<a href="">Presupuestos Generales de la Comunidad de Castilla y León para 2016</a>
+						<ul>
+						  <li><a href="" aria-label="Descargar Presupuestos Generales de la Comunidad de Castilla y León para 2016 en formato CSV"><img alt="CSV" src="img/iconos/csv.png"></a></li>
+						</ul>
+					  </li>
+					  <li>
+						<a href="">Espacios naturales</a>
+						<ul>
+						  <li><a href="" aria-label="Descargar Espacios naturales en formato CSV"><img alt="CSV" src="img/iconos/csv.png"></a></li>
+						  <li><a href="" aria-label="Descargar Espacios naturales en formato GML2"><img alt="GML2" src="img/iconos/gml20.png"></a></li>
+						  <li><a href="" aria-label="Descargar Espacios naturales en formato GML31"><img alt="GML31" src="img/iconos/gml31.png"></a></li>
+						  <li><a href="" aria-label="Descargar Espacios naturales en formato GML32"><img alt="GML32" src="img/iconos/gml32.png"></a></li>
+						  <li><a href="" aria-label="Descargar Espacios naturales en formato KML"><img alt="KML" src="img/iconos/kml.png"></a></li>
+						  <li><a href="" aria-label="Descargar Espacios naturales en formato SHP"><img alt="SHP" src="img/iconos/shp.png"></a></li>
+						</ul>
+					  </li>
+					  <li>
+						<a href="">Relación de monumentos de Castilla y León</a>
+						<ul>
+						  <li><a href="" aria-label="Descargar Relación de monumentos de Castilla y León en formato JSON"><img alt="JSON" src="img/iconos/json.png"></a></li>
+						  <li><a href="" aria-label="Descargar Relación de monumentos de Castilla y León en formato XML"><img alt="XML" src="img/iconos/xml.png"></a></li>
+						</ul>
+					  </li>
+					  <li>
+						<a href="">Licitaciones</a>
+						<ul>
+						  <li><a href="" aria-label="Descargar Licitaciones en formato CSV"><img alt="CSV" src="img/iconos/csv.png"></a></li>
+						  <li><a href="" aria-label="Descargar Licitaciones en formato JSON"><img alt="JSON" src="img/iconos/json.png"></a></li>
+						  <li><a href="" aria-label="Descargar Licitaciones en formato RSS"><img alt="RSS" src="img/iconos/rss.png"></a></li>
+						  <li><a href="" aria-label="Descargar Licitaciones en formato XML"><img alt="XML" src="img/iconos/xml.png"></a></li>
+						</ul>
+					  </li>
+					</ul>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se distribuye en filas de dos columnas, título a la izquierda e iconos a la derecha, por encima de 768px.</p>
+					<p>Por debajo de 768px se distribuye en filas de una columna con el título encima y los iconos debajo para cada registro.</p>
+					<p>El listado de iconos puede consultarse en la <a href="guia-estilos.html">guía de estilos</a>.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="conjunto-datos"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href="[ENLACE]"&gt;[TÍTULO]&lt;/a&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="[ENLACE]"  aria-label="Descargar [TÍTULO] en formato [FORMATO]"&gt;&lt;img alt="[FORMATO]" src="img/iconos/[FORMATO].png"&gt;&lt;/a&gt;&lt;/li&gt;
+				[...]
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		[..]
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

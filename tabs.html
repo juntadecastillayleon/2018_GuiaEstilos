@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Pestañas - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Para destacar</a></li>
+					<li><strong>Pestañas</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Pestañas</h1>
+				<div class="block-tabs">
+					<ul class="tabs">
+						<li class="activo"><a href="#tab-1" data-ajax-url="ajax-tab-content.html">Pestaña 1 (AJAX)</a></li>
+						<li><a href="#tab-2" data-ajax-url="ajax-tab-content.html">Pestaña 2 (AJAX)</a></li>
+						<li><a href="#tab-3">Pestaña 3 (Estático)</a></li>
+					</ul>
+					<div class="caja" id="tab-1">
+						<p>TEXTO DE PRUEBA 1</p>
+					</div>
+					<div class="caja elemento-invisible" id="tab-2">
+						<p>TEXTO DE PRUEBA 2</p>
+					</div>
+					<div class="caja elemento-invisible" id="tab-3">
+						<div class="componente-texto">
+							<h1>El Presidente de la Junta de Castilla y León</h1>
+							<div class="contenido">
+								<p class="izdaTexto"><img src="img/presidente.jpg" alt=""></p>
+								<p>Los ciudadanos de cualquier sociedad moderna tienen muy claro lo que piden a sus Administraciones públicas y que se puede resumir en dos conceptos básicos, como son los de eficacia y rapidez.</p>
+								<p>En su relación con las mismas quieren que se les proporcione una respuesta de calidad y con la máxima economía posible en los medios empleados para conseguirla. Por supuesto, es responsabilidad de cuantos asumimos responsabilidades públicas facilitar una adecuada respuesta a tales demandas.</p>
+								<p>A este respecto, las nuevas tecnologías de comunicación nos proporcionan valiosas herramientas para prestar el servicio público que corresponde a las Administraciones de una manera cercana, flexible e inmediata, permitiendo que los ciudadanos empleen cada vez menos tiempo y esfuerzos.</p>
+								<p>Castilla y León así lo ha asumido y tiene como un importante objetivo conseguir que cuantos ciudadanos deseen contactar con la Administración regional tengan a su disposición instrumentos modernos, cercanos y fiables, siendo la comunicación vía Internet uno de los más importantes.</p>
+								<p>Deseamos, pues, que el conjunto de servicios que se ponen a su disposición a través de la Red puedan dar eficaz respuesta a las demandas y necesidades de nuestra sociedad, reflejando así la voluntad de una Comunidad decididamente volcada hacia el futuro.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>Las pestañas del componente fluyen de izquierda a derecha y de arriba a abajo según el espacio del que dispongan.</p>
+					<p>El contenido de cada pestaña se adapta al ancho disponible.</p>
+					<p>El contenido de las pestañas puede ser cargado con AJAX, para ello hay que utilizar el atributo "data-ajax-url" que apuntará a la url dónde está el contenido (en HTML) de la pestaña.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="block-tabs"&gt;
+	&lt;ul class="tabs"&gt;
+		&lt;li class="activo"&gt;&lt;a href="#tab-[ID_AUTONUMÉRICO--1]"&gt;[TÍTULO]&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#tab-[ID_AUTONUMÉRICO--2]" [data-ajax-url="[AJAX_URL]"]&gt;[TÍTULO]&lt;/a&gt;&lt;/li&gt;
+		[...]
+	&lt;/ul&gt;
+	&lt;div class="caja" id="tab-[ID_AUTONUMÉRICO--1]"&gt;
+		[CONTENIDO_HTML]
+	&lt;/div&gt;
+	&lt;div class="caja elemento-invisible" id="tab-[ID_AUTONUMÉRICO--2]"&gt;
+		[CONTENIDO_HTML]
+	&lt;/div&gt;
+	[...]
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

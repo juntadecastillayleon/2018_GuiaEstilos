@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Enlaces submenú - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Enlaces</a></li>
+					<li><strong>Enlaces submenú</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Enlaces submenú</h1>
+				<p>[contenido]</p>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>Los elementos del submenú fluyen en función del ancho disponible y del número de elementos.</p>
+					<p>Este elemento va colocado en el #mapa-web y no en #contenidos como el resto.</p>
+					<p>El tamaño del icono (espacio incluido) es de 40 X 41px.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div id="mapa-web"&gt;
+	&lt;div class="contenedor"&gt;
+		&lt;div class="fila"&gt;
+			&lt;h2 class="elemento-invisible"&gt;Mapa web&lt;/h2&gt;
+			&lt;div class="enlaces-submenu"&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href=""&gt;
+							&lt;img src="[IMG]" alt="" /&gt;
+							&lt;span&gt;[TÍTULO]&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/li&gt;
+					[...]
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			[...]
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+			<script>
+				$('#mapa-web').load('includes/mapa-web-enlaces-submenu.inc.html');
+			</script>
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

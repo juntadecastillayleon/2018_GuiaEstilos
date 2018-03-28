@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contenidos destacados - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+          <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Para destacar</a></li>
+					<li><strong>Contenidos destacados</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Contenidos destacados</h1>
+				<div class="destacados">
+					<ul>
+						<li>
+							<p class="imagen"><img src="img/noticias/noticia-componente-1.jpg" alt=""/></p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Higo de Gredos</span>
+									<span class="texto">Castilla y León suma a su rica despensa una nueva Marca de Garantía: el Higo de Gredos.</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="imagen"><img src="img/noticias/noticia-componente-2.jpg" alt=""/></p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Quema de rastrojos de cereales</span>
+									<span class="texto">Agricultura y Ganadería publica la orden que autoriza la quema de rastrojos de cereales.</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="imagen"><img src="img/noticias/noticia-componente-3.jpg" alt=""/></p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Vivero de proyectos de innovación</span>
+									<span class="texto">Vivero de proyectos de innovación a disposición de los emprendedores el Instituto Tecnológico Agrario de Castilla y León.</span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="imagen"><img src="img/noticias/noticia-componente-4.jpg" alt=""/></p>
+							<p class="destacado">
+								<a href="">
+									<span class="titulo">Castilla y León en Fruit Attraction</span>
+									<span class="texto">Variedad y calidad de sus productos hortofrutícolas.</span>
+								</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se colocará en filas de dos columnas, con la imagen a la izquierda -con un ancho de 200px y el texto fluyendo en el ancho disponible- por encima de 1024px, por debajo de esta resolución se dispondrá cada elmento en una columna conservando las columnas y anchos</p>
+					<p>Entre 580px y 500px la imagen creará una máscara de 150px de ancho, centrando la imagen y conservando el alto, dejando el ancho restante para que el texto fluya.</p>
+          <p>Por debajo de 500px la imagen desaparecerá mostrándose solo el texto.</p>
+					<p>El tamaño de las imágenes es de 200 X 200px.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="destacados"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;p class="imagen"&gt;&lt;img src="[IMG]" alt=""/&gt;&lt;/p&gt;
+			&lt;p class="destacado"&gt;
+				&lt;a href=""&gt;
+					&lt;span class="titulo"&gt;[TITULO]&lt;/span&gt;
+					&lt;span class="texto"&gt;[TEXTO]&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/p&gt;
+		&lt;/li&gt;
+		[...]
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

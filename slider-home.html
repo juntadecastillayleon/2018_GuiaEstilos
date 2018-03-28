@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Slider home - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.slider-home.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+	
+    <script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Enlaces</a></li>
+					<li><strong>Slider home</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Slider home</h1>
+				<div class="carrusel-home">
+					<ul class="owl-carousel">
+						<li>
+							<a href="">
+								<img src="img/local/carrusel-home.jpg" alt=""/>
+								<span class="texto">
+									<strong>Etiam condimentum augue</strong>
+									<span>In commodo fringilla. Donec mattis bibendum dui, non euismod ipsum congue quis.</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/local/carrusel-home.jpg" alt=""/>
+								<span class="texto">
+									<strong>Etiam condimentum augue</strong>
+									<span>In commodo fringilla. Donec mattis bibendum dui, non euismod ipsum congue quis.</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/local/carrusel-home.jpg" alt=""/>
+								<span class="texto">
+									<strong>Etiam condimentum augue</strong>
+									<span>In commodo fringilla. Donec mattis bibendum dui, non euismod ipsum congue quis.</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El carrusel se adaptará al ancho disponible ocupando el 100% del contendor en el que se encuentre. Por debajo de 700px desaparecerá la imagen, mostrándose solo el texto dentro del carrusel.</p>
+					<p>El tamaño de las imágenes es de 1170px X 488/490px.</p>
+          <p>Es necesario añadir tanto los estilos como la librería JS de OWL Carousel.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;link href="css/owl.carousel.css" rel="stylesheet"&gt;
+&lt;link href="css/owl.theme.slider-home.css" rel="stylesheet"&gt;
+&lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;
+
+&lt;div class="carrusel-home"&gt;
+	&lt;ul class="owl-carousel"&gt;
+		&lt;li&gt;
+			&lt;a href=""&gt;
+				&lt;img src="[IMG]" alt=""/&gt;
+				&lt;span class="texto"&gt;
+					&lt;strong&gt;[TITULO]&lt;/strong&gt;
+					&lt;span&gt;[DESCRIPCIÓN]&lt;/span&gt;
+				&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

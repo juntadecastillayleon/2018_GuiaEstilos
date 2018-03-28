@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Videogalería - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+	<link href="css/menu-portal.css" rel="stylesheet">
+	<link href="css/jquery.sidr.light.css" rel="stylesheet">
+	<link href="css/componentes.css" rel="stylesheet">
+	<link href="css/colorbox-galeria.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/catalogo.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		var GLOBAL_N_ITEMS = 8;
+	</script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Imágenes</a></li>
+					<li><strong>Videogalería</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Videogalería</h1>
+				<h2>Sin paginación</h2>
+				<div class="galeria-multimedia videostreaming">
+					<ul>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">9 de mayo de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-1.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Villafranca del Bierzo</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">21 de diciembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-2.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Carpintería de lo Blanco en Zamora</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">19 de noviembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-3.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">La Luz de Falndes en La Cartuja</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">17 de septiembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-4.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Artesonados</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">9 de mayo de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-1.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Villafranca del Bierzo</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">21 de diciembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-2.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Carpintería de lo Blanco en Zamora</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">19 de noviembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-3.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">La Luz de Falndes en La Cartuja</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">17 de septiembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-4.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Artesonados</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="paginacion" aria-hidden="true">
+				</div>
+				<h2>Con paginación</h2>
+				<div class="galeria-multimedia videostreaming">
+					<ul>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">9 de mayo de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-1.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Villafranca del Bierzo</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">21 de diciembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-2.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Carpintería de lo Blanco en Zamora</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">19 de noviembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-3.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">La Luz de Falndes en La Cartuja</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">17 de septiembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-4.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Artesonados</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">9 de mayo de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-1.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Villafranca del Bierzo</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">21 de diciembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-2.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Carpintería de lo Blanco en Zamora</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">19 de noviembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-3.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">La Luz de Falndes en La Cartuja</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">17 de septiembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-4.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Artesonados</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">9 de mayo de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-1.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Villafranca del Bierzo</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">21 de diciembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-2.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Carpintería de lo Blanco en Zamora</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">9 de mayo de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-1.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Villafranca del Bierzo</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="img/local/colorbox.jpg" title="" class="cboxElement">
+							<span class="fecha">21 de diciembre de 2016</span>
+								<span class="imagen">
+									<img src="img/local/videostreaming-2.jpg">
+								</span>
+								<span class="texto">
+									<span class="titulo">Carpintería de lo Blanco en Zamora</span>
+									<span class="duracion">Duración: 11min 36 segundos</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="paginacion" aria-hidden="true">
+				</div>
+				
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El componente se dispondrá en filas de cuatro columnas por encima de 980px. Por debajo de 980px y por encima de 768px se dispondrá en filas de tres columnas. por debajo de 768px y por encima de 530px se dispondrá en filas de dos columnas. Por debajo de 530px se dispondrá en filas de una sola columna.</p>
+					<p>La paginación (Javascript) se inicializará sola si el número de elementos del listado es mayor que el indicado en la variable <em>GLOBAL_N_ITEMS</em>.</p>
+					<p>El tamaño de las imágenes es de 270 X 200px.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;script&gt;
+	var GLOBAL_N_ITEMS = 8;
+&lt;/script&gt;
+
+&lt;div class="galeria-multimedia videostreaming"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href="[URL]" title="" class="cboxElement"&gt;
+			&lt;span class="fecha"&gt;[FECHA]&lt;/span&gt;
+				&lt;span class="imagen"&gt;
+					&lt;img src="[IMG]"&gt;
+				&lt;/span&gt;
+				&lt;span class="texto"&gt;
+					&lt;span class="titulo"&gt;[TÍTULO]&lt;/span&gt;
+					&lt;span class="duracion"&gt;Duración: [DURACIÓN]&lt;/span&gt;
+				&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		[...]
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paginacion" aria-hidden="true"&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.simplePagination.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

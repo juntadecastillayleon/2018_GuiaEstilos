@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Calendario - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+	
+    <script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+	<div id="ventana-buscador">
+    <!--#include virtual="includes/ventana-buscador.inc.html" -->
+	</div>
+	<div id="ventana-menu-jcyl">
+    <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+	</div>
+    <div id="contenedor">
+        <div class="contenedor">
+      <!--#include virtual="includes/cabecera.inc.html" -->
+        </div>
+        <div id="main-menu">
+          <!--#include virtual="includes/menu.inc.html" -->
+        </div>
+		<div id="encabezado">
+      <!--#include virtual="includes/encabezado.inc.html" -->
+		</div>
+		<div id="rastro-migas">
+			<div class="contenedor">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="">Generales</a></li>
+					<li><strong>Calendario</strong></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contenidos">
+			<div class="contenedor">
+				<h1>Calendario</h1>
+				<h2>Completo</h2>
+				<div class="calendario">
+					<table>
+						<caption>Enero</caption>
+						<tr>
+							<th abbr="Lunes">lu</th>
+							<th abbr="Martes">ma</th>
+							<th abbr="Miércoles">mi</th>
+							<th abbr="Jueves">ju</th>
+							<th abbr="Viernes">vi</th>
+							<th abbr="Sábado">sá</th>
+							<th abbr="Domingo">do</th>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td class="actual">9</td>
+							<td>10</td>
+							<td class="seleccionado">11</td>
+							<td>12</td>
+							<td class="actual seleccionado">13</td>
+							<td>14</td>
+							<td><a href="">15</a></td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>31</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="calendario-buscador">
+						<h2>Histórico de convocatorias</h2>
+						<form action="" method="post">
+							<fieldset>
+								<legend>Selecciona mes y año</legend>
+								<label for="mes" class="elemento-invisible">Mes</label>
+								<select id="mes">
+                  <option value="0">Enero</option>
+                  <option value="1">Febrero</option>
+                  <option value="2">Marzo</option>
+                  <option value="3">Abril</option>
+                  <option value="4">Mayo</option>
+                  <option value="5">Junio</option>
+                  <option value="6">Julio</option>
+                  <option value="7">Agosto</option>
+                  <option value="8">Septiembre</option>
+                  <option value="9">Octubre</option>
+                  <option value="10">Noviembre</option>
+                  <option value="11">Diciembre</option>
+								</select>
+								<label for="anyo" class="elemento-invisible">Año</label>
+								<select id="mes">
+									<option value="2017">2017</option>
+								</select>
+							</fieldset>
+							<input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+						</form>
+					</div>
+					<div class="calendario-resultados">
+						<h3>Eventos</h3>
+						<ul>
+							<li>
+								<p class="fecha">
+									<span class="dia">20 de febrero de 2017</span>
+									<span class="hora">10:30h</span>
+								</p>
+								<p class="tipo">Convocatoria de prensa</p>
+								<p>CONSEJERÍA DE FOMENTO Y MEDIO AMBIENTE</p>
+								<p>Miranda de Ebro, Burgos. C/ Bilbao esquina con C/ Real Aquende</p>
+								<p><a href="">El consejero de Fomento y Medio Ambiente, Juan Carlos Suárez-Quiñones, visita el Aru Ebro-Entrevías en Miranda de Ebro</a></p>
+							</li>
+							<li>
+								<p class="fecha">
+									<span class="dia">20 de febrero de 2017</span>
+									<span class="hora">10:30h</span>
+								</p>
+								<p class="tipo">Convocatoria de prensa</p>
+								<p>CONSEJERÍA DE EDUCACIÓN</p>
+								<p>Valladolid. Cortes de Castilla y León. Sala de usos múltiples. Plaza de las Cortes de Castilla y León, 1.</p>
+								<p><a href="">El consejero de Educación, Fernando Rey, y la presidenta de las Cortes de Castilla y León y de la Fundación Villalar, Silvia Clemente, presentan las unidades didácticas sobre el parlamentarismo en Castilla y León</a></p>
+							</li>
+							<li>
+								<p class="fecha">
+									<span class="dia">20 de febrero de 2017</span>
+									<span class="hora">10:30h</span>
+								</p>
+								<p class="tipo">Convocatoria de prensa</p>
+								<p>CONSEJERÍA CULTURA Y TURISMO</p>
+								<p>Salamanca. Universidad de Salamanca. Patio de Escuelas Menores.</p>
+								<p>La consejera de Cultura y Turismo, María Josefa García Cirac, inaugura la exposición 'Transliteral'.</p>
+							</li>
+							<li>
+								<p class="fecha">
+									<span class="dia">20 de febrero de 2017</span>
+									<span class="hora">10:30h</span>
+								</p>
+								<p class="tipo">Presidente de la Junta de Castilla y León</p>
+								<p>Valladolid. Presidencia de la Junta de Castilla y León. Sala de Mapas.</p>
+								<p>LEl presidente de la Junta de Castilla y León, Juan Vicente Herrera, preside la reunión del Grupo de Trabajo de Emigración. Los gráficos podrán tomar imágenes al inicio. Al término, a las 13.00 horas, el vicepresidente y consejero de la Presidencia, José Antonio de Santiago-Juárez, atenderá a los medios de comunicación en la sala de prensa del edificio A.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="paginacion">
+					<p>Página 1 de 3</p>
+					<ul>
+						<li class="primera"><a href=""><span class="elemento-invisible">Primera página</span>&lt;&lt;</a></li>
+						<li class="anterior"><a href=""><span class="elemento-invisible">Página anterior</span>&lt;</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>1</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>2</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>3</a></li>
+						<li><a href=""><span class="elemento-invisible">Página </span>...</a></li>
+						<li class="siguiente"><a href=""><span class="elemento-invisible">Página siguiente</span>&gt;</a></li>
+						<li class="ultima"><a href=""><span class="elemento-invisible">Última página</span>&gt;&gt;</a></li>
+					</ul>
+				</div>
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>La parte del búsqueda del componente, calendario y selector de fechas se colocarán en dos columnas por encima de los 800px. En 800px y menos se colocarán cada uno en una fila ocupando todo el ancho disponible.</p>
+					<p>La parte de resultados, como texto que es, fluirá ocupando todo el ancho disponible.</p>
+					<p>La paginación fluira centrada y e línea según el espacio disponible.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="calendario"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;[Mes]&lt;/caption&gt;
+		&lt;tr&gt;
+			&lt;th abbr="Lunes"&gt;lu&lt;/th&gt;
+			&lt;th abbr="Martes"&gt;ma&lt;/th&gt;
+			&lt;th abbr="Miércoles"&gt;mi&lt;/th&gt;
+			&lt;th abbr="Jueves"&gt;ju&lt;/th&gt;
+			&lt;th abbr="Viernes"&gt;vi&lt;/th&gt;
+			&lt;th abbr="Sábado"&gt;sá&lt;/th&gt;
+			&lt;th abbr="Domingo"&gt;do&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;1&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;3&lt;/td&gt;
+			&lt;td&gt;4&lt;/td&gt;
+			&lt;td&gt;5&lt;/td&gt;
+			&lt;td&gt;6&lt;/td&gt;
+			&lt;td&gt;7&lt;/td&gt;
+			&lt;td&gt;8&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class="actual"&gt;9&lt;/td&gt;
+			&lt;td&gt;10&lt;/td&gt;
+			&lt;td class="seleccionado"&gt;11&lt;/td&gt;
+			&lt;td&gt;12&lt;/td&gt;
+			&lt;td class="actual seleccionado"&gt;13&lt;/td&gt;
+			&lt;td&gt;14&lt;/td&gt;
+			&lt;td&gt;&lt;a href=""&gt;15&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;16&lt;/td&gt;
+			&lt;td&gt;17&lt;/td&gt;
+			&lt;td&gt;18&lt;/td&gt;
+			&lt;td&gt;19&lt;/td&gt;
+			&lt;td&gt;20&lt;/td&gt;
+			&lt;td&gt;21&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;23&lt;/td&gt;
+			&lt;td&gt;24&lt;/td&gt;
+			&lt;td&gt;25&lt;/td&gt;
+			&lt;td&gt;26&lt;/td&gt;
+			&lt;td&gt;27&lt;/td&gt;
+			&lt;td&gt;28&lt;/td&gt;
+			&lt;td&gt;29&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;30&lt;/td&gt;
+			&lt;td&gt;31&lt;/td&gt;
+			&lt;td&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+	&lt;div class="calendario-buscador"&gt;
+		&lt;h2&gt;Histórico de convocatorias&lt;/h2&gt;
+		&lt;form action="" method="post"&gt;
+			&lt;fieldset&gt;
+				&lt;legend&gt;Selecciona mes y año&lt;/legend&gt;
+				&lt;label for="mes" class="elemento-invisible"&gt;Mes&lt;/label&gt;
+				&lt;select id="mes"&gt;
+					&lt;option value="[Mes]"&gt;[Mes]&lt;/option&gt;
+					[Meses]
+				&lt;/select&gt;
+				&lt;label for="anyo" class="elemento-invisible"&gt;Año&lt;/label&gt;
+				&lt;select id="mes"&gt;
+					&lt;option value="[Año]"&gt;[Año]&lt;/option&gt;
+					[Años]
+				&lt;/select&gt;
+			&lt;/fieldset&gt;
+			&lt;input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton"&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+	&lt;div class="calendario-resultados"&gt;
+		&lt;h3&gt;Eventos&lt;/h3&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;p class="fecha"&gt;
+					&lt;span class="dia"&gt;[Fecha]&lt;/span&gt;
+					&lt;span class="hora"&gt;[Hora]&lt;/span&gt;
+				&lt;/p&gt;
+				&lt;p class="tipo"&gt;[Tipo]&lt;/p&gt;
+				&lt;p&gt;[Texto]&lt;/p&gt;
+				[Más texto]
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paginacion"&gt;
+	&lt;p&gt;Página X de Y&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li class="primera"&gt;&lt;a href=""&gt;&lt;span class="elemento-invisible"&gt;Primera página&lt;/span&gt;&amp;lt;&amp;lt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="anterior"&gt;&lt;a href=""&gt;&lt;span class="elemento-invisible"&gt;Página anterior&lt;/span&gt;&amp;lt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;&lt;span class="elemento-invisible"&gt;Página &lt;/span&gt;[X]&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="siguiente"&gt;&lt;a href=""&gt;&lt;span class="elemento-invisible"&gt;Página siguiente&lt;/span&gt;&amp;gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="ultima"&gt;&lt;a href=""&gt;&lt;span class="elemento-invisible"&gt;Última página&lt;/span&gt;&amp;gt;&amp;gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+
+				<h2>Compacto</h2>
+				<div class="calendario mini">
+					<h2>Enero</h2>
+					<table>
+						<tr>
+							<th abbr="Lunes">lu</th>
+							<th abbr="Martes">ma</th>
+							<th abbr="Miércoles">mi</th>
+							<th abbr="Jueves">ju</th>
+							<th abbr="Viernes">vi</th>
+							<th abbr="Sábado">sá</th>
+							<th abbr="Domingo">do</th>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td class="actual">9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>31</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+					<div class="calendario-resultados">
+						<h3>Eventos del mes</h3>
+						<ul>
+
+						</ul>
+					</div>
+					<div class="calendario-buscador">
+						<h3 class="elemento-invisible">Filtrar eventos</h3>
+						<form action="json/calendario.json?param=x" method="post">
+							<fieldset>
+								<legend class="elemento-invisible">Selecciona mes y año</legend>
+								<label for="mes" class="elemento-invisible">Mes</label>
+								<select id="mes">
+                  <option value="0">Enero</option>
+                  <option value="1">Febrero</option>
+                  <option value="2">Marzo</option>
+                  <option value="3">Abril</option>
+                  <option value="4">Mayo</option>
+                  <option value="5">Junio</option>
+                  <option value="6">Julio</option>
+                  <option value="7">Agosto</option>
+                  <option value="8">Septiembre</option>
+                  <option value="9">Octubre</option>
+                  <option value="10">Noviembre</option>
+                  <option value="11">Diciembre</option>
+								</select>
+								<label for="anyo" class="elemento-invisible">Año</label>
+								<select id="mes">
+									<option value="2017">2017</option>
+								</select>
+							</fieldset>
+							<input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+						</form>
+					</div>
+				</div>
+				<div class="responsive">
+					<h3>Responsividad</h3>
+					<p>El calendario y los resultados se colocarán en dos columnas por encima de los 800px. En 800px y menos se colocarán cada uno en una fila ocupando todo el ancho disponible.</p>
+					<p>Los botones se colocarán en línea por encima de 600px. Por debajo de 600px se colocará en dos líneas, en una los selectores y otra para el botón de buscar. Si los selectores no dispusiesen de espacio se colocarían cada uno en una fila.</p>
+				</div>
+				<div class="codigo">
+					<h3>Código</h3>
+					<pre class="language-markup">
+						<code>
+&lt;div class="calendario mini"&gt;
+	&lt;h2&gt;[Mes]&lt;/h2&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th abbr="Lunes"&gt;lu&lt;/th&gt;
+			&lt;th abbr="Martes"&gt;ma&lt;/th&gt;
+			&lt;th abbr="Miércoles"&gt;mi&lt;/th&gt;
+			&lt;th abbr="Jueves"&gt;ju&lt;/th&gt;
+			&lt;th abbr="Viernes"&gt;vi&lt;/th&gt;
+			&lt;th abbr="Sábado"&gt;sá&lt;/th&gt;
+			&lt;th abbr="Domingo"&gt;do&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;1&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;3&lt;/td&gt;
+			&lt;td&gt;4&lt;/td&gt;
+			&lt;td&gt;5&lt;/td&gt;
+			&lt;td&gt;6&lt;/td&gt;
+			&lt;td&gt;7&lt;/td&gt;
+			&lt;td&gt;8&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class="actual"&gt;9&lt;/td&gt;
+			&lt;td&gt;10&lt;/td&gt;
+			&lt;td&gt;11&lt;/td&gt;
+			&lt;td&gt;12&lt;/td&gt;
+			&lt;td&gt;13&lt;/td&gt;
+			&lt;td&gt;14&lt;/td&gt;
+			&lt;td&gt;15&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;16&lt;/td&gt;
+			&lt;td&gt;17&lt;/td&gt;
+			&lt;td&gt;18&lt;/td&gt;
+			&lt;td&gt;19&lt;/td&gt;
+			&lt;td&gt;20&lt;/td&gt;
+			&lt;td&gt;21&lt;/td&gt;
+			&lt;td&gt;22&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;23&lt;/td&gt;
+			&lt;td&gt;24&lt;/td&gt;
+			&lt;td&gt;25&lt;/td&gt;
+			&lt;td&gt;26&lt;/td&gt;
+			&lt;td&gt;27&lt;/td&gt;
+			&lt;td&gt;28&lt;/td&gt;
+			&lt;td&gt;29&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;30&lt;/td&gt;
+			&lt;td&gt;31&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+			&lt;td&gt;&nbsp;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+	&lt;div class="calendario-resultados"&gt;
+		&lt;h3&gt;Eventos del mes&lt;/h3&gt;
+		&lt;ul&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class="calendario-buscador"&gt;
+		&lt;h3 class="elemento-invisible"&gt;Filtrar eventos&lt;/h3&gt;
+		&lt;form action="[action]" method="post"&gt;
+			&lt;fieldset&gt;
+				&lt;legend class="elemento-invisible"&gt;Selecciona mes y año&lt;/legend&gt;
+				&lt;label for="mes" class="elemento-invisible"&gt;Mes&lt;/label&gt;
+				&lt;select id="mes"&gt;
+					&lt;option value="[Mes]"&gt;[Mes]&lt;/option&gt;
+					[Meses]
+				&lt;/select&gt;
+				&lt;label for="anyo" class="elemento-invisible"&gt;Año&lt;/label&gt;
+				&lt;select id="mes"&gt;
+					&lt;option value="[Año]"&gt;[Año]&lt;/option&gt;
+					[Años]
+				&lt;/select&gt;
+			&lt;/fieldset&gt;
+			&lt;input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton"&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+					<p>Este buscador ejecuta una búsqueda por AJAX a la url indicada en el action del form.</p>
+					<p>El formato de JSON que espera recibir es el siguiente:</p>
+					<pre>
+						<code class="language-json">
+[
+  {
+    "fechaini": "2017-08-29 00:00:00.0",
+    "fechafin": "2017-09-03 00:00:00.0",
+    "texto": "XVIII FERIA DE ARTESANÍA DE PALENCIA. PALENCIA",
+    "dia": [
+      1,
+      2,
+      3
+    ],
+    "href": ""
+  },
+  {
+    "fechaini": "2017-09-01 00:00:00.0",
+    "fechafin": "2017-09-01 00:00:00.0",
+    "texto": "XXXIX FERIA DE CERÁMICA Y ALFARERÍA DE VALLADOLID. VALLADOLID",
+    "dia": [
+      1
+    ],
+    "href": ""
+  }
+]
+						</code>
+					</pre>
+				</div>
+				
+				
+			</div>
+		</div>
+		<div id="mapa-web">
+      <!--#include virtual="includes/mapa-web.inc.html" -->
+		</div>
+		<div id="menu-pie">
+      <!--#include virtual="includes/menu-pie.inc.html" -->
+		</div>
+		<div id="logos">
+      <!--#include virtual="includes/logos.inc.html" -->
+		</div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>
