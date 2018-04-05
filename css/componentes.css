@@ -875,7 +875,7 @@
 	text-align:center;
 	margin-right:0em;
 }
-.destacados.incidentes > p{
+.destacados.incidentes > h2 + p{
 	margin-top:-3em;
 }
 .destacados.alertas > p{
@@ -4296,8 +4296,9 @@ table:not(.ui-datepicker-calendar):not(.tabla-calendario) th:first-child{
 	border-left:1px solid #ba0c2f;
 }
 .tabla tr:first-child th,
-table:not(.ui-datepicker-calendar):not(.tabla-calendario) tr:first-child th{
-	text-align:center;
+table:not(.ui-datepicker-calendar):not(.tabla-calendario) tr:first-child th,
+.tabla .separacion-cabecera th{
+	text-align:center !important;
 }
 .tabla td,
 table:not(.ui-datepicker-calendar):not(.tabla-calendario) td{
@@ -6302,4 +6303,58 @@ a.rspkr_dr_link  img{
   .componente-texto .enlaces-contenido a.rspkr_dr_link{
     right: 16%;
   }
+}
+
+/* Enlaces imagen título */
+.enlaces-imagen-titulo{
+  
+}
+.enlaces-imagen-titulo ul{
+  text-align:center;
+  padding:0px;
+  margin:0px;
+}
+.enlaces-imagen-titulo ul li{
+  display:inline-block;
+  vertical-align:top;
+  width:13.125em;
+  height:13.125em;
+  border:1px solid #ccc;
+  text-align:center;
+  margin:5px;
+  position:relative;
+  box-shadow:0px 0px 3px 0px rgba(78, 78, 78, .2);
+  list-style-type:none;
+}
+.enlaces-imagen-titulo ul li a{
+  color:#333;
+  text-decoration:none;
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+.enlaces-imagen-titulo ul li a:hover,
+.enlaces-imagen-titulo ul li a:focus{
+  text-decoration:underline;
+}
+.enlaces-imagen-titulo ul li a img{
+  max-width:100%;
+  max-height:7em;
+}
+.enlaces-imagen-titulo ul li a .titulo{
+  display:block;
+  position:absolute;
+  width:90%;
+  height:30%;
+  left:0px;
+  bottom:0px;
+  background-color:#f6f6f6;
+  padding:5%;
+  font-family:lato;
+  font-size:.9375em;
+}
+.enlaces-imagen-titulo ul li a:hover .titulo,
+.enlaces-imagen-titulo ul li a:focus .titulo{
+  text-decoration:underline;
 }
