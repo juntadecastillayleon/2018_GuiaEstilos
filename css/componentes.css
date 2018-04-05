@@ -4296,8 +4296,9 @@ table:not(.ui-datepicker-calendar):not(.tabla-calendario) th:first-child{
 	border-left:1px solid #ba0c2f;
 }
 .tabla tr:first-child th,
-table:not(.ui-datepicker-calendar):not(.tabla-calendario) tr:first-child th{
-	text-align:center;
+table:not(.ui-datepicker-calendar):not(.tabla-calendario) tr:first-child th,
+.tabla .separacion-cabecera th{
+	text-align:center !important;
 }
 .tabla td,
 table:not(.ui-datepicker-calendar):not(.tabla-calendario) td{
