@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Listado agenda cultural mapa - Catálogo de componentes - Junta de Castilla y León</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+	
+    <script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div id="ventana-buscador">
+      <!--#include virtual="includes/ventana-buscador.inc.html" -->
+    </div>
+    <div id="ventana-menu-jcyl">
+      <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
+    </div>
+    <div id="contenedor">
+      <div class="contenedor">
+        <!--#include virtual="includes/cabecera.inc.html" -->
+      </div>
+      <div id="main-menu">
+        <!--#include virtual="includes/menu.inc.html" -->
+      </div>
+      <div id="encabezado">
+        <!--#include virtual="includes/encabezado.inc.html" -->
+      </div>
+      <div id="rastro-migas">
+        <div class="contenedor">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Enlaces</a></li>
+            <li><strong>Listado agenda cultural mapa</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div id="contenidos">
+        <div class="contenedor">
+          <h1>Listado agenda cultural mapa</h1>
+          <div class="buscador-mapa">
+            <div class="buscador-filtro">
+              <ul class="menu-opciones-buscador">
+                <li class="ico-ayuda">
+                  <a href="" target="_blank" title="Nueva ventana: Ayuda del buscador específico">Ayuda</a>
+                </li>
+                <li class="ico-calendario">
+                  <a href="">Calendario</a>
+                </li>
+              </ul>
+              <form action="" method="post">
+                <input type="text" name="q" id="q" value="calendario" placeholder="Buscar...">
+                <input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+              </form>
+            </div>
+            <ul class="vistas">
+              <li class="vista-lista"><a href="">Lista</a></li>
+              <li class="vista-mapa seleccionado"><a href="">Mapa</a></li>
+            </ul>
+            <div class="mapa">
+              <div class="filtros-buscador">
+                <h2><a href="">Filtros<span aria-hidden="true">+</span></a></h2>
+                <form name="filtros" method="get" action="">
+                  <div>
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia">
+                      <option value="">Todas</option>
+                      <option value="burgos">Burgos</option>
+                      <option value="soria">Soria</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="fuente">Fuente</label>
+                    <select id="fuente">
+                      <option>Todas</option>
+                    </select>
+                  </div>
+                  <div class="fechas">
+                    <div>
+                      <label for="desde">Desde</label>
+                      <input id="desde" name="desde" type="text" placeholder="dd/mm/aaaa">
+                      <img src="img/calendario-popup.png" alt="">
+                    </div>
+                    <div>
+                      <label for="hasta">Hasta</label>
+                      <input id="hasta" name="hasta" type="text" placeholder="dd/mm/aaaa">
+                      <img src="img/calendario-popup.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <fieldset>
+                      <legend>Estado</legend>
+                      <input id="en-plazo" name="en-plazo" type="checkbox">
+                      <label for="en-plazo">En plazo</label>
+                    </fieldset>
+                  </div>
+                  <!--<input id="cancelar" name="aceptar" value="Cancelar" type="reset" class="boton">-->
+                  <input id="aceptar" name="aceptar" value="Aplicar filtros" type="submit" class="boton">
+                </form>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.6160844242336!2d-5.5855768842909!3d42.60588832753348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af35650fc1f%3A0x1bc3bf21aace39fe!2sEdificio+Eren!5e0!3m2!1ses!2ses!4v1488218027106" style="border:0" allowfullscreen="" frameborder="0" height="700" width="700"></iframe>
+            </div>
+          </div>
+          <div class="leyenda">
+            <h2>Leyenda</h2>
+            <ul>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/cine-audiovisual.png" alt=""></span>
+                <span>Cine o audiovisual</span>
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/concurso-juego.png" alt=""></span>
+                Concurso o juego
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/curso-formacion.png" alt=""></span>
+                Curso o formación
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/festejo-taurino.png" alt=""></span>
+                Festejo taurino
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/magia.png" alt=""></span>
+                Magia
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/visita-guiada.png" alt=""></span>
+                Visita guiada
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/circo.png" alt=""></span>
+                Circo
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/conferencia.png" alt=""></span>
+                Conferencia
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/danza.png" alt=""></span>
+                Danza
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/festivales.png" alt=""></span>
+                Festivales
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/presentacion.png" alt=""></span>
+                Presentación
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/club-lectura.png" alt=""></span>
+                Club de la lectura
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/conmemoracion.png" alt=""></span>
+                Conmemoración
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/exposicion.png" alt=""></span>
+                Exposición
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/fiesta.png" alt=""></span>
+                Fiesta
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/taller.png" alt=""></span>
+                Taller
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/concierto.png" alt=""></span>
+                Concierto
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/cuentacuentos.png" alt=""></span>
+                Cuentacuentos
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/feria-mercado.png" alt=""></span>
+                Feria o mercado
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/foro-reunion.png" alt=""></span>
+                Foro o reunión
+              </li>
+              <li>
+                <span class="icono"><img src="img/icos-cultura/teatro-titeres.png" alt=""></span>
+                Teatro, títeres, monologos
+              </li>
+            </ul>
+          </div>
+          
+          <div class="responsive">
+            <h3>Responsividad</h3>
+            <p></p>
+          </div>
+          <div class="codigo">
+            <h3>Código</h3>
+            <pre class="language-markup">
+              <code>
+              </code>
+            </pre>
+          </div>
+          
+        </div>
+      </div>
+      <div id="mapa-web">
+        <!--#include virtual="includes/mapa-web.inc.html" -->
+      </div>
+      <div id="menu-pie">
+        <!--#include virtual="includes/menu-pie.inc.html" -->
+      </div>
+      <div id="logos">
+        <!--#include virtual="includes/logos.inc.html" -->
+      </div>
+    </div>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/portal.js"></script>
+	<script src="js/prism.js"></script>
+  </body>
+</html>

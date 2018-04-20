@@ -57,39 +57,29 @@
 						</li>
 					</ul>
 					<form name="formulario" method="get" action="">
-						<div>
-							<label for="q">Texto</label>
+						<div class="texto-busqueda">
+							<label for="q" class="elemento-invisible">Texto</label>
 							<input id="q" name="q" type="text" placeholder="Texto a buscar...">
 						</div>
-						<div>
-							<label for="provincia">Provincia</label>
-							<select id="provincia">
-								<option>Todas</option>
-							</select>
-						</div>
-						<div>
-							<label for="fuente">Fuente</label>
-							<select id="fuente">
-								<option>Todas</option>
-							</select>
-						</div>
-						<div class="fechas">
-							<div>
-								<label for="desde">Desde</label>
-								<input id="desde" name="desde" type="text" placeholder="dd/mm/aaaa">
-								<img src="img/calendario-popup.png" alt="">
-							</div>
-							<div>
-								<label for="hasta">Hasta</label>
-								<input id="hasta" name="hasta" type="text" placeholder="dd/mm/aaaa">
-								<img src="img/calendario-popup.png" alt="">
-							</div>
-						</div>
-						<div>
-							<input id="en-plazo" name="en-plazo" type="checkbox">
-							<label for="en-plazo">En plazo</label>
-						</div>
-						<input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+            <div class="campos-busqueda">
+              <div>
+                <label for="provincia">Provincia</label>
+                <select id="provincia">
+                  <option>Todas</option>
+                </select>
+              </div>
+              <div>
+                <label for="fuente">Fuente</label>
+                <select id="fuente">
+                  <option>Todas</option>
+                </select>
+              </div>
+              <div>
+                <input id="en-plazo" name="en-plazo" type="checkbox">
+                <label for="en-plazo">En plazo</label>
+              </div>
+              <input id="aceptar" name="aceptar" value="Buscar" type="submit" class="boton">
+            </div>
 					</form>
 				</div>
 
@@ -283,8 +273,8 @@
 				
 				<div class="responsive">
 					<h3>Responsividad</h3>
-					<p>Este componente se comporta igual que el <a href="buscador.html">buscador</a>. De hecho es un buscador con una columna de filtros.</p>
-					<p>Los filtros se colocarán a la izquierda de los resultados de búsqueda ocupando el 20% del anchio disponible a partir de de 980px. Por debajo de 980px se dispondrán los filtros encima y los resultados debajo.</p>
+					<p>Este componente se comporta igual que el <a href="buscador.html">buscador</a>. Los campos extras, que aparecen alineados debajo del texto de busqueda fluyen segun el espacio disponible.</p>
+					<p>Los filtros se colocarán a la izquierda de los resultados de búsqueda ocupando el 20% del ancho disponible a partir de de 980px. Por debajo de 980px se dispondrán los filtros encima y los resultados debajo.</p>
 				</div>
 				<div class="codigo">
 					<h3>Código</h3>

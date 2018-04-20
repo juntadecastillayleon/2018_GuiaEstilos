@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Componente texto - Catálogo de componentes - Junta de Castilla y León</title>
     <link href="css/normalize.css" rel="stylesheet">
-	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
-	<link href="css/menu-portal.css" rel="stylesheet">
-	<link href="css/jquery.sidr.light.css" rel="stylesheet">
-	<link href="css/componentes.css" rel="stylesheet">
-	<link href="css/prism.css" rel="stylesheet">
-	<link href="css/catalogo.css" rel="stylesheet">
-	
-	<script src="js/jquery-1.12.4.min.js"></script>
+    <link href="css/menu-portal.css" rel="stylesheet">
+    <link href="css/jquery.sidr.light.css" rel="stylesheet">
+    <link href="css/componentes.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/catalogo.css" rel="stylesheet">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
   </head>
   <body>
 	<div id="ventana-buscador">
@@ -25,12 +25,12 @@
     <!--#include virtual="includes/ventana-menu-jcyl.inc.html" -->
 	</div>
     <div id="contenedor">
-        <div class="contenedor">
-      <!--#include virtual="includes/cabecera.inc.html" -->
-        </div>
-        <div id="main-menu">
-          <!--#include virtual="includes/menu.inc.html" -->
-        </div>
+      <div class="contenedor">
+        <!--#include virtual="includes/cabecera.inc.html" -->
+      </div>
+      <div id="main-menu">
+        <!--#include virtual="includes/menu.inc.html" -->
+      </div>
 		<div id="encabezado">
       <!--#include virtual="includes/encabezado.inc.html" -->
 		</div>
@@ -47,25 +47,38 @@
 			<div class="contenedor">
 				<div class="componente-texto">
 					<h1>Componente texto</h1>
-					<ul class="acciones">
-						<li><a href=""><img src="img/contactar.png" alt="Contactar"/></a></li>
-						<li><a href=""><img src="img/enviar.png" alt="Enviar"/></a></li>
-						<li><a href=""><img src="img/imprimir.png" alt="Imprimir"/></a></li>
+					<ul class="acciones" id="microinteracciones">
+						<li><a href=""><img src="img/contactar-2.png" alt="Contactar"/><span>Contactar</span></a></li>
+						<li><a href=""><img src="img/enviar-2.png" alt="Enviar"/><span>Enviar</span></a></li>
+						<li><a href=""><img src="img/imprimir.png" alt="Imprimir"/><span>Imprimir</span></a></li>
 						<li>
 							<div id="readspeaker_button1" class="rs_skip rs_preserve">
 								<a accesskey="L" rel="nofollow" href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=4882&amp;lang=es_es&amp;readid=contenidos&amp;url=[ENCODED_URL]" onclick="readpage(this.href, 'xp1'); return false;">
-									<img src="img/escuchar.png" alt="Escuchar" title="Escuchar">
+									<img src="img/escuchar.png" alt="Escuchar" title="Escuchar"><span>Escuchar</span>
 								</a>
 							</div>
 							<div id='xp1' class="rs_preserve rs_skip"></div>
 						</li>
-						<li><a href=""><img src="img/compartir.png" alt="Compartir"/></a></li>
+						<li class="compartir">
+              <a href=""><img src="img/compartir.png" alt="Compartir"/><span>Compartir</span></a>
+							<ul class="elemento-invisible">
+								<li><a href=""><img src="img/compartir-facebook.png" alt="Facebook"></a></li>
+								<li><a href=""><img src="img/compartir-twitter.png" alt="Twitter"></a></li>
+								<li><a href=""><img src="img/compartir-linkedin.png" alt="Linkedin"></a></li>
+								<li><a href=""><img src="img/compartir-google.png" alt="Google+"></a></li>
+								<li><a href=""><img src="img/compartir-blogger.png" alt="Blogger"></a></li>
+								<li><a href=""><img src="img/compartir-myspace.png" alt="Myspace"></a></li>
+								<li><a href=""><img src="img/compartir-delicious.png" alt="Delicious"></a></li>
+								<li><a href=""><img src="img/compartir-digg.png" alt="Digg"></a></li>
+							</ul>
+            </li>
 						<li><a href=""><img src="img/ver-pdf.png" alt="PDF"/></a></li>
 						<li><a href=""><img src="img/ver-doc.png" alt="DOC"/></a></li>
 						<li><a href=""><img src="img/opciones.png" alt="Opciones"/></a></li>
 						<li><a href=""><img src="img/guardar.png" alt="Guardar"/></a></li>
 						<li><a href=""><img src="img/evento.png" alt="Evento"/></a></li>
 					</ul>
+          <span id="tipo-microinteraccion"></span>
 					<div class="contenido">
 						<p>La agricultura y la ganadería de Castilla y León de hoy no son, desde luego, las mismas de hace 26 años, cuando España entraba a formar parte de la Unión Europea en el año 1986. Han sido muchos los cambios que con gran esfuerzo se han ido consiguiendo, así:</p>
 						<ul>
@@ -146,20 +159,22 @@
 					</div>
 					
 				</div>
-				
+        
 				<div class="responsive">
 					<h3>Responsividad</h3>
 					<p>Componente texto está pensado para albergar todo tipo de contenido HTML, párrafos, listas, tablas, ...</p>
 					<p>Los enlaces de cabecera pueden usarse aquellos que sean necesarios, eliminando el resto.</p>
 					<p>Como componente de texto que es su responsividad se limita a fluir según el espacio disponible para ello. Los enlaces de cabecera fluirán en una linea mientras tengan espacio, cuando no se distribuirán en varias líeas según el espacio disoponible.</p>
-					<p>La lista de descargas inferior, de existir, se colocará en una única línea (icono, título, tamaño y botón) a partir de 800px, por debajo de 800px y por encima de 600px se colocarán en dos filas (icono más imagen y peso más botón), por debajo de 600px se colocarán en una línea cada elemento.</p>
+					<p>Los enlaces de descarga y microinteracciones se colocarán a la izquierda del contenido por encima de 680px, acompañando al contenidos mientras se hace scroll. Por debajo de esa resolución se colocarán en la parte inferior de la pantalla mientras el contenido esté en la pantalla.</p>
+          <p>La lista de descargas inferior, de existir, se colocará en una única línea (icono, título, tamaño y botón) a partir de 800px, por debajo de 800px y por encima de 600px se colocarán en dos filas (icono más imagen y peso más botón), por debajo de 600px se colocarán en una línea cada elemento.</p>
 				</div>
 				<div class="codigo">
 					<h3>Código</h3>
 					<pre class="language-markup">
 						<code>
 &lt;div class="componente-texto"&gt;
-	&lt;ul class="acciones"&gt;
+	&lt;ul class="acciones" id="microinteracciones"&gt;
+    &lt;li class="anexos"&gt;&lt;a href="#anexos"&gt;Ir a descargas&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/contactar.png" alt="Contactar"/&gt;&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/enviar.png" alt="Enviar"/&gt;&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=""&gt;&lt;img src="img/imprimir.png" alt="Imprimir"/&gt;&lt;/a&gt;&lt;/li&gt;

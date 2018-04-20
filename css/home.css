@@ -222,7 +222,7 @@
 	vertical-align:top;
 	width:32.75%;
 	padding:0px;
-	font-style:italic;
+	/*font-style:italic;*/
 	border-left:4px dashed #f6f6f6;
 }
 #main-menu ul li .submenu .columna:first-child{
@@ -233,7 +233,7 @@
 }
 #main-menu ul li .submenu .columna > ul > li{
 	font-weight:bold;
-	background:url(../img/subrayado.gif) left top no-repeat;
+	/*background:url(../img/subrayado.gif) left top no-repeat;*/
 	padding:10px 0px;
 	border-top:none;
 	margin-top:10px;
@@ -242,7 +242,8 @@
 }
 #main-menu ul li .submenu .columna > ul  li  a:hover,
 #main-menu ul li .submenu .columna > ul  li  a:focus{
-	color:#ba0c2f;;
+	color:#ba0c2f;
+  text-decoration:underline;
 }
 #main-menu ul li .submenu .columna > ul > li ul li{
 	display:block;
@@ -253,7 +254,18 @@
 	text-align:left;
 }
 #main-menu ul li .submenu .columna > ul > li ul li a{
-	
+  position:relative;
+  padding-left:15px;
+}
+#main-menu ul li .submenu .columna > ul > li ul li a:after{
+  content: ' ';
+  position:absolute;
+  left:0px;
+  top:50%;
+  width:8px;
+  height:8px;
+  margin-top:-4px;
+  background-color:#ccc;
 }
 #main-menu ul li .submenu .pie{
 	background-color:#f6f6f6;

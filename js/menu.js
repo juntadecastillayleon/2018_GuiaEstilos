@@ -1,5 +1,5 @@
 (function($){
-	$(document).ready(function(){
+	$(window).load(function(){
 		var timer = null;
 		//Ratón
 		$('#main-menu #sidr > ul > li').on('mouseenter', function(e){
@@ -83,5 +83,7 @@
 			var className = 'items-' + ($(this).siblings().length + 1);
 			$(this).addClass(className).parents('#main-menu').addClass(className);
 		});
+    //Con Submenú
+    $('#main-menu #sidr > ul > li > a.menu-focus').prev('a').addClass('con-submenu');
 	});
 })(jQuery);
