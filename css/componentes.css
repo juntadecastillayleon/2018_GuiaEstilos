@@ -5026,9 +5026,10 @@ table:not(.ui-datepicker-calendar):not(.tabla-calendario) tr:first-child td:firs
 .listado.general ol li a .titulo{
 	font-weight:bold;
 }
-.listado.sin-imagen ul li a .titulo
+.listado.sin-imagen ul li a .titulo,
 .listado.sin-imagen ol li a .titulo{
-	color:#ba0c2f;
+	/* color:#ba0c2f; */
+  font-style:bold;
 }
 .listado.previsiones ul li a .titulo{
 	color:#ba0c2f;
