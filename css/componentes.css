@@ -3203,6 +3203,9 @@
   text-transform:uppercase;
   margin-bottom:50px;
 }
+.componente-texto .acciones > li.anexos.descargas a{
+  width:70px;
+}
 .componente-texto .acciones > li.anexos a:hover,
 .componente-texto .acciones > li.anexos a:focus{
 	background-color:#92efdf;
