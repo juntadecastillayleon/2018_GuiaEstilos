@@ -883,7 +883,7 @@
 	text-align:center;
 	margin-right:0em;
 }
-.destacados.incidentes > p{
+.destacados.incidentes > h2 + p{
 	margin-top:-3em;
 }
 .destacados.alertas > p{
