@@ -5852,9 +5852,9 @@ p.volver a:focus{
 /* Cultura, buscador mapa */
 .buscador-mapa{
 	overflow:hidden;
-	clear:both;
+	/* clear:both; */
 	margin-bottom:2em;
-	padding:5px 0px;
+	padding:0px 0px;
 }
 @media all and (min-width:48em){ /* 768px */
 	.buscador-mapa .mapa{
