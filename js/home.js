@@ -1,4 +1,5 @@
 (function($){
+  var RUTA_JCYL = '/futuretense_cs/JCYL_17/';
 	$(document).ready(function(){
 		$('#portales .ver').on('click', function(){
 			$('a', this).text('Ver todos los portales').css('background-image', 'none');
@@ -43,7 +44,8 @@
 				opacity:0.75,
 				width: '80%',
 				height: '80%',
-				className: 'galeria-colorbox'
+				className: 'galeria-colorbox',
+        close: '<img src="' + RUTA_JCYL + 'img/cerrar-hc-colorbox.png" alt="Cerrar">'
 			});
 		}
 		
