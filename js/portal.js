@@ -1,6 +1,6 @@
 (function($){
-	//var RUTA_JCYL = '/futuretense_cs/JCYL_17/';
-	var RUTA_JCYL = '';
+	var RUTA_JCYL = '/futuretense_cs/JCYL_17/';
+	//var RUTA_JCYL = '';
 	$(document).ready(function(){
 		$('.navegacion-iconos li').each(function(){
 			$(this).addClass('items-' + ($(this).siblings().length + 1));
@@ -799,6 +799,8 @@
         dataType: 'html',
         method: 'GET'
       }).done(function(html){
+        var url_history = getUrlHistoryJs(url);
+        history.pushState({jcyl: 'search'}, 'Search results', url_history);
         printSearchResults(html);
       });
     }
@@ -812,6 +814,30 @@
         return false;
       });
       $('.filtros-buscador form input[type=submit]').removeClass('activo');
+    }
+    function extractUrlParams(url_nav){
+      var url_nav_domain_params = url_nav.split('?');
+      if(!url_nav_domain_params[1]){
+        return {};
+      }
+      var url_nav_params = url_nav_domain_params[1].split('&');
+      var url_nav_params_obj = {};
+      $.each(url_nav_params, function(idx, elm){
+        var obj = elm.split('=');
+        url_nav_params_obj[obj[0]] = obj[1];
+      });
+      return url_nav_params_obj;
+    }
+    function getUrlHistoryJs(url){
+      var params = $.extend(extractUrlParams(location.href), extractUrlParams(url));
+      var query = '';
+      $.each(params, function(key, value){
+        if(key != 'pagename'){
+          query += key + '=' + value + '&';
+        }
+      });
+      query = query.slice(0, -1);
+      return location.origin + location.pathname + '?' + query;
     }
   }
   $('.filtros-buscador h2 a').on('click', function(e){
