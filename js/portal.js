@@ -400,7 +400,8 @@
 				width: '80%',
 				height: '80%',
 				className: 'galeria-colorbox',
-				close: '<img src="' + RUTA_JCYL + 'img/cerrar-hc-colorbox.png" alt="Cerrar">'
+				close: '<img src="' + RUTA_JCYL + 'img/cerrar-hc-colorbox.png" alt="Cerrar">',
+        title:false
 			});
 		}
 		
