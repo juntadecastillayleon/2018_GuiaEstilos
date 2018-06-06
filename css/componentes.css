@@ -5012,7 +5012,7 @@ table:not(.ui-datepicker-calendar):not(.tabla-calendario) tr:first-child td:firs
 .listado ol li a .imagen + .fecha + .titulo,
 .listado ul li a .imagen + .titulo,
 .listado ol li a .imagen + .titulo{
-  max-width: calc(100% - 185px);
+  max-width: calc(100% - 235px);
 }
 .listado ul li a .titulo:after,
 .listado ol li a .titulo:after{
