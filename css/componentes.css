@@ -2259,6 +2259,8 @@
 }
 .buscador-especifico label span{
 	color:#ba0c2f;
+  font-size:1.5em;
+  font-weight:bold;
 }
 .buscador-especifico input{
 	border:1px solid #999;
