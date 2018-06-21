@@ -142,7 +142,7 @@
 				)
 			);
 		/*}*/
-		
+    
 		if($('#tipo-microinteraccion').is(':visible')){
       $('.acciones .compartir').on('mouseenter', function(){
         $('ul', this).removeClass('elemento-invisible');
@@ -150,17 +150,39 @@
         $('ul', this).addClass('elemento-invisible');
       });
     }
-		$('.acciones .compartir > a').on('focus', function(){
+    
+    /*
+		$('.acciones .compartir > a').on('focus touchstart', function(){
 			$(this).next('ul').removeClass('elemento-invisible');
-		}).on('blur', function(){
+		}).on('blur touchend', function(){
 			$(this).next('ul').addClass('elemento-invisible');
-		});
+		}).on('click', function(){
+      return false;
+    });
+    */
+    /*
 		$('.acciones .compartir ul li a').on('focus', function(){
 			$(this).closest('ul').removeClass('elemento-invisible');
 		}).on('blur', function(){
 			$(this).closest('ul').addClass('elemento-invisible');
 		});
-		
+		*/
+    $('.acciones .compartir > a').on('click', function(){
+      if(!$('#tipo-microinteraccion').is(':visible')){
+        $(this).next('ul').toggleClass('elemento-invisible').css('bottom', $('#microinteracciones').height() + 'px');
+      }
+      return false;
+    });
+    $('.acciones a').on('click', function(){
+      if(!$(this).parent().hasClass('compartir')){
+        $('.compartir > ul').addClass('elemento-invisible');
+      }
+    });
+    $('body').on('touchstart click', function(){
+      $('.compartir > ul').addClass('elemento-invisible');
+    });
+    
+    
 		$('#main-menu .buscar-menu a, #main-menu .buscar a').on('click', function(e){
 			if($('#menu-jcyl a').attr('aria-expanded') == 'true'){
 				$('#menu-jcyl a').click();
@@ -892,6 +914,7 @@
     if($('#contenedor .cabecera .buscador').length > 0){
       fixSearchPosition();
     }
+    
 		if($('#tipo-microinteraccion').is(':visible')){
       $('.acciones .compartir').on('mouseenter', function(){
         $('ul', this).removeClass('elemento-invisible');
@@ -902,6 +925,7 @@
     else{
       $('.acciones .compartir').off('mouseenter mouseleave');
     }
+    
   });
   
   
