@@ -3870,6 +3870,7 @@
 	background-color:#ba0c2f !important;
 	margin:0px !important;
 	padding:.3em 0em !important;
+  text-align:center;
 }
 .calendario.mini > h2:after{
 	display:none !important;
