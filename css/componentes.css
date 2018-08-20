@@ -36,6 +36,9 @@
   position:relative;
   line-height:140%;
 }
+#contenidos .sin-titulo{
+  margin-top:2.7em;
+}
 #contenidos h2:after{
 	content:'';
 	background-color:#ddd;
@@ -2959,7 +2962,7 @@
 .componente-texto .contenido ul li{
 	list-style-image:url(../img/bullet-li.png);
 	margin-bottom:1em;
-  font-size: 1.05em;
+  font-size: 1em;
 }
 .componente-texto .contenido ul li ul,
 .componente-texto .contenido ol li ol,
