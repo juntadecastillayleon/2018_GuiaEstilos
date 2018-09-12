@@ -2267,7 +2267,7 @@
   font-weight:bold;
 }
 .buscador-especifico input{
-	border:1px solid #999;
+	border:1px solid #757575;
 	padding:10px 5px;
 	width:90%;
 	font-weight:bold;
@@ -2294,7 +2294,7 @@
 	width:auto;
 }
 .buscador-especifico select{
-	border:1px solid #999;
+	border:1px solid #757575;
 	border-radius:5px;
 	padding:10px 5px;
 	min-width:90%;
@@ -2303,7 +2303,7 @@
 	min-width:auto;
 }
 .buscador-especifico textarea{
-	border:1px solid #999;
+	border:1px solid #757575;
 	border-radius:4px;
 	padding:10px 5px;
 	width:90%;
