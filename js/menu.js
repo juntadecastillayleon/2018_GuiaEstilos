@@ -36,7 +36,7 @@
 			}).on('blur', function(e){
 				$(this).parents('li').removeClass('activo-focus');
 			});
-      $('img', this).attr('alt', 'Submenú ' + $('img', this).attr('alt', ));
+      $('img', this).attr('alt', 'Submenú ' + $('img', this).attr('alt'));
 		});
 		//Escape
 		$('#main-menu #sidr > ul > li a').on('keyup', function(e){
