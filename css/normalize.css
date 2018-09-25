@@ -459,3 +459,9 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Default focus outline
+   ========================================================================== */
+:focus{
+  outline-color:#333;
+}
