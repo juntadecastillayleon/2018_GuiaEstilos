@@ -2696,6 +2696,9 @@
 	left:0px !important;
 	margin-left:0px !important;
 }
+.resultados-busqueda .resultados{
+  max-width:80%;
+}
 .resultados-busqueda p.imprimir{
 	background:url(../img/imprimir-listados.png) left center no-repeat;
 	padding:5px 0px 5px 30px;
