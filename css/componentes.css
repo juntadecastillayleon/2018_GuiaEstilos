@@ -2502,6 +2502,7 @@
   font-family: lato;
   border:1px solid #ba0c2f;
   margin-left:-5px;
+  cursor:pointer;
 }
 @media all and (min-width:30em){ /* 480px */
   .buscador-filtro form input[type="text"]{
@@ -2655,6 +2656,7 @@
 .filtros-buscador input.activo[type=submit]{
   background:#ba0c2f url(../img/aplicar-filtros-on.png) 10px center no-repeat;
   color:#fff;
+  cursor:pointer;
 }
 @media all and (min-width:61.25em){ /* 980 */
   /*
