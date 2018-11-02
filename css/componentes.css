@@ -3012,7 +3012,6 @@
 /* Componente texto - Preguntas y respuestas */
 .componente-texto .preguntas-respuestas dt{
 	font-size:1.25em;
-	text-transform:uppercase;
 	font-weight:bold;
 	font-family:lato;
 	color:#333;
