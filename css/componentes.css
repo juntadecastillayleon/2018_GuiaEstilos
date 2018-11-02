@@ -1039,6 +1039,10 @@
 	transition:color .5s ease-out;
   overflow:hidden;
 }
+.destacados.rss ul li p{
+	min-height:150px;
+  height:auto;
+}
 .destacados.incidentes.sin-fecha ul li p{
   height:10em;
 }
@@ -1177,6 +1181,11 @@
 	color:#fff;
 	text-decoration:underline;
 }
+.destacados.incidentes ul li:hover p a,
+.destacados.incidentes ul li.over p a{
+	color:#fff;
+	text-decoration:none;
+}
 .destacados.blog ul li:hover p a,
 .destacados.blog ul li.over p a{
 	color:#ba0c2f;
@@ -1185,6 +1194,11 @@
 .destacados.alertas ul li.over p a{
 	color:#ba0c2f;
 }
+.destacados.rss ul li:hover p a,
+.destacados.rss ul li.over p a{
+	color:#fff;
+  text-decoration:none;
+}
 .destacados ul li p.destacado .titulo{
 	display:block;
 	text-transform:uppercase;
@@ -1192,9 +1206,21 @@
 	font-family:lato;
   font-weight:bold;
 }
+.destacados.rss ul li p.destacado .titulo{
+  color:#ba0c2f;
+}
 .destacados.incidentes ul li p.destacado .titulo{
 	text-transform:none;
 	font-weight:bold;
+  color:#ba0c2f;
+}
+.destacados.incidentes ul li:hover p.destacado .titulo,
+.destacados.incidentes ul li.over p.destacado .titulo{
+  color:#fff;
+}
+.destacados.rss ul li:hover p.destacado .titulo,
+.destacados.rss ul li.over p.destacado .titulo{
+  color:#fff;
 }
 .destacados.alertas ul li p.destacado .titulo{
 	text-transform:none;
@@ -1554,7 +1580,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+/*
+.texto-imagen.items-5{
+  float:left;
+  width:17%;
+  margin-left:2.275em;
+}
+*/
 /* Texto + Descripción */
 .texto-descripcion{
 	margin:1em 0em;
@@ -1779,6 +1811,7 @@
 .texto.gobierno ul li a{
 	padding:12px 0px 12px 50px;
 	font-size:1.125em;
+  color:#ba0c2f;
 }
 .texto.sin-imagen ul li a{
 	padding:12px 0px 12px 50px;
@@ -2365,6 +2398,15 @@
 	margin-top:2em;
 	width:auto;
 	font-style:normal;
+}
+.buscador-especifico input.boton:hover,
+.buscador-especifico input.boton:focus{
+	background-color:#9f0b28;
+	color:#fff;
+}
+.buscador-especifico input.boton:active{
+	background-color:#5e0617;
+	color:#fff;
 }
 .buscador-especifico input.boton.enlace{
 	background-color:transparent;
@@ -3244,8 +3286,11 @@
   .componente-texto .acciones .compartir ul{
     left:0px;
     top:auto;
-    bottom:0px;
-    width:6.5em;
+    /* bottom:0px; */
+    bottom:60px;
+    /* width:6.5em; */
+    width:100%;
+    position:fixed;
   }
 }
 .componente-texto .acciones .compartir ul:after{
@@ -4111,6 +4156,24 @@
 	background:url(../img/mail.png) left top no-repeat;
 	padding-left:30px;
 }
+
+.direccion .datos p.tipo{
+	background:url(../img/bandera.png) left top no-repeat;
+	padding-left:30px;
+}
+.direccion .datos p.coordenadas{
+	background:url(../img/coordenadas.png) left top no-repeat;
+	padding-left:30px;
+}
+.direccion .datos p.area{
+	background:url(../img/area.png) left top no-repeat;
+	padding-left:30px;
+}
+.direccion .datos p.altitud{
+	background:url(../img/altitud.png) left top no-repeat;
+	padding-left:30px;
+}
+
 .direccion .datos .elemento-invisible{
 	display:none;
 }
@@ -5042,8 +5105,8 @@ table:not(.ui-datepicker-calendar):not(.tabla-calendario) tr:first-child td:firs
 }
 .listado.sin-imagen ul li a .titulo,
 .listado.sin-imagen ol li a .titulo{
-	/* color:#ba0c2f; */
-  font-style:bold;
+	color:#ba0c2f;
+  font-weight:bold;
 }
 .listado.previsiones ul li a .titulo{
 	color:#ba0c2f;
@@ -6153,6 +6216,15 @@ p.volver a:focus{
 	border-bottom:2px solid #f00;
 	border-left:2px solid #f00;
 }
+.mensaje.ok{
+	border:2px solid #be7;
+	background-color:#f8fff0;
+}
+.mensaje.ok:after{
+	background-color:#f8fff0;
+	border-bottom:2px solid #be7;
+	border-left:2px solid #be7;
+}
 .mensaje p{
 	font-size:1.125em;
 	font-family:lato;
@@ -6615,6 +6687,9 @@ a.rspkr_dr_link  img{
   box-shadow:0px 0px 3px 0px rgba(78, 78, 78, .2);
   list-style-type:none;
 }
+.enlaces-imagen-titulo ul li{
+  height:15.125em;
+}
 .enlaces-imagen-titulo ul li a{
   color:#333;
   text-decoration:none;
@@ -6631,6 +6706,10 @@ a.rspkr_dr_link  img{
   max-width:100%;
   max-height:7em;
 }
+.enlaces-imagen-titulo.texto-imagen ul li a img{
+  width:100%;
+  max-height:none;
+}
 .enlaces-imagen-titulo ul li a .titulo{
   display:block;
   position:absolute;
@@ -6646,6 +6725,24 @@ a.rspkr_dr_link  img{
 .enlaces-imagen-titulo ul li a:hover .titulo,
 .enlaces-imagen-titulo ul li a:focus .titulo{
   text-decoration:underline;
+}
+.enlaces-imagen-titulo.texto-imagen ul li a .titulo{
+  background-color:#fff;
+  padding:5%;
+  font-family:lora;
+  font-size:1.05em;
+  font-weight:bold;
+  text-align:left;
+  border-top:1px solid #ccc;
+}
+
+/* Buscador genérico AJAX */
+.buscador-especifico.filtro.buscador-generico-ajax{
+	margin-bottom:1em;
+}
+#resultados-ajax .mensaje{
+  width:auto;
+  margin-bottom:50px;
 }
 
 /* JCyL Internet TV */
