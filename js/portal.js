@@ -390,8 +390,8 @@
 
       $('.galeria-multimedia > ul > li > a.cboxElement, .galeria-multimedia > p > a.cboxElement').colorbox({
         current: 'Imagen {current} de {total}',
-        previous: 'anterior',
-        next: 'siguiente',
+        previous: '<',
+        next: '>',
         opacity:0.75,
         maxWidth: '100%',
         maxHeight: '100%',
@@ -400,7 +400,7 @@
         title: function(){
           var title = $(this).attr('title');
           var url = $(this).attr('href');
-          var textoEnlace = 'Ver mas';
+          var textoEnlace = 'Más información';
           var verMas = $(this).attr('name');
           if (verMas === undefined || verMas.split("-").length < 3) {
             textoEnlace = 'Descargar imagen';
@@ -707,6 +707,25 @@
 		}
 		
 		$('#contenidos table:not(.tabla-calendario):not(.ui-datepicker-calendar)').wrap($('<div>').css({overflow:'auto'}));
+    
+    //Formulario genérico AJAX
+    if($('.buscador-generico-ajax').length > 0){
+      var $form = $('.buscador-generico-ajax form');
+      $('input[type=submit]', $form).on('click', function(e){
+        $('#resultados-ajax').html('<p>Procesando...</p>');
+        var jqxhr = $.ajax({
+          url: $form.attr('action'),
+          dataType: 'html',
+          method: 'GET',
+          data: $form.serialize()
+        }).done(function(html){
+          $('#resultados-ajax').html(html);
+        }).fail(function() {
+					$('#resultados-ajax').html('<p>Error cargando contenido</p>');
+				});
+        return false;
+      });
+    }
 		
 	});
 	

@@ -27,6 +27,8 @@
         .galeria-colorbox #cboxError{padding:50px; border:1px solid #ccc;}
         .galeria-colorbox #cboxLoadedContent{background:#fff;margin-bottom:120px;padding:43px 43px 0px 43px;}
         .galeria-colorbox #cboxTitle{position:absolute; bottom:60px; left:43px; color:#333;font-size:1.125em;font-weight:bold;}
+        .galeria-colorbox #cboxTitle a{color:#ba0c2f;text-decoration:none;}
+        .galeria-colorbox #cboxTitle a:focus,.galeria-colorbox #cboxTitle a:hover{text-decoration:underline;}
         .galeria-colorbox #cboxCurrent{position:absolute; bottom:0px; left:43px; color:#333;text-align:left;padding-bottom:25px;font-weight:normal;}
 		.galeria-colorbox #cboxCurrent span{display:block;font-weight:normal;}
         .galeria-colorbox #cboxLoadingGraphic{background:url(../img/loading.gif) no-repeat center center;}
@@ -38,9 +40,11 @@
         .galeria-colorbox #cboxPrevious:active, .galeria-colorbox #cboxNext:active, .galeria-colorbox #cboxSlideshow:active, .galeria-colorbox #cboxClose:active {outline:0;}
         
         .galeria-colorbox #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
-        .galeria-colorbox #cboxPrevious{position:absolute; bottom:50%; left:43px;padding:15px;text-transform:uppercase;font-family:lato;background-color:#fff;}
-		.galeria-colorbox #cboxPrevious:hover,.galeria-colorbox #cboxPrevious:focus{color:#ba0c2f;}
-        .galeria-colorbox #cboxNext{position:absolute; bottom:50%; right:43px;padding:15px;text-transform:uppercase;font-family:lato;background-color:#fff;}
-        .galeria-colorbox #cboxNext:hover,.galeria-colorbox #cboxPrevious:focus{color:#ba0c2f;}
+        /*.galeria-colorbox #cboxPrevious{position:absolute; bottom:50%; left:43px;padding:15px;text-transform:uppercase;font-family:lato;background-color:#fff;}*/
+        .galeria-colorbox #cboxPrevious{position:absolute; bottom:50%; left:2px;padding:3px;text-transform:uppercase;font-family:lato;font-size:45px;color:#ba0c2f;border:3px solid #ba0c2f;}
+		.galeria-colorbox #cboxPrevious:hover,.galeria-colorbox #cboxPrevious:focus{color:#333;}
+        /*.galeria-colorbox #cboxNext{position:absolute; bottom:50%; right:43px;padding:15px;text-transform:uppercase;font-family:lato;background-color:#fff;}*/
+        .galeria-colorbox #cboxNext{position:absolute; bottom:50%; right:2px;padding:3px;text-transform:uppercase;font-family:lato;font-size:45px;color:#ba0c2f;border:3px solid #ba0c2f;}
+        .galeria-colorbox #cboxNext:hover,.galeria-colorbox #cboxPrevious:focus{color:#333;}
 		.galeria-colorbox #cboxClose{position:absolute; top:0px; right:0px; display:inline-block; background:url(../img/cerrar.png) no-repeat top center; width:43px; height:43px; /*text-indent:-9999px;*/overflow:hidden;}
 		.galeria-colorbox #cboxClose:hover,.galeria-colorbox #cboxClose:focus{background:url(../img/cerrar-hover.png) no-repeat top center;}
