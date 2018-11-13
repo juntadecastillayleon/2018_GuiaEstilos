@@ -88,6 +88,6 @@
 			$(this).addClass(className).parents('#main-menu').addClass(className);
 		});
     //Con Submenú
-    $('#main-menu #sidr > ul > li > a.menu-focus').prev('a').addClass('con-submenu');
+    $('#main-menu #sidr > ul > li > a.menu-focus').prev('a, span').addClass('con-submenu');
 	});
 })(jQuery);
