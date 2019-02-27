@@ -418,8 +418,8 @@
       
 			$('a.cboxElementIframe').colorbox({
 				iframe:true,
-				previous: 'anterior',
-				next: 'siguiente',
+				previous: '<',
+				next: '>',
 				opacity:0.75,
 				width: '80%',
 				height: '80%',
@@ -766,7 +766,7 @@
     else{
       $('#foros .paginacion').hide();
       $('#foros .caja > ul li').addClass('elemento-invisible').each(function(){
-        if($(this).text().toLowerCase().indexOf(q) != -1){
+        if($(this).text().toLowerCase().indexOf(q) != -1 || $(this).text().toLowerCase().normalize('NFD').replace(/([aeio])\u0301|(u)[\u0301\u0308]/gi, "$1$2").normalize().indexOf(q) != -1){
           $(this).hide().removeClass('elemento-invisible').fadeIn('fast');
         }
       });
