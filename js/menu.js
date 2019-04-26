@@ -70,7 +70,7 @@
 				source: '#sidr',
 				renaming: false,
 				onOpen: function(){
-					$('#sidr-menu #menu li a[aria-haspopup="true"]').off('click').on('click', function(e){
+					$('#sidr-menu .menu li a[aria-haspopup="true"]').off('click').on('click', function(e){
 						if($(this).attr('aria-expanded') == 'false'){
 							$(this).attr('aria-expanded', 'true').parents('li').addClass('activo');
 						}
@@ -83,7 +83,7 @@
 			});
 		}
 		//Anchos
-		$(':not(body.home) #menu > li').each(function(idx, elm){
+		$(':not(body.home) .menu > li').each(function(idx, elm){
 			var className = 'items-' + ($(this).siblings().length + 1);
 			$(this).addClass(className).parents('#main-menu').addClass(className);
 		});

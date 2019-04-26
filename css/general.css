@@ -611,7 +611,7 @@
 #main-menu ul li.home:hover > a{
   color:#fff;
 }
-#main-menu #menu > li:after{
+#main-menu .menu > li:after{
   content:' ';
   position:absolute;
   width:1px;
@@ -620,7 +620,7 @@
   right:0px;
   border-right:1px dotted rgba(255, 255, 255, .6);
 }
-#main-menu #menu > li:last-child:after{
+#main-menu .menu > li:last-child:after{
   display:none;
 }
 #main-menu ul li.items-2{

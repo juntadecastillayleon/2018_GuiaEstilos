@@ -231,7 +231,7 @@
 			return false;
 		});
 		*/
-		$('#menu .buscar-menu').on('mouseenter', function(){
+		$('.menu .buscar-menu').on('mouseenter', function(){
 			$('img', this).attr('src', RUTA_JCYL + 'img/buscar-menu-over.png');
 		}).on('mouseleave', function(){
 			$('img', this).attr('src', RUTA_JCYL + 'img/buscar-menu.png');
